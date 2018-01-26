@@ -1,5 +1,6 @@
 <div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36.png" /></div>
 # SimpleClock
+<br>
 ### TabletClock is for Android & SimpleClock is for macOS
 <br>
 <br>
@@ -54,5 +55,6 @@ Zeng Tianyu, a student in SYSU, Guangzhou, China. For more detail? Here is the l
 <br>
 <div style="text-align:center"><img src ="https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/icon.png" /></div>
 <br>
+<center>SimpleClock</center>
 <br>
 
