@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36.png" /></div>
+<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg" /></div>
 # SimpleClock
 <br>
 ### TabletClock is for Android & SimpleClock is for macOS
@@ -35,13 +35,14 @@ This function can be called by clicking SimpleClock->Timer. This window is also 
 When you toggle the fullscreen, the app will become a locker-like application. And this make your MBP into a "Big iPad".
 <br>
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.35.png" /></div>
+<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.35-2.jpg" /></div>
 <br>
 <center>SimpleClock in Fullscreen Mode</center>
 <br>
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56.png" /></div>
+<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg" /></div>
 <br>
+<center>Timer/Stopwatch in Fullscreen Mode</center>
 <br>
 ## Requirements
 1. macOS Version: macOS High Sierre (Recommended) (10.10+ support in the future)
