@@ -35,6 +35,16 @@ When you toggle the fullscreen, the app will become a locker-like application. A
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg)
 <center>Timer/Stopwatch in Fullscreen Mode</center>
 <br>
+## Release Version: SimpleClock 1.1(2)
+**Time: 2018/01/26 17:52**
+**Content:**
+>1. Add Clock function;
+>2. Add Timer/Stopwatch function
+>3. Add blurry background
+>4. Add Fullscreen Mode
+>5. Add Light/Dark Theme Changer
+>6. Add HH:MM/HH:MM:SS Mode Changer
+<br>
 ## Requirements
 1. macOS Version: macOS High Sierre (Recommended) (10.10+ support in the future)
 2. Touch bar: Macbook Pro 2016 or 2017 (Recommended) (Previous version will be supported in the future)
