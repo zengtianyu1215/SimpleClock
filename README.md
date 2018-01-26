@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg" /></div>
+![Title](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg)
 # SimpleClock
 <br>
 ### TabletClock is for Android & SimpleClock is for macOS
@@ -13,10 +13,10 @@ SimpleClock, SC in short, is a macOS application which can bring basic time func
 Because macOS doesn't have an application called "Clock", each time I called Siri to show me the time in Guangzhou or other places, I find it hard to make the robot to understand "Guangzhou" but not "Guam Joe". So, I built this app for time showing.
 This app is of the latest design of Apple on Mac, such as Blurry Background, Multi-Touch Bar, etc.. And I make it into this app.
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.43.png" /></div><br>
+![Light Blurry Background of SimpleClock](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.43.png)
 <center>Light Blurry Background of SimpleClock</center>
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.36.png" /></div>
+![Dark Blurry Background of SimpleClock](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.36.png)
 <br>
 <center>Dark Blurry Background of SimpleClock</center>
 <br>
@@ -25,7 +25,7 @@ SimpleClock can change between Hour-Minute Mode and Hour-Minute-Second Mode by c
 ### 2. Timer/Stopwatch
 Because the Timer and Stopwatch are also important in our daily life, SimpleClock will make them in the future. The timer is in developing. But the Stopwatch is already in use. 
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.48.png" /></div>
+![Stopwatch in Timer](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.48.png)
 <br>
 <center>Stopwatch in Timer</center>
 <br>
@@ -35,12 +35,12 @@ This function can be called by clicking SimpleClock->Timer. This window is also 
 When you toggle the fullscreen, the app will become a locker-like application. And this make your MBP into a "Big iPad".
 <br>
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.35-2.jpg" /></div>
+![SimpleClock in Fullscreen Mode](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.35-2.jpg)
 <br>
 <center>SimpleClock in Fullscreen Mode</center>
 <br>
 <br>
-<div style="text-align:center"><img src ="https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg" /></div>
+![Timer/Stopwatch in Fullscreen Mode](https://github.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg)
 <br>
 <center>Timer/Stopwatch in Fullscreen Mode</center>
 <br>
