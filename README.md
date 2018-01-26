@@ -14,11 +14,9 @@ This app is of the latest design of Apple on Mac, such as Blurry Background, Mul
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.43.png)
 <center>Light Blurry Background of SimpleClock</center>
-<br>
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.18.36.png)
 <center>Dark Blurry Background of SimpleClock</center>
-<br>
 
 SimpleClock can change between Hour-Minute Mode and Hour-Minute-Second Mode by clicking the time. And you can also change it by switching the toggle on your Macbook Pro Multi-Touch Bar. You can change the theme by clicking the upper-right corner of the window. What's more, you can also change the 12/24H with your touch bar.
 
@@ -28,7 +26,6 @@ Because the Timer and Stopwatch are also important in our daily life, SimpleCloc
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.48.png)
 <center>Stopwatch in Timer</center>
-<br>
 
 This function can be called by clicking SimpleClock->Timer. This window is also with the design features. You can use it as your working stopwatch or life stopwatch.
 <br>
@@ -39,11 +36,9 @@ When you toggle the fullscreen, the app will become a locker-like application. A
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.35-2.jpg)
 <center>SimpleClock in Fullscreen Mode</center>
-<br>
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg)
 <center>Timer/Stopwatch in Fullscreen Mode</center>
-<br>
 
 ## Release Version: SimpleClock 1.1(2)
 **Time: 2018/01/26 17:52**
