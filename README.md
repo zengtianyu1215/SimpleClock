@@ -1,4 +1,4 @@
-![Title](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/blob/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg)
+![Title](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg)
 # SimpleClock
 <br>
 ### TabletClock is for Android & SimpleClock is for macOS
