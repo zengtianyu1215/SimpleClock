@@ -8,7 +8,7 @@
 import AVFoundation
 import Cocoa
 
-class Timer2ViewController : NSViewController{
+class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
     @IBOutlet weak var StartButton: NSButton!
     @IBOutlet weak var PauseButton: NSButton!
     @IBOutlet weak var EndButton: NSButton!
@@ -45,7 +45,12 @@ class Timer2ViewController : NSViewController{
             timer.fireDate = Date.distantFuture
             TimerText.textColor = NSColor.red
             NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
-            
+            let userNotification = NSUserNotification()
+            userNotification.title = "Time Up! "
+            userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
+            userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, total - totalSecond-1)
+            let userNotificationCenter = NSUserNotificationCenter.default
+            userNotificationCenter.scheduleNotification(userNotification)
         }else{
             Indicater.doubleValue = Double(totalSecond)
             hour = totalSecond / 3600
@@ -57,6 +62,12 @@ class Timer2ViewController : NSViewController{
                 timer.fireDate = Date.distantFuture
                 TimerText.textColor = NSColor.red
                 NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+                let userNotification = NSUserNotification()
+                userNotification.title = "Time Up! "
+                userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
+                userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, total - totalSecond-1)
+                let userNotificationCenter = NSUserNotificationCenter.default
+                userNotificationCenter.scheduleNotification(userNotification)
             }
         }
 
@@ -83,6 +94,10 @@ class Timer2ViewController : NSViewController{
             second = totalSecond % 3600 % 60
             TimerText.stringValue = String(format: "%02d:%02d:%02d", hour, minute, second)
             //计时器启动
+            let userNotification = NSUserNotification()
+            userNotification.title = "Timer Start"
+            let userNotificationCenter = NSUserNotificationCenter.default
+            userNotificationCenter.scheduleNotification(userNotification)
             Indicater.doubleValue = Double(totalSecond)
             Indicater.maxValue = Double(totalSecond)
             timer.fireDate = NSDate.init() as Date
@@ -105,15 +120,29 @@ class Timer2ViewController : NSViewController{
     
     
     @IBAction func EndTimer(_ sender: NSButton) {
-        isStart = false
-        timer.fireDate = Date.distantFuture
-        hour = 0
-        minute = 0
-        second = 0
-        totalSecond = 0
-        TimerText.stringValue = "00:00:00"
-        Indicater.doubleValue = 0
-        TimerText.textColor = NSColor.white
-        NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+        if isStart {
+            isStart = false
+            timer.fireDate = Date.distantFuture
+            hour = 0
+            minute = 0
+            second = 0
+            TimerText.stringValue = "00:00:00"
+            Indicater.doubleValue = 0
+            TimerText.textColor = NSColor.white
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            
+            let userNotification = NSUserNotification()
+            userNotification.title = "Time Up! "
+            userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
+            userNotification.informativeText = String(format: "SimpleClock Timer is ended manually. Running seconds: %ds.", total, total - totalSecond-1)
+            let userNotificationCenter = NSUserNotificationCenter.default
+            userNotificationCenter.scheduleNotification(userNotification)
+            totalSecond = 0
+        }
     }
+    
+    func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
+        return true
+    }
+    
 }

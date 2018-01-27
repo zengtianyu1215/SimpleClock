@@ -421,8 +421,8 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="Akh-Rt-k46">
                                 <viewController key="viewController" id="Vjd-He-0Ey">
-                                    <button key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-jj-Wc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="41"/>
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-jj-Wc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ofz-Zu-HlL">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -437,8 +437,8 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="LZ5-gb-ID0">
                                 <viewController key="viewController" id="oEM-lP-6Su">
-                                    <button key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-bh-lwq">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="41"/>
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-bh-lwq">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ugi-qn-5kE">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -454,7 +454,7 @@ DQ
                             <touchBarItem id="EcF-8Q-WdZ">
                                 <viewController key="viewController" id="eOC-bG-BqU">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-OE-uN1">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="End Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V5x-Lj-8od">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -588,7 +588,7 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Jcg-Vc-M2T">
@@ -622,7 +622,7 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="eHE-gX-mha">
                                 <viewController key="viewController" id="I9J-NQ-zKp">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="pem-Hr-P9W">
@@ -653,7 +653,7 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
