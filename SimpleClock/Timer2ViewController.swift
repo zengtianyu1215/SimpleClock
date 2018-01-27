@@ -5,7 +5,7 @@
 //  Created by 曾天宇 on 26/01/2018.
 //  Copyright © 2018 曾天宇. All rights reserved.
 //
-
+import AVFoundation
 import Cocoa
 
 class Timer2ViewController : NSViewController{
@@ -44,6 +44,8 @@ class Timer2ViewController : NSViewController{
         if TimerText.stringValue == "00:00:00" {
             timer.fireDate = Date.distantFuture
             TimerText.textColor = NSColor.red
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            
         }else{
             Indicater.doubleValue = Double(totalSecond)
             hour = totalSecond / 3600
@@ -54,10 +56,12 @@ class Timer2ViewController : NSViewController{
             if hour == 0 && minute == 0 && second == 0{
                 timer.fireDate = Date.distantFuture
                 TimerText.textColor = NSColor.red
+                NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
             }
         }
 
     }
+
     
     @IBAction func StartTimer(_ sender: NSButton) {
         if isStart==false{
@@ -105,6 +109,9 @@ class Timer2ViewController : NSViewController{
         second = 0
         totalSecond = 0
         TimerText.stringValue = "00:00:00"
+        Indicater.doubleValue = 0
         TimerText.textColor = NSColor.white
+        
+        NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
     }
 }

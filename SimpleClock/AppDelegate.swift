@@ -7,13 +7,28 @@
 //
 
 import Cocoa
+import Foundation
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var windowController: NSWindowController?
 
-
+    @IBOutlet weak var SimpleGithub: NSMenuItem!
+    @IBAction func SimpleGithubView(_ sender: NSMenuItem) {
+        let url = URL.init(string: "https://zengtianyu1215.github.io/SimpleClock/")
+        NSWorkspace.shared.open(url!)
+        
+    }
+    @IBOutlet weak var DevGithub: NSMenuItem!
+    @IBAction func DevGithubView(_ sender: NSMenuItem) {
+        let url = URL.init(string: "https://zengtianyu1215.github.io/Zengtianyu.io/")
+        NSWorkspace.shared.open(url!)
+    }
+    
+    
+    
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         

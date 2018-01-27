@@ -63,6 +63,7 @@ class TimerViewController : NSViewController {
             minute = 0
             TimerLabel.stringValue = "00:00:00"
             timer.fireDate = NSDate.init() as Date
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
@@ -85,6 +86,7 @@ class TimerViewController : NSViewController {
             hour = 0
             minute = 0
             isStart = false
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
         }
     }
 }

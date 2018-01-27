@@ -30,7 +30,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var Background: NSVisualEffectView!
     
     
-    @IBAction func ChangeSecond(_ sender: NSButton) {
+    @IBAction func ChangeSecond(_ sender: Any) {
         if isSecond {
             isSecond = false
         }else{

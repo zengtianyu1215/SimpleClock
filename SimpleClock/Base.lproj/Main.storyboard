@@ -24,25 +24,43 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Timer Stopwatch" id="G2X-7w-IjT">
+                                        <menuItem isSeparatorItem="YES" id="B9l-GZ-qol"/>
+                                        <menuItem title="View on GitHub" id="6Su-pT-iZ5">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Timer Stopwatch" id="I0y-y9-rQ5">
+                                            <menu key="submenu" title="View on GitHub" id="cr5-a4-8Sx">
                                                 <items>
-                                                    <menuItem title="Stopwatch" id="puq-j9-Mrf">
+                                                    <menuItem title="SimpleClock GitHub Pages" id="5bG-Uq-FYZ">
                                                         <modifierMask key="keyEquivalentModifierMask"/>
                                                         <connections>
-                                                            <segue destination="zWa-RP-J5V" kind="show" id="SrH-xN-RYf"/>
+                                                            <action selector="SimpleGithubView:" target="Voe-Tx-rLC" id="wZT-h3-97W"/>
                                                         </connections>
                                                     </menuItem>
-                                                    <menuItem title="Timer" id="BYd-ci-zQ2">
+                                                    <menuItem isSeparatorItem="YES" id="Jx8-u0-nIQ"/>
+                                                    <menuItem title="Developer's GitHub Pages" id="reN-dW-1lZ">
                                                         <modifierMask key="keyEquivalentModifierMask"/>
                                                         <connections>
-                                                            <segue destination="zwL-UC-LHZ" kind="show" id="91U-dk-OR6"/>
+                                                            <action selector="DevGithubView:" target="Voe-Tx-rLC" id="AKC-0d-RL2"/>
                                                         </connections>
                                                     </menuItem>
                                                 </items>
                                             </menu>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Clock" keyEquivalent="C" id="BNi-Dm-Ncm">
+                                            <connections>
+                                                <segue destination="jGA-0Y-lOj" kind="show" id="ab7-cH-wNA"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="jS3-Cu-EpO"/>
+                                        <menuItem title="Stopwatch" keyEquivalent="S" id="SgY-gd-BCR">
+                                            <connections>
+                                                <segue destination="zWa-RP-J5V" kind="show" id="QOp-dt-N7i"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Timer" keyEquivalent="T" id="iZv-Dh-Ezg">
+                                            <connections>
+                                                <segue destination="zwL-UC-LHZ" kind="show" id="sow-GF-fri"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="oyx-cU-Z5h"/>
                                         <menuItem title="Hide SimpleClock" keyEquivalent="h" id="Olw-nP-bQN">
@@ -56,8 +74,8 @@
                                                 <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show All" id="Kd2-mp-pUS">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Show All" keyEquivalent="a" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
                                             </connections>
@@ -71,23 +89,66 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Window" id="p1B-ee-MHR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="FXN-Bq-BHe">
+                                    <items>
+                                        <menuItem title="Minimize" keyEquivalent="m" id="x78-sq-Y9j">
+                                            <connections>
+                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="qKa-aR-MHg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom" id="U1g-Tu-ak6">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="performZoom:" target="Ady-hI-5gd" id="oTu-Fr-BmL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="Zl0-8b-2Jc"/>
+                                        <menuItem title="Bring All to Front" id="CMo-qs-QmN">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="cCO-zL-OcX"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="iFA-jg-4Q2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="qnl-aB-l4x">
+                                    <items>
+                                        <menuItem title="Application Help" keyEquivalent="?" id="ujO-70-ZdH">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="HfC-fP-kfh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SimpleClock" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SimpleClock" customModuleProvider="target">
+                    <connections>
+                        <outlet property="DevGithub" destination="reN-dW-1lZ" id="4Ro-BL-48X"/>
+                        <outlet property="DevGiuhub" destination="reN-dW-1lZ" id="uuf-U4-4bJ"/>
+                        <outlet property="SimpleGithub" destination="5bG-Uq-FYZ" id="r15-WA-Ldf"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="-89"/>
+            <point key="canvasLocation" x="-1" y="-277"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Qbe-eY-nLl">
             <objects>
-                <windowController id="zwL-UC-LHZ" sceneMemberID="viewController">
-                    <window key="window" title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="5y7-zX-MCb">
+                <windowController id="zwL-UC-LHZ" customClass="TimerWindowController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="5y7-zX-MCb">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
@@ -96,7 +157,79 @@
                             <outlet property="delegate" destination="zwL-UC-LHZ" id="d1W-JH-pQl"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="a36-Ff-fBo">
+                        <touchBarItems>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="Btj-Nn-DQK"/>
+                            <touchBarItem id="mav-J6-PXI">
+                                <viewController key="viewController" id="gXF-6D-LZJ">
+                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uSn-B9-NF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="24"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Timer" drawsBackground="YES" id="tMZ-BQ-x0H">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="52" height="24"/>
+                            </touchBarItem>
+                            <touchBarItem id="q9u-cU-0gF">
+                                <viewController key="viewController" id="qez-3C-YRK">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qu1-Ej-IpY">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sGh-7m-x0h">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="Start:" target="zwL-UC-LHZ" id="qad-YP-OZN"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="lgH-za-WKi">
+                                <viewController key="viewController" id="r8k-Z7-QS1">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-77-2Un">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Pause Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nfN-iZ-bPb">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="Pause:" target="zwL-UC-LHZ" id="maL-99-XcS"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="eTu-T7-zox">
+                                <viewController key="viewController" id="Q5h-2h-oqQ">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YS2-2d-tBS">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="End Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zwn-HV-Snl">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="End:" target="zwL-UC-LHZ" id="OcT-TR-AH7"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="ej7-qv-jgF"/>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
+                        <outlet property="EndB" destination="YS2-2d-tBS" id="Eve-es-TMS"/>
+                        <outlet property="PauseB" destination="6aO-77-2Un" id="VIS-t2-0N9"/>
+                        <outlet property="Start" destination="qu1-Ej-IpY" id="gZV-KL-BwI"/>
+                        <outlet property="StartB" destination="qu1-Ej-IpY" id="6yZ-wf-ewc"/>
                         <segue destination="4WS-vy-C2V" kind="relationship" relationship="window.shadowedContentViewController" id="zIY-XX-eP3"/>
                     </connections>
                 </windowController>
@@ -116,10 +249,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="277"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Dp-Ic-YSD">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dp-Ic-YSD">
                                         <rect key="frame" x="52" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="09j-69-mUw">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="09j-69-mUw">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -128,10 +261,10 @@
                                             </allowedInputSourceLocales>
                                         </textFieldCell>
                                     </textField>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-C2-Ibd">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-C2-Ibd">
                                         <rect key="frame" x="171" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="w93-QY-KNu">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="w93-QY-KNu">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -149,10 +282,10 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
                                         <rect key="frame" x="301" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="pyD-MS-eLq">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="pyD-MS-eLq">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -176,6 +309,10 @@
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gFu-E3-Yet">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="StartTimer:" target="4WS-vy-C2V" id="NA5-nP-u96"/>
@@ -187,6 +324,8 @@
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rgc-KW-5EW">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">p</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="PauseTimer:" target="4WS-vy-C2V" id="kGx-1S-ZlJ"/>
@@ -198,6 +337,8 @@
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4mx-hJ-0ZZ">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">e</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="EndTimer:" target="4WS-vy-C2V" id="7ia-aZ-xbq"/>
@@ -247,8 +388,8 @@
         <!--Window Controller-->
         <scene sceneID="Ati-oe-A8g">
             <objects>
-                <windowController id="zWa-RP-J5V" sceneMemberID="viewController">
-                    <window key="window" title="Stopwatch" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="ain-dA-UCM">
+                <windowController id="zWa-RP-J5V" customClass="StopwatchWindowController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Stopwatch" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="ain-dA-UCM">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="240" width="529" height="288"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
@@ -257,13 +398,81 @@
                             <outlet property="delegate" destination="zWa-RP-J5V" id="63t-uD-ALi"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="HUS-uy-wCO">
+                        <touchBarItems>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="dNE-ie-496"/>
+                            <touchBarItem id="pU4-Nb-t5H">
+                                <viewController key="viewController" id="YEg-OU-1F8">
+                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="31W-jx-Pb4">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Stopwatch" drawsBackground="YES" id="hvM-he-Q3d">
+                                            <font key="font" metaFont="system" size="14"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="96" height="22"/>
+                            </touchBarItem>
+                            <touchBarItem id="Akh-Rt-k46">
+                                <viewController key="viewController" id="Vjd-He-0Ey">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-jj-Wc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Start Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ofz-Zu-HlL">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="Start:" target="zWa-RP-J5V" id="IxZ-MA-v99"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="LZ5-gb-ID0">
+                                <viewController key="viewController" id="oEM-lP-6Su">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-bh-lwq">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Pause Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ugi-qn-5kE">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="Pause:" target="zWa-RP-J5V" id="3M4-PH-q4i"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="EcF-8Q-WdZ">
+                                <viewController key="viewController" id="eOC-bG-BqU">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-OE-uN1">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="End Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V5x-Lj-8od">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <connections>
+                                                <action selector="End:" target="zWa-RP-J5V" id="zMd-bz-uNc"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="151" height="30"/>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="sqh-1m-HNS"/>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
                         <segue destination="ZG4-kJ-tYT" kind="relationship" relationship="window.shadowedContentViewController" id="E2X-uu-NjB"/>
                     </connections>
                 </windowController>
                 <customObject id="can-Pa-nib" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="-32"/>
+            <point key="canvasLocation" x="663.5" y="-30"/>
         </scene>
         <!--TimerViewController-->
         <scene sceneID="30C-4r-SXw">
@@ -292,6 +501,10 @@
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4iq-oy-Iei">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                             <connections>
                                                 <action selector="StartTimer:" target="ZG4-kJ-tYT" id="n2L-HX-9UP"/>
                                             </connections>
@@ -303,6 +516,8 @@
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wbh-c9-UYz">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">p</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="Pause:" target="ZG4-kJ-tYT" id="11s-GA-nc5"/>
@@ -314,6 +529,8 @@
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vNt-ub-QUc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">e</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="End:" target="ZG4-kJ-tYT" id="OV2-df-WXh"/>
@@ -333,7 +550,7 @@
                 </viewController>
                 <customObject id="BuA-ol-vTG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="-22"/>
+            <point key="canvasLocation" x="1356" y="-57"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -341,8 +558,8 @@
                 <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="WindowController" customModule="SimpleClock" sceneMemberID="viewController">
                     <window key="window" title="Simple Clock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <windowCollectionBehavior key="collectionBehavior" moveToActiveSpace="YES" managed="YES" participatesInCycle="YES" fullScreenDisallowsTiling="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="529" height="333"/>
+                        <windowPositionMask key="initialPositionMask" topStrut="YES"/>
+                        <rect key="contentRect" x="196" y="347" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
@@ -351,20 +568,20 @@
                     </window>
                     <touchBar key="touchBar" id="Uyx-Vc-hvU">
                         <touchBarItems>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="1WP-m9-vVf"/>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="3Ob-Pg-KK7"/>
                             <touchBarItem id="Scg-Kh-EaQ">
                                 <viewController key="viewController" id="C06-rn-7ah">
                                     <textField key="view" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eMp-6Q-eNk">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Second Setting" drawsBackground="YES" id="tgd-Pk-2v0">
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Second" drawsBackground="YES" id="tgd-Pk-2v0">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                 </viewController>
-                                <size key="designTimeSize" width="114" height="24"/>
+                                <size key="designTimeSize" width="64" height="24"/>
                             </touchBarItem>
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
@@ -385,7 +602,7 @@
                                 </viewController>
                                 <size key="designTimeSize" width="144" height="30"/>
                             </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="ndw-cu-cxo"/>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFixedSpaceSmall" id="vpM-8G-rfg"/>
                             <touchBarItem id="pag-6T-AOy">
                                 <viewController key="viewController" id="XLM-CM-Mt4">
                                     <textField key="view" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="FA8-I4-cov">
@@ -416,7 +633,26 @@
                                 </viewController>
                                 <size key="designTimeSize" width="144" height="30"/>
                             </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="Zoa-gI-Jkl"/>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="yyu-GQ-j3D"/>
+                            <touchBarItem id="3A1-kI-5TX">
+                                <viewController key="viewController" id="ym2-b5-dym">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="Light"/>
+                                                <segment label="Dark" selected="YES" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="DarkLight:" target="jGA-0Y-lOj" id="EaF-zt-QrA"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </viewController>
+                                <size key="designTimeSize" width="144" height="30"/>
+                            </touchBarItem>
                         </touchBarItems>
                         <connections>
                             <outlet property="delegate" destination="Ckk-yw-fiv" id="0Io-w5-w4a"/>
@@ -450,6 +686,8 @@
                                         <buttonCell key="cell" type="recessed" bezelStyle="recessed" image="buttonCell:aJE-pP-vSB:image" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="aJE-pP-vSB">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                             <font key="font" metaFont="systemBold" size="12"/>
+                                            <string key="keyEquivalent">n</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="ClickToChangeBackground:" target="5gI-5U-AMq" id="QEs-Pi-Rzx"/>
@@ -471,7 +709,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-4D-HbS">
                                         <rect key="frame" x="-729" y="-29" width="1987" height="286"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Simple Clock" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="576-Bt-5tP">
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="SimpleClock" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="576-Bt-5tP">
                                             <dateFormatter key="formatter" dateStyle="short" id="3ad-9j-8TH"/>
                                             <font key="font" metaFont="systemUltraLight" size="84"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -487,6 +725,8 @@
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="mgK-EP-nDB">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">s</string>
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="ChangeSecond:" target="5gI-5U-AMq" id="tac-Pt-zAb"/>
