@@ -154,9 +154,9 @@
                 <windowController id="zwL-UC-LHZ" customClass="TimerWindowController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="5y7-zX-MCb">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="minSize" type="size" width="480" height="333"/>
                         <connections>
                             <outlet property="delegate" destination="zwL-UC-LHZ" id="d1W-JH-pQl"/>
                         </connections>
@@ -246,15 +246,15 @@
             <objects>
                 <viewController id="4WS-vy-C2V" customClass="Timer2ViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="bPZ-8O-JPT">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-ZA-pzG">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="277"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dp-Ic-YSD">
-                                        <rect key="frame" x="52" y="70" width="56" height="22"/>
+                                        <rect key="frame" x="52" y="87" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="09j-69-mUw">
                                             <font key="font" metaFont="system"/>
@@ -266,7 +266,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-C2-Ibd">
-                                        <rect key="frame" x="171" y="70" width="56" height="22"/>
+                                        <rect key="frame" x="171" y="87" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="w93-QY-KNu">
                                             <font key="font" metaFont="system"/>
@@ -278,7 +278,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-r7-awt">
-                                        <rect key="frame" x="233" y="70" width="62" height="22"/>
+                                        <rect key="frame" x="233" y="87" width="62" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minute(s)" id="PLu-5X-RaX">
                                             <font key="font" metaFont="system"/>
@@ -287,7 +287,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
-                                        <rect key="frame" x="301" y="70" width="56" height="22"/>
+                                        <rect key="frame" x="301" y="87" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="pyD-MS-eLq">
                                             <font key="font" metaFont="system"/>
@@ -299,7 +299,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-ne-sPU">
-                                        <rect key="frame" x="363" y="70" width="67" height="22"/>
+                                        <rect key="frame" x="363" y="87" width="67" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Second(s)" id="qzJ-HS-3Tu">
                                             <font key="font" metaFont="system"/>
@@ -308,7 +308,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-wQ-axS">
-                                        <rect key="frame" x="134" y="19" width="70" height="32"/>
+                                        <rect key="frame" x="134" y="25" width="70" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gFu-E3-Yet">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -323,7 +323,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhM-e0-Rmq">
-                                        <rect key="frame" x="206" y="19" width="77" height="32"/>
+                                        <rect key="frame" x="206" y="25" width="77" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rgc-KW-5EW">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -336,7 +336,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Yd-nS-Vvt">
-                                        <rect key="frame" x="283" y="19" width="64" height="32"/>
+                                        <rect key="frame" x="283" y="25" width="64" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4mx-hJ-0ZZ">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -349,16 +349,16 @@ DQ
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-Ta-me2">
-                                        <rect key="frame" x="-2" y="119" width="484" height="119"/>
+                                        <rect key="frame" x="-2" y="130" width="484" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" id="mMo-qG-YqC">
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="mMo-qG-YqC">
                                             <font key="font" metaFont="systemUltraLight" size="84"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-Hp-f0s">
-                                        <rect key="frame" x="114" y="70" width="51" height="22"/>
+                                        <rect key="frame" x="114" y="87" width="51" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hour(s)" id="ZWe-mj-Wnl">
                                             <font key="font" metaFont="system"/>
@@ -387,7 +387,7 @@ DQ
                 </viewController>
                 <customObject id="5Tr-2y-ZMZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="-414"/>
+            <point key="canvasLocation" x="1190" y="-556"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Ati-oe-A8g">
@@ -395,9 +395,9 @@ DQ
                 <windowController id="zWa-RP-J5V" customClass="StopwatchWindowController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Stopwatch" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="ain-dA-UCM">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="529" height="288"/>
+                        <rect key="contentRect" x="196" y="240" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="529" height="288"/>
+                        <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
                             <outlet property="delegate" destination="zWa-RP-J5V" id="63t-uD-ALi"/>
                         </connections>
@@ -476,31 +476,31 @@ DQ
                 </windowController>
                 <customObject id="can-Pa-nib" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663.5" y="-30"/>
+            <point key="canvasLocation" x="658" y="109"/>
         </scene>
         <!--TimerViewController-->
         <scene sceneID="30C-4r-SXw">
             <objects>
                 <viewController title="TimerViewController" id="ZG4-kJ-tYT" customClass="TimerViewController" customModule="SimpleClock" sceneMemberID="viewController">
                     <view key="view" id="B6t-4u-60E">
-                        <rect key="frame" x="0.0" y="0.0" width="529" height="288"/>
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-Bs-XNZ">
-                                <rect key="frame" x="0.0" y="0.0" width="529" height="288"/>
+                                <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-No-IGU">
-                                        <rect key="frame" x="73" y="98" width="384" height="119"/>
+                                        <rect key="frame" x="73" y="124" width="384" height="119"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" id="Sgy-4t-63y">
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="Sgy-4t-63y">
                                             <font key="font" metaFont="systemUltraLight" size="85"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-w8-Gst">
-                                        <rect key="frame" x="95" y="24" width="111" height="32"/>
+                                        <rect key="frame" x="95" y="29" width="111" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4iq-oy-Iei">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -515,7 +515,7 @@ DQ
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TVU-6s-wU6">
-                                        <rect key="frame" x="209" y="24" width="111" height="32"/>
+                                        <rect key="frame" x="209" y="29" width="111" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wbh-c9-UYz">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -528,7 +528,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-4U-QMO">
-                                        <rect key="frame" x="323" y="24" width="111" height="32"/>
+                                        <rect key="frame" x="323" y="29" width="111" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vNt-ub-QUc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -562,8 +562,7 @@ DQ
                 <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="WindowController" customModule="SimpleClock" sceneMemberID="viewController">
                     <window key="window" title="Simple Clock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <windowPositionMask key="initialPositionMask" topStrut="YES"/>
-                        <rect key="contentRect" x="196" y="347" width="529" height="333"/>
+                        <rect key="contentRect" x="196" y="366" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
