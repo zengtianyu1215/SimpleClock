@@ -60,12 +60,13 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 ## Release Version: SimpleClock 1.2(3)
 **Time: 2018/01/27 15:15**
 >**Content:**
->1. Add Clock function;
->2. Add Timer/Stopwatch function
->3. Add blurry background
->4. Add Fullscreen Mode
->5. Add Light/Dark Theme Changer
->6. Add HH:MM/HH:MM:SS Mode Changer
+>1. Fix several bugs
+>2. Add Timer Function
+>3. Add Multi-Touch Bar Functions in Clock, Timer and Stopwatch
+>4. Fix design feature bugs
+>5. Cancel the Second Changer function in the center of the clock
+>6. Make the text bigger.
+>7. etc.
 <br>
 
 ## Requirements
