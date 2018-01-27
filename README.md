@@ -31,7 +31,7 @@ Because the Timer and Stopwatch are also important in our daily life, SimpleCloc
 <center>Timer in SimpleClock</center>
 
 And in Timer, I designed a Progressbar to show the position of the time. What's more, if you input the time like 100 seconds, the Timer will correct the mistake automatically. 
-This functions can be called by clicking SimpleClock->Timer or SimpleClock->Stopwatch. These windows are also with the design features. You can use it as your working timer or life stopwatch.
+These functions can be called by clicking SimpleClock->Timer or SimpleClock->Stopwatch. These windows are also with the design features. You can use it as your working timer or life stopwatch.
 <br>
 
 ### 3. Fullscreen
