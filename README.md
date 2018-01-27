@@ -21,7 +21,7 @@ This app is of the latest design of Apple on Mac, such as Blurry Background, Mul
 SimpleClock can change between Hour-Minute Mode and Hour-Minute-Second Mode by clicking the time. And you can also change it by switching the toggle on your Macbook Pro Multi-Touch Bar. You can change the theme by clicking the upper-right corner of the window. What's more, you can also change the 12/24H with your touch bar.
 
 ### 2. Timer & Stopwatch
-Because the Timer and Stopwatch are also important in our daily life, SimpleClock will make them in the future. The picture of Timer and Stopwatch are here:
+Because the Timer and Stopwatch are also important in our daily life, SimpleClock will make them in the future. The pictures of Timer and Stopwatch are here:
 <br>
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.48.png)
