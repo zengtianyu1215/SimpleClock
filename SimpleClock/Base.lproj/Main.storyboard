@@ -51,7 +51,6 @@
                                                 <segue destination="jGA-0Y-lOj" kind="show" id="ab7-cH-wNA"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="jS3-Cu-EpO"/>
                                         <menuItem title="Stopwatch" keyEquivalent="S" id="SgY-gd-BCR">
                                             <connections>
                                                 <segue destination="zWa-RP-J5V" kind="show" id="QOp-dt-N7i"/>
@@ -81,6 +80,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Close Window" keyEquivalent="w" id="jFE-Vt-MdI">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="nhp-Wc-ip7"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Quit SimpleClock" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
@@ -252,7 +256,7 @@
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dp-Ic-YSD">
                                         <rect key="frame" x="52" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="09j-69-mUw">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="09j-69-mUw">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -264,7 +268,7 @@
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-C2-Ibd">
                                         <rect key="frame" x="171" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="w93-QY-KNu">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="w93-QY-KNu">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -285,7 +289,7 @@
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
                                         <rect key="frame" x="301" y="70" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" id="pyD-MS-eLq">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="pyD-MS-eLq">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -634,6 +638,20 @@ DQ
                                 <size key="designTimeSize" width="144" height="30"/>
                             </touchBarItem>
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="yyu-GQ-j3D"/>
+                            <touchBarItem id="FSN-mB-Nih">
+                                <viewController key="viewController" id="kNS-iC-WIz">
+                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-IU-SV5">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Mode" drawsBackground="YES" id="ude-3f-vqo">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="46" height="24"/>
+                            </touchBarItem>
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
@@ -709,7 +727,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-4D-HbS">
                                         <rect key="frame" x="-729" y="-29" width="1987" height="286"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="SimpleClock" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="576-Bt-5tP">
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="SimpleClock" placeholderString="SimpleClock" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="576-Bt-5tP">
                                             <dateFormatter key="formatter" dateStyle="short" id="3ad-9j-8TH"/>
                                             <font key="font" metaFont="systemUltraLight" size="84"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>

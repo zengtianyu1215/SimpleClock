@@ -67,6 +67,7 @@ class TimerViewController : NSViewController {
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
     
@@ -75,6 +76,7 @@ class TimerViewController : NSViewController {
         if isStart {
             timer.fireDate = Date.distantFuture
             isPause = true
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
 

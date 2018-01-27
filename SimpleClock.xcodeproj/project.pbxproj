@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D254BF4201AFAF0001995E4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D254BF3201AFAF0001995E4 /* TimerViewController.swift */; };
+		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
 		7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BB2019C3730032670C /* ViewController.swift */; };
 		7D5CF6BE2019C3730032670C /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BD2019C3730032670C /* Document.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		7D254BF3201AFAF0001995E4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D5CF6B62019C3730032670C /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5CF6B92019C3730032670C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5CF6BB2019C3730032670C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				7D5CF6C22019C3730032670C /* Assets.xcassets */,
 				7DA82555201C4393006C5566 /* StopwatchWindowController.swift */,
 				7DA82551201C39DF006C5566 /* Glass.aiff */,
+				7D507511201C52C000E2C6C5 /* Pop.aiff */,
 				7D5CF6C42019C3730032670C /* Main.storyboard */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
@@ -279,6 +282,7 @@
 				7DA82552201C39DF006C5566 /* Glass.aiff in Resources */,
 				7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */,
 				7D5CF6C32019C3730032670C /* Assets.xcassets in Resources */,
+				7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */,
 				7D5CF6C62019C3730032670C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

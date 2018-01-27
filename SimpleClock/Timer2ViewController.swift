@@ -87,9 +87,11 @@ class Timer2ViewController : NSViewController{
             Indicater.maxValue = Double(totalSecond)
             timer.fireDate = NSDate.init() as Date
             TimerText.textColor = NSColor.white
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
     
@@ -97,6 +99,7 @@ class Timer2ViewController : NSViewController{
         if isStart {
             isPause = true
             timer.fireDate = Date.distantFuture
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
     
@@ -111,7 +114,6 @@ class Timer2ViewController : NSViewController{
         TimerText.stringValue = "00:00:00"
         Indicater.doubleValue = 0
         TimerText.textColor = NSColor.white
-        
         NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
     }
 }
