@@ -20,14 +20,17 @@ This app is of the latest design of Apple on Mac, such as Blurry Background, Mul
 
 SimpleClock can change between Hour-Minute Mode and Hour-Minute-Second Mode by clicking the time. And you can also change it by switching the toggle on your Macbook Pro Multi-Touch Bar. You can change the theme by clicking the upper-right corner of the window. What's more, you can also change the 12/24H with your touch bar.
 
-### 2. Timer/Stopwatch
-Because the Timer and Stopwatch are also important in our daily life, SimpleClock will make them in the future. The timer is in developing. But the Stopwatch is already in use. 
+### 2. Timer & Stopwatch
+Because the Timer and Stopwatch are also important in our daily life, SimpleClock will make them in the future. The picture of Timer and Stopwatch are here:
 <br>
 
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.48.png)
-<center>Stopwatch in Timer</center>
+<center>Stopwatch in SimpleClock</center>
 
-This function can be called by clicking SimpleClock->Timer. This window is also with the design features. You can use it as your working stopwatch or life stopwatch.
+![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-27%20at%2014.59.20.png)
+<center>Timer in SimpleClock</center>
+
+This functions can be called by clicking SimpleClock->Timer or SimpleClock->Stopwatch. These windows are also with the design features. You can use it as your working timer or life stopwatch.
 <br>
 
 ### 3. Fullscreen
@@ -40,8 +43,21 @@ When you toggle the fullscreen, the app will become a locker-like application. A
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.16.56-4.jpg)
 <center>Timer/Stopwatch in Fullscreen Mode</center>
 
-## Release Version: SimpleClock 1.1(2)
-**Time: 2018/01/26 17:52**
+### 4. Multi-Touch Bar Function
+As an application designed on High Sierra, SimpleClock provides several Touch Bar functions. With Multi-Touch Bar, we can give some settings to the app. 
+<br>
+
+![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.58.33.png)
+<center>Clock Touch Bar</center>
+
+![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.05.png)
+<center>Timer Touch Bar</center>
+
+![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.00.png)
+<center>Stopwatch Touch Bar</center>
+
+## Release Version: SimpleClock 1.2(3)
+**Time: 2018/01/27 15:15**
 >**Content:**
 >1. Add Clock function;
 >2. Add Timer/Stopwatch function
