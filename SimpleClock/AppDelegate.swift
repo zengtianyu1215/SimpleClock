@@ -26,6 +26,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(url!)
     }
     
+    @IBAction func CheckUpdate(_ sender: Any) {
+        let url = URL.init(string: "https://github.com/zengtianyu1215/SimpleClock/releases")
+        NSWorkspace.shared.open(url!)
+    }
+    
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application

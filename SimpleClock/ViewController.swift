@@ -26,6 +26,7 @@ class ViewController: NSViewController {
     
     var isNightMode = Bool(true)
     var isSecond = Bool(false)
+    var is24H = Bool(true)
     
     @IBOutlet weak var Background: NSVisualEffectView!
     
@@ -38,6 +39,13 @@ class ViewController: NSViewController {
         }
     }
     
+    func Change24H() -> Void {
+        if is24H {
+            is24H = false
+        }else{
+            is24H = true
+        }
+    }
     
     @IBAction func ClickToChangeBackground(_ sender: NSButton) {
         if isNightMode {
@@ -64,7 +72,7 @@ class ViewController: NSViewController {
             timeCount = 60
             DispatchQueue.main.async {
                 let time = Date()
-                self.setFormatClock(mode: self.isSecond)
+                self.setFormatClock(mode: self.isSecond, is24: self.is24H)
                 self.ClockLabel.stringValue = self.timeFormat.string(from: time as Date) as String
                 self.CalendarLabel.stringValue = self.timeFormat2.string(from: time as Date ) as String
             }
@@ -79,11 +87,19 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    func setFormatClock(mode: Bool) -> Void {
+    func setFormatClock(mode: Bool, is24: Bool) -> Void {
         if mode {
-            timeFormat.dateFormat = "HH:mm:ss  aa"
+            if is24{
+                timeFormat.dateFormat = "HH:mm:ss  aa"
+            }else{
+                timeFormat.dateFormat = "h:mm:ss  aa"                
+            }
         }else{
-            timeFormat.dateFormat = "HH:mm  aa"
+            if is24{
+                timeFormat.dateFormat = "HH:mm  aa"
+            }else{
+                timeFormat.dateFormat = "h:mm  aa"
+            }
         }
     }
     

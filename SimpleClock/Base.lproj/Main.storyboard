@@ -24,7 +24,12 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="B9l-GZ-qol"/>
+                                        <menuItem title="Check for Update" keyEquivalent="U" id="hwr-Lb-HB2">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="CheckUpdate:" target="Voe-Tx-rLC" id="w3X-W5-PWg"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="View on GitHub" id="6Su-pT-iZ5">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <menu key="submenu" title="View on GitHub" id="cr5-a4-8Sx">
@@ -560,7 +565,7 @@ DQ
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="WindowController" customModule="SimpleClock" sceneMemberID="viewController">
-                    <window key="window" title="Simple Clock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
+                    <window key="window" title="SimpleClock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="alertPanel" appearanceType="aqua" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="366" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
@@ -589,7 +594,7 @@ DQ
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Jcg-Vc-M2T">
                                             <font key="font" metaFont="system"/>
@@ -623,7 +628,7 @@ DQ
                             <touchBarItem id="eHE-gX-mha">
                                 <viewController key="viewController" id="I9J-NQ-zKp">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="pem-Hr-P9W">
                                             <font key="font" metaFont="system"/>
@@ -632,6 +637,9 @@ DQ
                                                 <segment label="24 H" selected="YES" tag="1"/>
                                             </segments>
                                         </segmentedCell>
+                                        <connections>
+                                            <action selector="Change24H:" target="jGA-0Y-lOj" id="GtI-Yz-QTG"/>
+                                        </connections>
                                     </segmentedControl>
                                 </viewController>
                                 <size key="designTimeSize" width="144" height="30"/>
@@ -654,7 +662,7 @@ DQ
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
                                             <font key="font" metaFont="system"/>
@@ -676,7 +684,9 @@ DQ
                         </connections>
                     </touchBar>
                     <connections>
+                        <outlet property="H24Changer" destination="hOr-77-8TR" id="tS6-bu-bUX"/>
                         <outlet property="HourChanger" destination="hOr-77-8TR" id="DJe-RC-SWD"/>
+                        <outlet property="ModeChanger" destination="apB-yj-cCY" id="4bW-eB-5KX"/>
                         <outlet property="SecondChanger" destination="tdo-Tl-v86" id="fwx-MU-8ye"/>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
                     </connections>
@@ -685,10 +695,10 @@ DQ
             </objects>
             <point key="canvasLocation" x="76" y="219"/>
         </scene>
-        <!--Simple Clock-->
+        <!--SimpleClock-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Simple Clock" showSeguePresentationStyle="single" id="5gI-5U-AMq" customClass="ViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SimpleClock" showSeguePresentationStyle="single" id="5gI-5U-AMq" customClass="ViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" appearanceType="aqua" id="ERx-hH-rdd">
                         <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -697,7 +707,7 @@ DQ
                                 <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-8m-gBq">
+                                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-8m-gBq">
                                         <rect key="frame" x="498" y="314" width="31" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="recessed" bezelStyle="recessed" image="buttonCell:aJE-pP-vSB:image" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="aJE-pP-vSB">
