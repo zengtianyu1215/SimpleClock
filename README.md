@@ -57,16 +57,14 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.00.png)
 <center>Stopwatch Touch Bar</center>
 
-## Release Version: SimpleClock 1.2(3)
-**Time: 2018/01/27 15:15**
+## Release Version: SimpleClock 1.3(4)
+**Time: 2018/01/31 14:21**
 >**Content:**
->1. Fix several bugs
->2. Add Timer Function
->3. Add Multi-Touch Bar Functions in Clock, Timer and Stopwatch
->4. Fix design feature bugs
->5. Cancel the Second Changer function in the center of the clock
->6. Make the text bigger.
->7. etc.
+>1. Fix 12/24 Hour Mode bugs;
+>2. Add Timer Notification and Sound;
+>3. Add Stopwatch Notification and Sound;
+>4. Fix Layout Features;
+>5. etc.;
 <br>
 
 ## Requirements
