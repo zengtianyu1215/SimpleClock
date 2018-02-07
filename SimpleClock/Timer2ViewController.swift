@@ -31,6 +31,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
     
     var totalSecond = Int(0)
     var total = Int(0)
+    var runningSec = Int(0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
             let userNotification = NSUserNotification()
             userNotification.title = "Time Up! "
             userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-            userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, total - totalSecond-1)
+            userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, runningSec - 1)
             let userNotificationCenter = NSUserNotificationCenter.default
             userNotificationCenter.scheduleNotification(userNotification)
         }else{
@@ -58,6 +59,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
             second = totalSecond % 3600 % 60
             TimerText.stringValue = String(format: "%02d:%02d:%02d", hour, minute, second)
             totalSecond -= 1
+            runningSec += 1
             if hour == 0 && minute == 0 && second == 0{
                 timer.fireDate = Date.distantFuture
                 TimerText.textColor = NSColor.red
@@ -65,7 +67,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
                 let userNotification = NSUserNotification()
                 userNotification.title = "Time Up! "
                 userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-                userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, total - totalSecond-1)
+                userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, runningSec - 1)
                 let userNotificationCenter = NSUserNotificationCenter.default
                 userNotificationCenter.scheduleNotification(userNotification)
             }
@@ -103,6 +105,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
             timer.fireDate = NSDate.init() as Date
             TimerText.textColor = NSColor.white
             NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            runningSec = 0
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
@@ -134,7 +137,7 @@ class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
             let userNotification = NSUserNotification()
             userNotification.title = "Time Up! "
             userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-            userNotification.informativeText = String(format: "SimpleClock Timer is ended manually. Running seconds: %ds.", total, total - totalSecond-1)
+            userNotification.informativeText = String(format: "SimpleClock Timer is ended manually. Running seconds: %ds.", runningSec - 1)
             let userNotificationCenter = NSUserNotificationCenter.default
             userNotificationCenter.scheduleNotification(userNotification)
             totalSecond = 0
