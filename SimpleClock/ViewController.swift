@@ -61,12 +61,13 @@ class ViewController: NSViewController {
         }
     }
     
+    let codeTimer = DispatchSource.makeTimerSource(queue:      DispatchQueue.global())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
         var timeCount = 60
-        let codeTimer = DispatchSource.makeTimerSource(queue:      DispatchQueue.global())
         codeTimer.schedule(deadline: .now(), repeating: .microseconds(200))
         codeTimer.setEventHandler(handler: {
             timeCount = 60
@@ -77,14 +78,18 @@ class ViewController: NSViewController {
                 self.CalendarLabel.stringValue = self.timeFormat2.string(from: time as Date ) as String
             }
             if timeCount <= 0 {
-                codeTimer.cancel()
+                self.codeTimer.cancel()
             }
         })
         // 启动时间源
-        codeTimer.resume()
+        self.codeTimer.resume()
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidDisappear() {
+        self.codeTimer.cancel()
     }
 
     func setFormatClock(mode: Bool, is24: Bool) -> Void {
