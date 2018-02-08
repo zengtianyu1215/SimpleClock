@@ -1,6 +1,7 @@
 ![Title](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg)
 # SimpleClock
 ### TabletClock is for Android & SimpleClock is for macOS
+#### Release Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
 <br>
 
 ## Abstract
@@ -57,7 +58,8 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.00.png)
 <center>Stopwatch Touch Bar</center>
 
-## RELEASE: SimpleClock 1.6(6) <https://github.com/zengtianyu1215/SimpleClock/releases>
+## RELEASE: SimpleClock 1.6(6)
+### Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
 ### Release ChangeLog::
 **Time: 2018/02/08 16:15:00**
 >**Content:**
