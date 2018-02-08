@@ -1,0 +1,183 @@
+
+/* Class = "NSMenuItem"; title = "SimpleClock"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "SimpleClock";
+
+/* Class = "NSButtonCell"; title = "Start"; ObjectID = "4iq-oy-Iei"; */
+"4iq-oy-Iei.title" = "啟動";
+
+/* Class = "NSButtonCell"; title = "End"; ObjectID = "4mx-hJ-0ZZ"; */
+"4mx-hJ-0ZZ.title" = "結束";
+
+/* Class = "NSMenuItem"; title = "Quit SimpleClock"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "退出 SimpleClock";
+
+/* Class = "NSTextFieldCell"; title = "12/24 Hour"; ObjectID = "4tm-j8-8hv"; */
+"4tm-j8-8hv.title" = "12/24 小時";
+
+/* Class = "NSTextFieldCell"; placeholderString = "SimpleClock"; ObjectID = "576-Bt-5tP"; */
+"576-Bt-5tP.placeholderString" = "SimpleClock";
+
+/* Class = "NSTextFieldCell"; title = "SimpleClock"; ObjectID = "576-Bt-5tP"; */
+"576-Bt-5tP.title" = "SimpleClock";
+
+/* Class = "NSMenuItem"; title = "SimpleClock GitHub Pages"; ObjectID = "5bG-Uq-FYZ"; */
+"5bG-Uq-FYZ.title" = "SimpleClock GitHub Pages";
+
+/* Class = "NSViewController"; title = "SimpleClock"; ObjectID = "5gI-5U-AMq"; */
+"5gI-5U-AMq.title" = "SimpleClock";
+
+/* Class = "NSMenuItem"; title = "About SimpleClock"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "關於 SimpleClock";
+
+/* Class = "NSWindow"; title = "Timer"; ObjectID = "5y7-zX-MCb"; */
+"5y7-zX-MCb.title" = "定時器";
+
+/* Class = "NSMenuItem"; title = "View on GitHub"; ObjectID = "6Su-pT-iZ5"; */
+"6Su-pT-iZ5.title" = "查看 GitHub";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "主菜單";
+
+/* Class = "NSMenuItem"; title = "Clock"; ObjectID = "BNi-Dm-Ncm"; */
+"BNi-Dm-Ncm.title" = "時鐘";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "CMo-qs-QmN"; */
+"CMo-qs-QmN.title" = "前置窗口";
+
+/* Class = "NSWindow"; title = "SimpleClock"; ObjectID = "Ckk-yw-fiv"; */
+"Ckk-yw-fiv.title" = "SimpleClock";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "FXN-Bq-BHe"; */
+"FXN-Bq-BHe.title" = "窗口";
+
+/* Class = "NSSegmentedCell"; JBs-y0-iUz.ibShadowedLabels[0] = "Light"; ObjectID = "JBs-y0-iUz"; */
+"JBs-y0-iUz.ibShadowedLabels[0]" = "亮色";
+
+/* Class = "NSSegmentedCell"; JBs-y0-iUz.ibShadowedLabels[1] = "Dark"; ObjectID = "JBs-y0-iUz"; */
+"JBs-y0-iUz.ibShadowedLabels[1]" = "暗色";
+
+/* Class = "NSSegmentedCell"; Jcg-Vc-M2T.ibShadowedLabels[0] = "Off"; ObjectID = "Jcg-Vc-M2T"; */
+"Jcg-Vc-M2T.ibShadowedLabels[0]" = "Off";
+
+/* Class = "NSSegmentedCell"; Jcg-Vc-M2T.ibShadowedLabels[1] = "On"; ObjectID = "Jcg-Vc-M2T"; */
+"Jcg-Vc-M2T.ibShadowedLabels[1]" = "On";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "顯示所有";
+
+/* Class = "NSButtonCell"; title = "Start Stopwatch"; ObjectID = "Ofz-Zu-HlL"; */
+"Ofz-Zu-HlL.title" = "啟動秒錶";
+
+/* Class = "NSMenuItem"; title = "Hide SimpleClock"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "隱藏 SimpleClock";
+
+/* Class = "NSTextFieldCell"; title = "Minute(s)"; ObjectID = "PLu-5X-RaX"; */
+"PLu-5X-RaX.title" = "分鐘";
+
+/* Class = "NSMenuItem"; title = "Stopwatch"; ObjectID = "SgY-gd-BCR"; */
+"SgY-gd-BCR.title" = "秒錶";
+
+/* Class = "NSTextFieldCell"; title = "00:00:00"; ObjectID = "Sgy-4t-63y"; */
+"Sgy-4t-63y.title" = "00:00:00";
+
+/* Class = "NSTextFieldCell"; title = "Tablet Clock For Android & Simple Clock For Mac"; ObjectID = "TNd-iW-Vp6"; */
+"TNd-iW-Vp6.title" = "TabletClock For Android & SimpleClock For Mac";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "U1g-Tu-ak6"; */
+"U1g-Tu-ak6.title" = "縮放";
+
+/* Class = "NSButtonCell"; title = "End Stopwatch"; ObjectID = "V5x-Lj-8od"; */
+"V5x-Lj-8od.title" = "結束秒錶";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "隱藏其他";
+
+/* Class = "NSViewController"; title = "TimerViewController"; ObjectID = "ZG4-kJ-tYT"; */
+"ZG4-kJ-tYT.title" = "TimerViewController";
+
+/* Class = "NSTextFieldCell"; title = "Hour(s)"; ObjectID = "ZWe-mj-Wnl"; */
+"ZWe-mj-Wnl.title" = "小時";
+
+/* Class = "NSWindow"; title = "Stopwatch"; ObjectID = "ain-dA-UCM"; */
+"ain-dA-UCM.title" = "秒錶";
+
+/* Class = "NSMenu"; title = "View on GitHub"; ObjectID = "cr5-a4-8Sx"; */
+"cr5-a4-8Sx.title" = "查看GitHub";
+
+/* Class = "NSButtonCell"; title = "Start"; ObjectID = "gFu-E3-Yet"; */
+"gFu-E3-Yet.title" = "啟動";
+
+/* Class = "NSTextFieldCell"; title = "Stopwatch"; ObjectID = "hvM-he-Q3d"; */
+"hvM-he-Q3d.title" = "秒錶";
+
+/* Class = "NSMenuItem"; title = "Check for Update"; ObjectID = "hwr-Lb-HB2"; */
+"hwr-Lb-HB2.title" = "更新 SimpleClock";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "iFA-jg-4Q2"; */
+"iFA-jg-4Q2.title" = "幫做";
+
+/* Class = "NSMenuItem"; title = "Timer"; ObjectID = "iZv-Dh-Ezg"; */
+"iZv-Dh-Ezg.title" = "定時器";
+
+/* Class = "NSMenuItem"; title = "Close Window"; ObjectID = "jFE-Vt-MdI"; */
+"jFE-Vt-MdI.title" = "關閉";
+
+/* Class = "NSTextFieldCell"; title = "00:00:00"; ObjectID = "mMo-qG-YqC"; */
+"mMo-qG-YqC.title" = "00:00:00";
+
+/* Class = "NSButtonCell"; title = "Pause Timer"; ObjectID = "nfN-iZ-bPb"; */
+"nfN-iZ-bPb.title" = "暫停定時器";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "p1B-ee-MHR"; */
+"p1B-ee-MHR.title" = "窗口";
+
+/* Class = "NSSegmentedCell"; pem-Hr-P9W.ibShadowedLabels[0] = "12 H"; ObjectID = "pem-Hr-P9W"; */
+"pem-Hr-P9W.ibShadowedLabels[0]" = "12 H";
+
+/* Class = "NSSegmentedCell"; pem-Hr-P9W.ibShadowedLabels[1] = "24 H"; ObjectID = "pem-Hr-P9W"; */
+"pem-Hr-P9W.ibShadowedLabels[1]" = "24 H";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "qnl-aB-l4x"; */
+"qnl-aB-l4x.title" = "幫助";
+
+/* Class = "NSTextFieldCell"; title = "Second(s)"; ObjectID = "qzJ-HS-3Tu"; */
+"qzJ-HS-3Tu.title" = "秒";
+
+/* Class = "NSMenuItem"; title = "Developer's GitHub Pages"; ObjectID = "reN-dW-1lZ"; */
+"reN-dW-1lZ.title" = "開發者的 GitHub Pages";
+
+/* Class = "NSButtonCell"; title = "Pause"; ObjectID = "rgc-KW-5EW"; */
+"rgc-KW-5EW.title" = "暫停";
+
+/* Class = "NSButtonCell"; title = "Start Timer"; ObjectID = "sGh-7m-x0h"; */
+"sGh-7m-x0h.title" = "啟動定時器";
+
+/* Class = "NSTextFieldCell"; title = "Timer"; ObjectID = "tMZ-BQ-x0H"; */
+"tMZ-BQ-x0H.title" = "定時器";
+
+/* Class = "NSTextFieldCell"; title = "Second"; ObjectID = "tgd-Pk-2v0"; */
+"tgd-Pk-2v0.title" = "秒";
+
+/* Class = "NSMenu"; title = "SimpleClock"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "SimpleClock";
+
+/* Class = "NSTextFieldCell"; title = "Mode"; ObjectID = "ude-3f-vqo"; */
+"ude-3f-vqo.title" = "模式";
+
+/* Class = "NSButtonCell"; title = "Pause Stopwatch"; ObjectID = "ugi-qn-5kE"; */
+"ugi-qn-5kE.title" = "暫停秒錶";
+
+/* Class = "NSMenuItem"; title = "Application Help"; ObjectID = "ujO-70-ZdH"; */
+"ujO-70-ZdH.title" = "應用程式幫助";
+
+/* Class = "NSButtonCell"; title = "End"; ObjectID = "vNt-ub-QUc"; */
+"vNt-ub-QUc.title" = "結束";
+
+/* Class = "NSButtonCell"; title = "Pause"; ObjectID = "wbh-c9-UYz"; */
+"wbh-c9-UYz.title" = "暫停";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "x78-sq-Y9j"; */
+"x78-sq-Y9j.title" = "最小化";
+
+/* Class = "NSButtonCell"; title = "End Timer"; ObjectID = "zwn-HV-Snl"; */
+"zwn-HV-Snl.title" = "結束定時器";
