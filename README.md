@@ -5,8 +5,11 @@
 <br>
 
 ## Abstract
-[![GitHub release](https://img.shields.io/github/release/zengtianyu1215/SimpleClock.svg?style=flat-square)](https://github.com/zengtianyu1215/SimpleClock/releases)
+[![GitHub release](https://img.shields.io/github/release/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock/releases)
+[![GitHub top language](https://img.shields.io/github/languages/top/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock)
 [![license](https://img.shields.io/github/license/zengtianyu1215/SimpleClock.svg)]()
+[![GitHub forks](https://img.shields.io/github/forks/zengtianyu1215/SimpleClock.svg?style=social&label=Fork&style=flat-square)]()
+[![GitHub stars](https://img.shields.io/github/stars/zengtianyu1215/SimpleClock.svg?style=social&label=Stars&style=flat-square)]()
 <br>
 
 SimpleClock, SC in short, is a macOS application which can bring basic time functions but with better user experience. This app is fully built with Swift 3.0 in Xcode on High Sierra platform. 
