@@ -1,16 +1,14 @@
 ![Title](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-26%20at%2016.25.36-7.jpg)
 # SimpleClock
 ### TabletClock is for Android & SimpleClock is for macOS
-#### Release Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
-<br>
-
-## Abstract
 [![GitHub release](https://img.shields.io/github/release/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock/releases)
 [![GitHub top language](https://img.shields.io/github/languages/top/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock)
 [![license](https://img.shields.io/github/license/zengtianyu1215/SimpleClock.svg)]()
 [![GitHub forks](https://img.shields.io/github/forks/zengtianyu1215/SimpleClock.svg?style=social&label=Fork&style=flat-square)]()
 [![GitHub stars](https://img.shields.io/github/stars/zengtianyu1215/SimpleClock.svg?style=social&label=Stars&style=flat-square)]()
 <br>
+
+## Abstract
 
 SimpleClock, SC in short, is a macOS application which can bring basic time functions but with better user experience. This app is fully built with Swift 3.0 in Xcode on High Sierra platform. 
 <br>
