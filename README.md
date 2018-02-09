@@ -2,7 +2,7 @@
 # SimpleClock
 ### TabletClock is for Android & SimpleClock is for macOS
 [![GitHub release](https://img.shields.io/github/release/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock/releases)
-[![](https://img.shields.io/badge/language-swift-orange.svg)]
+[![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://github.com/zengtianyu1215/SimpleClock)
 [![GitHub top language](https://img.shields.io/github/languages/top/zengtianyu1215/SimpleClock.svg)](https://github.com/zengtianyu1215/SimpleClock)
 [![license](https://img.shields.io/github/license/zengtianyu1215/SimpleClock.svg)]()
 [![GitHub forks](https://img.shields.io/github/forks/zengtianyu1215/SimpleClock.svg?style=social&label=Fork&style=flat-square)]()
