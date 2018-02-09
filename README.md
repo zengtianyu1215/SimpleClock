@@ -5,6 +5,7 @@
 <br>
 
 ## Abstract
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](#LICENSE)
 SimpleClock, SC in short, is a macOS application which can bring basic time functions but with better user experience. This app is fully built with Swift 3.0 in Xcode on High Sierra platform. 
 <br>
 
