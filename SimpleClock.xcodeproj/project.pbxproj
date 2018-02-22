@@ -22,6 +22,7 @@
 		7D5CF6F1201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F2201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6F3201A21C60032670C /* Images.xcassets */; };
+		7D6F64AC203EE79D00C46B06 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */; };
 		7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8254F201C2E05006C5566 /* ViewGithubController.swift */; };
 		7DA82552201C39DF006C5566 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7DA82551201C39DF006C5566 /* Glass.aiff */; };
 		7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82553201C431C006C5566 /* TimerWindowController.swift */; };
@@ -71,6 +72,7 @@
 		7D5CF6ED201A08F00032670C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7D5CF6EF201A14B20032670C /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		7D5CF6F3201A21C60032670C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		7DA8254F201C2E05006C5566 /* ViewGithubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGithubController.swift; sourceTree = "<group>"; };
 		7DA82551201C39DF006C5566 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */,
 				7DA8254F201C2E05006C5566 /* ViewGithubController.swift */,
 				7DA82553201C431C006C5566 /* TimerWindowController.swift */,
+				7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */,
 			);
 			path = SimpleClock;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				7DFDFA86201B77E8005E30AE /* Timer2ViewController.swift in Sources */,
 				7D5CF6C12019C3730032670C /* Document.xcdatamodeld in Sources */,
 				7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */,
+				7D6F64AC203EE79D00C46B06 /* CalendarViewController.swift in Sources */,
 				7D5CF6F0201A14B20032670C /* WindowController.swift in Sources */,
 				7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */,
 				7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */,

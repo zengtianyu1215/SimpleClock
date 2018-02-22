@@ -8,6 +8,87 @@
         <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
+        <!--Window Controller-->
+        <scene sceneID="ZSu-tN-bUF">
+            <objects>
+                <windowController id="pNx-uy-NUd" sceneMemberID="viewController">
+                    <window key="window" title="Calendar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="2EJ-tm-Fdl">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="333"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <value key="minSize" type="size" width="480" height="333"/>
+                        <connections>
+                            <outlet property="delegate" destination="pNx-uy-NUd" id="UMX-up-fSp"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="lBa-gH-b8t" kind="relationship" relationship="window.shadowedContentViewController" id="dYq-9y-pb0"/>
+                    </connections>
+                </windowController>
+                <customObject id="vmE-H9-JZ5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-481" y="-163"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="pIO-hh-Vpx">
+            <objects>
+                <viewController id="lBa-gH-b8t" customClass="CalendarViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="J9t-UY-kCk">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="oiW-Fh-qO9">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField canDrawConcurrently="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-Sc-jIn">
+                                        <rect key="frame" x="18" y="299" width="444" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" alignment="center" id="BFO-uB-xdn">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-9P-H5z">
+                                        <rect key="frame" x="20" y="20" width="440" height="271"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <clipView key="contentView" ambiguous="YES" id="lJV-gE-AIq">
+                                            <rect key="frame" x="1" y="1" width="438" height="269"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView ambiguous="YES" id="NTk-6M-aDJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="438" height="158"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="D7X-vl-CRj">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                    </collectionViewFlowLayout>
+                                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </collectionView>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="v7j-Xn-oc2">
+                                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="aOv-0W-7P3">
+                                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                            </visualEffectView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="qKS-9P-H5z" id="NjP-t8-LI9"/>
+                        <outlet property="timeLabel" destination="Dbj-Sc-jIn" id="MEE-3V-k0W"/>
+                    </connections>
+                </viewController>
+                <customObject id="BLd-MJ-HHW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-728"/>
+        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
@@ -56,6 +137,12 @@
                                                 <segue destination="jGA-0Y-lOj" kind="show" id="ab7-cH-wNA"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Calendar" keyEquivalent="C" id="RNX-Ie-jMn">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                                            <connections>
+                                                <segue destination="pNx-uy-NUd" kind="show" id="pzj-M9-FJx"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Stopwatch" keyEquivalent="S" id="SgY-gd-BCR">
                                             <connections>
                                                 <segue destination="zWa-RP-J5V" kind="show" id="QOp-dt-N7i"/>
@@ -102,6 +189,11 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="FXN-Bq-BHe">
                                     <items>
+                                        <menuItem title="Full Screen" keyEquivalent="f" id="bIf-vM-AwB">
+                                            <connections>
+                                                <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="gvB-HG-o51"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Minimize" keyEquivalent="m" id="x78-sq-Y9j">
                                             <connections>
                                                 <action selector="performMiniaturize:" target="Ady-hI-5gd" id="qKa-aR-MHg"/>
@@ -250,11 +342,11 @@
         <scene sceneID="o4X-Fr-Wbg">
             <objects>
                 <viewController id="4WS-vy-C2V" customClass="Timer2ViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="bPZ-8O-JPT">
+                    <view key="view" wantsLayer="YES" id="bPZ-8O-JPT">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-ZA-pzG">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-ZA-pzG">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -487,11 +579,11 @@ DQ
         <scene sceneID="30C-4r-SXw">
             <objects>
                 <viewController title="TimerViewController" id="ZG4-kJ-tYT" customClass="TimerViewController" customModule="SimpleClock" sceneMemberID="viewController">
-                    <view key="view" id="B6t-4u-60E">
+                    <view key="view" wantsLayer="YES" id="B6t-4u-60E">
                         <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-Bs-XNZ">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-Bs-XNZ">
                                 <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -594,7 +686,7 @@ DQ
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Jcg-Vc-M2T">
                                             <font key="font" metaFont="system"/>
@@ -628,7 +720,7 @@ DQ
                             <touchBarItem id="eHE-gX-mha">
                                 <viewController key="viewController" id="I9J-NQ-zKp">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="pem-Hr-P9W">
                                             <font key="font" metaFont="system"/>
@@ -662,7 +754,7 @@ DQ
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
                                             <font key="font" metaFont="system"/>
