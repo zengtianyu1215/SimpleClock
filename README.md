@@ -84,7 +84,7 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 
 ## About SimpleClock Maker: Zeng Tianyu
 Zeng Tianyu, a student in SYSU, Guangzhou, China. For more detail? Here is the link:
-* **<https://zengtianyu1215.github.io/Zengtianyu.io/>**
+* **<https://zengtianyu1215.github.io/>**
 <br>
 <br>
 <br>
