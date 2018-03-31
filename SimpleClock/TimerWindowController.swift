@@ -13,6 +13,10 @@ class TimerWindowController: NSWindowController {
     @IBOutlet weak var StartB: NSButton!
     @IBOutlet weak var PauseB: NSButton!
     @IBOutlet weak var EndB: NSButton!
+    
+    
+    
+    
     @IBAction func Start(_ sender: Any) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
         rootViewController.StartButton.performClick(nil)
@@ -30,5 +34,24 @@ class TimerWindowController: NSWindowController {
     }
     override func windowDidLoad() {
         super.windowDidLoad()
+    }
+    
+    @IBOutlet weak var ModeChanger: NSSegmentedControl!
+    
+    @IBAction func ChangeMode(_ sender: Any) {
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
+        if ModeChanger.isSelected(forSegment: 0) {
+            rootViewController.background.material = NSVisualEffectView.Material.mediumLight
+            rootViewController.TimerText.textColor = NSColor.black
+            rootViewController.hourLabel.textColor = NSColor.black
+            rootViewController.minuteLabel.textColor = NSColor.black
+            rootViewController.secondLabel.textColor = NSColor.black
+        }else{
+            rootViewController.background.material = NSVisualEffectView.Material.menu
+            rootViewController.TimerText.textColor = NSColor.white
+            rootViewController.hourLabel.textColor = NSColor.white
+            rootViewController.minuteLabel.textColor = NSColor.white
+            rootViewController.secondLabel.textColor = NSColor.white
+        }
     }
 }

@@ -12,13 +12,14 @@ class TimerViewController : NSViewController {
     @IBOutlet weak var TimerLabel: NSTextField!
     
     @IBOutlet weak var TimerStartEnd: NSButton!
-    
     @IBOutlet weak var Pause: NSButton!
     @IBOutlet weak var End: NSButton!
     let timeFormat = DateFormatter()
     
+    @IBOutlet weak var Background: NSVisualEffectView!
     var isStart = Bool(false)
     var isPause = Bool(false)
+    var isDark = Bool(true)
     
     var timer : Timer!
     

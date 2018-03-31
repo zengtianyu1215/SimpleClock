@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="13752"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14019"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
-        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
         <scene sceneID="ZSu-tN-bUF">
             <objects>
                 <windowController id="pNx-uy-NUd" sceneMemberID="viewController">
-                    <window key="window" title="Calendar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="2EJ-tm-Fdl">
+                    <window key="window" title="Calendar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="2EJ-tm-Fdl">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
@@ -43,36 +43,36 @@
                                 <subviews>
                                     <textField canDrawConcurrently="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-Sc-jIn">
                                         <rect key="frame" x="18" y="299" width="444" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" alignment="center" id="BFO-uB-xdn">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-9P-H5z">
+                                    <scrollView hidden="YES" wantsLayer="YES" canDrawConcurrently="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-9P-H5z">
                                         <rect key="frame" x="20" y="20" width="440" height="271"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" ambiguous="YES" id="lJV-gE-AIq">
+                                        <clipView key="contentView" hidden="YES" canDrawConcurrently="YES" ambiguous="YES" drawsBackground="NO" id="lJV-gE-AIq">
                                             <rect key="frame" x="1" y="1" width="438" height="269"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <collectionView ambiguous="YES" id="NTk-6M-aDJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="438" height="158"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="D7X-vl-CRj">
-                                                        <size key="itemSize" width="50" height="50"/>
-                                                    </collectionViewFlowLayout>
+                                                <collectionView canDrawConcurrently="YES" focusRingType="none" ambiguous="YES" selectable="YES" allowsMultipleSelection="YES" id="NTk-6M-aDJ">
+                                                    <rect key="frame" x="0.0" y="111" width="438" height="158"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewGridLayout key="collectionViewLayout" id="2pf-cK-7vk"/>
                                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
                                                 </collectionView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.17203329114202026" green="1" blue="0.0003432199855107898" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="v7j-Xn-oc2">
-                                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                            <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="aOv-0W-7P3">
-                                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                            <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
@@ -260,7 +260,6 @@
                     </window>
                     <touchBar key="touchBar" id="a36-Ff-fBo">
                         <touchBarItems>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="Btj-Nn-DQK"/>
                             <touchBarItem id="mav-J6-PXI">
                                 <viewController key="viewController" id="gXF-6D-LZJ">
                                     <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uSn-B9-NF0">
@@ -323,11 +322,31 @@
                                 </viewController>
                                 <size key="designTimeSize" width="151" height="30"/>
                             </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="ej7-qv-jgF"/>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="H2f-sd-tvc"/>
+                            <touchBarItem id="5cA-MP-WLP">
+                                <viewController key="viewController" id="ru6-Pf-4z1">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="Light" width="50"/>
+                                                <segment label="Dark" width="50" selected="YES" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="ChangeMode:" target="zwL-UC-LHZ" id="4rg-08-nzi"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </viewController>
+                                <size key="designTimeSize" width="110" height="30"/>
+                            </touchBarItem>
                         </touchBarItems>
                     </touchBar>
                     <connections>
                         <outlet property="EndB" destination="YS2-2d-tBS" id="Eve-es-TMS"/>
+                        <outlet property="ModeChanger" destination="wPC-lb-007" id="vyv-Q2-ohR"/>
                         <outlet property="PauseB" destination="6aO-77-2Un" id="VIS-t2-0N9"/>
                         <outlet property="Start" destination="qu1-Ej-IpY" id="gZV-KL-BwI"/>
                         <outlet property="StartB" destination="qu1-Ej-IpY" id="6yZ-wf-ewc"/>
@@ -480,11 +499,15 @@ DQ
                         <outlet property="SecondText" destination="XW5-xh-Hes" id="C3C-KG-XFx"/>
                         <outlet property="StartButton" destination="EB9-wQ-axS" id="jaY-qh-kw3"/>
                         <outlet property="TimerText" destination="hSO-Ta-me2" id="3NH-RY-I2W"/>
+                        <outlet property="background" destination="AJe-ZA-pzG" id="t8I-sr-T8S"/>
+                        <outlet property="hourLabel" destination="7jQ-Hp-f0s" id="egp-Gc-Lmx"/>
+                        <outlet property="minuteLabel" destination="j0b-r7-awt" id="Qle-Wh-kMi"/>
+                        <outlet property="secondLabel" destination="zI1-ne-sPU" id="FX8-05-JX9"/>
                     </connections>
                 </viewController>
                 <customObject id="5Tr-2y-ZMZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="-556"/>
+            <point key="canvasLocation" x="1190" y="-556.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Ati-oe-A8g">
@@ -501,11 +524,10 @@ DQ
                     </window>
                     <touchBar key="touchBar" id="HUS-uy-wCO">
                         <touchBarItems>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="dNE-ie-496"/>
                             <touchBarItem id="pU4-Nb-t5H">
                                 <viewController key="viewController" id="YEg-OU-1F8">
                                     <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="31W-jx-Pb4">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Stopwatch" drawsBackground="YES" id="hvM-he-Q3d">
                                             <font key="font" metaFont="system" size="14"/>
@@ -514,7 +536,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                 </viewController>
-                                <size key="designTimeSize" width="96" height="22"/>
+                                <size key="designTimeSize" width="82" height="22"/>
                             </touchBarItem>
                             <touchBarItem id="Akh-Rt-k46">
                                 <viewController key="viewController" id="Vjd-He-0Ey">
@@ -564,7 +586,26 @@ DQ
                                 </viewController>
                                 <size key="designTimeSize" width="151" height="30"/>
                             </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="sqh-1m-HNS"/>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="3Ae-iD-uw5"/>
+                            <touchBarItem id="gDk-AT-I4h">
+                                <viewController key="viewController" id="OdC-GI-PkU">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="Light" width="50"/>
+                                                <segment label="Dark" width="50" selected="YES" tag="1"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="Changeback:" target="zWa-RP-J5V" id="u30-rX-0ET"/>
+                                            </connections>
+                                        </segmentedCell>
+                                    </segmentedControl>
+                                </viewController>
+                                <size key="designTimeSize" width="110" height="30"/>
+                            </touchBarItem>
                         </touchBarItems>
                     </touchBar>
                     <connections>
@@ -642,6 +683,7 @@ DQ
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="Background" destination="tKz-Bs-XNZ" id="Gby-Gr-8bm"/>
                         <outlet property="End" destination="Dzu-4U-QMO" id="HM9-t2-GnE"/>
                         <outlet property="EndTimer" destination="Dzu-4U-QMO" id="uzB-u4-kmB"/>
                         <outlet property="Pause" destination="TVU-6s-wU6" id="FFd-kI-Vky"/>
@@ -651,7 +693,7 @@ DQ
                 </viewController>
                 <customObject id="BuA-ol-vTG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-57"/>
+            <point key="canvasLocation" x="1307" y="19"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">

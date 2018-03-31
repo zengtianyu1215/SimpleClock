@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         windowController.showWindow(self)
         self.windowController = windowController
         
-        if #available(OSX 10.12.1, *) {
+        if #available(OSX 10.12.2, *) {
             NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
         }
         

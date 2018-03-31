@@ -9,10 +9,14 @@ import AVFoundation
 import Cocoa
 
 class Timer2ViewController : NSViewController, NSUserNotificationCenterDelegate{
+    @IBOutlet weak var background: NSVisualEffectView!
     @IBOutlet weak var StartButton: NSButton!
     @IBOutlet weak var PauseButton: NSButton!
     @IBOutlet weak var EndButton: NSButton!
     
+    @IBOutlet weak var hourLabel: NSTextField!
+    @IBOutlet weak var minuteLabel: NSTextField!
+    @IBOutlet weak var secondLabel: NSTextField!
     @IBOutlet weak var TimerText: NSTextField!
     
     @IBOutlet weak var HourText: NSTextField!
