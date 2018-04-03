@@ -39,7 +39,7 @@
 "4sb-4s-VLi.title" = "Quit SimpleClock";
 
 /* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "576-Bt-5tP"; */
-"576-Bt-5tP.title" = "Label";
+"576-Bt-5tP.title" = "SimpleClock";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "Edit";
