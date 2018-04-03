@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     @IBOutlet weak var DevGithub: NSMenuItem!
     @IBAction func DevGithubView(_ sender: NSMenuItem) {
-        let url = URL.init(string: "https://zengtianyu1215.github.io/Zengtianyu.io/")
+        let url = URL.init(string: "https://zengtianyu1215.github.io/")
         NSWorkspace.shared.open(url!)
     }
     

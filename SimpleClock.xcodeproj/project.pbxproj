@@ -30,6 +30,7 @@
 		7DB33020206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
 		7DB33021206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
 		7DC6DA15206FD9810088797D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* TimerViewController.swift */; };
+		7DCF8A8B2073D11100FE9034 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */; };
 		7DFDFA86201B77E8005E30AE /* Timer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
 		7DA82555201C4393006C5566 /* StopwatchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchWindowController.swift; sourceTree = "<group>"; };
 		7DC6DA14206FD9810088797D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Timer2ViewController.swift; path = SimpleClock/Timer2ViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				7DA82551201C39DF006C5566 /* Glass.aiff */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
 				7D5CF6C42019C3730032670C /* Main.storyboard */,
+				7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
 				7D5CF6BF2019C3730032670C /* Document.xcdatamodeld */,
@@ -334,6 +337,7 @@
 				7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */,
 				7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */,
 				7D5CF6BE2019C3730032670C /* Document.swift in Sources */,
+				7DCF8A8B2073D11100FE9034 /* CalendarCell.swift in Sources */,
 				7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,7 @@ class StopwatchWindowController: NSWindowController {
     @IBAction func Changeback(_ sender: Any){
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
         if rootViewController.isDark {
-            rootViewController.Background.material = NSVisualEffectView.Material.mediumLight
+            rootViewController.Background.material = NSVisualEffectView.Material.light
             rootViewController.TimerLabel.textColor = NSColor.black
             rootViewController.isDark = false
         }else{

@@ -41,17 +41,23 @@ class TimerWindowController: NSWindowController {
     @IBAction func ChangeMode(_ sender: Any) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
         if ModeChanger.isSelected(forSegment: 0) {
-            rootViewController.background.material = NSVisualEffectView.Material.mediumLight
+            rootViewController.background.material = NSVisualEffectView.Material.light
             rootViewController.TimerText.textColor = NSColor.black
             rootViewController.hourLabel.textColor = NSColor.black
             rootViewController.minuteLabel.textColor = NSColor.black
             rootViewController.secondLabel.textColor = NSColor.black
+            rootViewController.HourText.textColor = NSColor.black
+            rootViewController.MinuteText.textColor = NSColor.black
+            rootViewController.SecondText.textColor = NSColor.black
         }else{
             rootViewController.background.material = NSVisualEffectView.Material.menu
             rootViewController.TimerText.textColor = NSColor.white
             rootViewController.hourLabel.textColor = NSColor.white
             rootViewController.minuteLabel.textColor = NSColor.white
             rootViewController.secondLabel.textColor = NSColor.white
+            rootViewController.HourText.textColor = NSColor.white
+            rootViewController.MinuteText.textColor = NSColor.white
+            rootViewController.SecondText.textColor = NSColor.white
         }
     }
 }
