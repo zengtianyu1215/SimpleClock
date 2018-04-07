@@ -91,7 +91,7 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 <br>
 
 ## Requirements
-1. macOS Version: macOS High Sierre (Recommended) (10.12+ support in the future)
+1. macOS Version: macOS High Sierre (Recommended) (10.12+ is supported)
 2. Touch bar: Macbook Pro 2016 or 2017 (Recommended) (Previous version will be supported in the future)
 3. RAM Space: 4GB+
 <br>
