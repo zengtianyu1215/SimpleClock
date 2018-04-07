@@ -64,22 +64,36 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.00.png)
 <center>Stopwatch Touch Bar</center>
 
-## RELEASE: SimpleClock 1.6(6)
+## RELEASE: SimpleClock 1.7(7)
 ### Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
 ### Release ChangeLog::
-**Time: 2018/02/08 16:15:00**
->**Content:**
->1. Fix Clock window bugs;
->2. Add localization files;
->3. Add language: Chinese Simplified;
->4. Add language: Chinese Traditional;
->5. Add language: German (Deutsch);
+**Time: 2018/04/04 22:47:00**
+
+>**Content**
+>1. Full Theme Mode switch in Clock, Timer and Stopwatch;
+>2. Add Calendar Part. Now in developing;
+>3. Fix the bug on starting scene;
+>4. Fix the bugs on Multi-touch Bar;
+>5. Now SimpleClock support Mac OS X 10.12;
+>6. Reach 150+ users. Thanks!
+>
+>*If you have problems when you are using SimpleClock, please post an issue on SimpleClock.*
+
+>**更新内容**
+>1. 全新的暗色/亮色模式，支持时钟，秒表和计时器；
+>2. 加入日历（正在开发）；
+>3. 修复启动时，主界面不能正常显示的Bug；
+>4. 修复触控栏显示问题；
+>5. SimpleClock 现在已经支持OS X 10.12；
+>6. 1.6版本用户数达到150+，谢谢！
+>
+>*如果在使用过程中遇到无法解决的Bug，欢迎在 Issue 中提出*
 <br>
 
 ## Requirements
-1. macOS Version: macOS High Sierre (Recommended) (10.10+ support in the future)
+1. macOS Version: macOS High Sierre (Recommended) (10.12+ support in the future)
 2. Touch bar: Macbook Pro 2016 or 2017 (Recommended) (Previous version will be supported in the future)
-3. RAM Space: 8GB/16GB
+3. RAM Space: 4GB+
 <br>
 
 ## About SimpleClock Maker: Zeng Tianyu
