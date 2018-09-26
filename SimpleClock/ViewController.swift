@@ -24,6 +24,7 @@ class ViewController: NSViewController {
     var isSecond = Bool(false)
     var is24H = Bool(true)
     
+    @IBOutlet weak var ThemeChanger: NSClickGestureRecognizer!
     @IBOutlet weak var Background: NSVisualEffectView!
     
     
@@ -42,15 +43,18 @@ class ViewController: NSViewController {
             is24H = true
         }
     }
+    @IBAction func ClickToChangeBackgroundInWindow(_ sender: Any) {
+        ClickToChangeBackground(Any.self)
+    }
     
-    @IBAction func ClickToChangeBackground(_ sender: NSButton) {
+    @IBAction func ClickToChangeBackground(_ sender: Any) {
         if isNightMode {
             BackgroundView.material =  NSVisualEffectView.Material.mediumLight
             ClockLabel.textColor = NSColor.black
             CalendarLabel.textColor = NSColor.black
             isNightMode = false
         }else{
-            BackgroundView.material =  NSVisualEffectView.Material.menu
+            BackgroundView.material =  NSVisualEffectView.Material.dark
             ClockLabel.textColor = NSColor.white
             CalendarLabel.textColor = NSColor.white
             isNightMode = true

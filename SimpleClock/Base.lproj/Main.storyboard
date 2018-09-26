@@ -26,7 +26,7 @@
                 </windowController>
                 <customObject id="vmE-H9-JZ5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-481" y="-163"/>
+            <point key="canvasLocation" x="-503" y="-669"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="pIO-hh-Vpx">
@@ -328,8 +328,8 @@
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="H2f-sd-tvc"/>
                             <touchBarItem id="5cA-MP-WLP">
                                 <viewController key="viewController" id="ru6-Pf-4z1">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="33"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
+                                        <rect key="frame" x="0.0" y="30" width="116" height="3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
                                             <font key="font" metaFont="system"/>
@@ -592,8 +592,8 @@ DQ
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="3Ae-iD-uw5"/>
                             <touchBarItem id="gDk-AT-I4h">
                                 <viewController key="viewController" id="OdC-GI-PkU">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="33"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
+                                        <rect key="frame" x="0.0" y="30" width="116" height="3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
                                             <font key="font" metaFont="system"/>
@@ -730,8 +730,8 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
+                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Jcg-Vc-M2T">
                                             <font key="font" metaFont="system"/>
@@ -764,14 +764,14 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="eHE-gX-mha">
                                 <viewController key="viewController" id="I9J-NQ-zKp">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
+                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="pem-Hr-P9W">
                                             <font key="font" metaFont="system"/>
                                             <segments>
-                                                <segment label="ON"/>
-                                                <segment label="OFF" selected="YES" tag="1"/>
+                                                <segment label="Off"/>
+                                                <segment label="On" selected="YES" tag="1"/>
                                             </segments>
                                         </segmentedCell>
                                         <connections>
@@ -798,8 +798,8 @@ DQ
                             </touchBarItem>
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
+                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
                                             <font key="font" metaFont="system"/>
@@ -840,7 +840,7 @@ DQ
                         <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-rK-C29">
+                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="dark" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-rK-C29">
                                 <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -873,6 +873,13 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-4D-HbS">
                                         <rect key="frame" x="-2" y="0.0" width="533" height="257"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers>
+                                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="3" id="c6V-SP-Hms">
+                                                <connections>
+                                                    <action selector="ClickToChangeBackgroundInWindow:" target="5gI-5U-AMq" id="SIV-Ac-Elm"/>
+                                                </connections>
+                                            </clickGestureRecognizer>
+                                        </gestureRecognizers>
                                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="SimpleClock" placeholderString="SimpleClock" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="576-Bt-5tP">
                                             <dateFormatter key="formatter" dateStyle="short" id="3ad-9j-8TH"/>
                                             <font key="font" metaFont="systemUltraLight" size="84"/>
@@ -907,6 +914,7 @@ DQ
                         <outlet property="ClockLabel" destination="rUm-4D-HbS" id="Dpf-NK-fxG"/>
                         <outlet property="NightModeChange" destination="SIR-8m-gBq" id="uSU-Zu-w7Q"/>
                         <outlet property="SecondChanger" destination="3Qx-kb-0uH" id="f2i-mY-AQT"/>
+                        <outlet property="ThemeChanger" destination="c6V-SP-Hms" id="fQA-3m-sn5"/>
                     </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
