@@ -16,13 +16,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var ClockLabel: NSTextField!
     @IBOutlet weak var CalendarLabel: NSTextField!
     @IBOutlet weak var BackgroundView: NSVisualEffectView!
-    
     @IBOutlet weak var SecondChanger: NSButton!
-    
     var timer = Timer()
     let timeFormat = DateFormatter()
     let timeFormat2 = DateFormatter()
-
     var isNightMode = Bool(true)
     var isSecond = Bool(false)
     var is24H = Bool(true)
@@ -66,7 +63,6 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
-        
         timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (timer) in
             self.timerMain()
         })
