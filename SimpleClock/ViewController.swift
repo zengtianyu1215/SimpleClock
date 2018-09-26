@@ -23,7 +23,6 @@ class ViewController: NSViewController {
     let timeFormat = DateFormatter()
     let timeFormat2 = DateFormatter()
 
-    
     var isNightMode = Bool(true)
     var isSecond = Bool(false)
     var is24H = Bool(true)
@@ -67,29 +66,23 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
-        var timeCount = 60
-        codeTimer.schedule(deadline: .now(), repeating: .microseconds(200))
-        codeTimer.setEventHandler(handler: {
-            timeCount = 60
-            DispatchQueue.main.async {
-                let time = Date()
-                self.setFormatClock(mode: self.isSecond, is24: self.is24H)
-                self.ClockLabel.stringValue = self.timeFormat.string(from: time as Date) as String
-                self.CalendarLabel.stringValue = self.timeFormat2.string(from: time as Date ) as String
-            }
-            if timeCount <= 0 {
-                self.codeTimer.cancel()
-            }
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (timer) in
+            self.timerMain()
         })
-        // 启动时间源
-        self.codeTimer.resume()
         
-        
-        // Do any additional setup after loading the view.
+        timer.fire();
+    }
+    
+    func timerMain() -> Void {
+        let time = Date()
+        self.setFormatClock(mode: self.isSecond, is24: self.is24H)
+        self.ClockLabel.stringValue = self.timeFormat.string(from: time as Date) as String
+        self.CalendarLabel.stringValue = self.timeFormat2.string(from: time as Date ) as String
     }
     
     override func viewDidDisappear() {
-        self.codeTimer.cancel()
+        self.timer.invalidate();
     }
 
     func setFormatClock(mode: Bool, is24: Bool) -> Void {
