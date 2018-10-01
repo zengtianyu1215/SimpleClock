@@ -10,9 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    
-    @IBOutlet weak var NightModeChange: NSButton!
-    
+        
     @IBOutlet weak var ClockLabel: NSTextField!
     @IBOutlet weak var CalendarLabel: NSTextField!
     @IBOutlet weak var BackgroundView: NSVisualEffectView!

@@ -12,8 +12,8 @@ import Foundation
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var windowController: NSWindowController?
-
+    var windowController: NSWindowController?    
+    
     @IBOutlet weak var SimpleGithub: NSMenuItem!
     @IBAction func SimpleGithubView(_ sender: NSMenuItem) {
         let url = URL.init(string: "https://zengtianyu1215.github.io/SimpleClock/")

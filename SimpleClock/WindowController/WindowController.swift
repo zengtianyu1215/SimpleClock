@@ -19,7 +19,6 @@ class WindowController: NSWindowController {
     var calendar : LunarCalendarView!
     var dateFormatter:DateFormatter!
     
-    
     @IBAction func ChangeSecond(_ sender: NSSegmentedControl) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
         if SecondChanger.isSelected(forSegment: 0) {

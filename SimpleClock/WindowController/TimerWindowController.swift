@@ -19,18 +19,18 @@ class TimerWindowController: NSWindowController {
     
     @IBAction func Start(_ sender: Any) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
-        rootViewController.StartButton.performClick(nil)
+        rootViewController.StartButton.performClick(Any.self)
         
     }
     
     @IBAction func Pause(_ sender: Any) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
-        rootViewController.PauseButton.performClick(nil)
+        rootViewController.PauseButton.performClick(Any.self)
     }
     
     @IBAction func End(_ sender: Any) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
-        rootViewController.EndButton.performClick(nil)
+        rootViewController.EndButton.performClick(Any.self)
     }
     override func windowDidLoad() {
         super.windowDidLoad()

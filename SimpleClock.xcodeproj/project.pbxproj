@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D00002D20DFE63B006A720B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00002C20DFE63B006A720B /* Sparkle.framework */; };
-		7D00003020DFE783006A720B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00002C20DFE63B006A720B /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */; };
 		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
 		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
 		7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */; };
+		7D3F7F132161DFBE0019185F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F7F122161DFBE0019185F /* Sparkle.framework */; };
+		7D3F7F152161E02C0019185F /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D3F7F122161DFBE0019185F /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
 		7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BB2019C3730032670C /* ViewController.swift */; };
@@ -60,18 +60,27 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D00003020DFE783006A720B /* Sparkle.framework in CopyFiles */,
+				7D3F7F152161E02C0019185F /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3F7F142161DFF50019185F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7D00002C20DFE63B006A720B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendarView.swift; sourceTree = "<group>"; };
 		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
 		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
 		7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetViewController.swift; sourceTree = "<group>"; };
+		7D3F7F122161DFBE0019185F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7D516628202C316B00EF62EB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -108,7 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5CF6EE201A08F00032670C /* AppKit.framework in Frameworks */,
-				7D00002D20DFE63B006A720B /* Sparkle.framework in Frameworks */,
+				7D3F7F132161DFBE0019185F /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +231,7 @@
 		7D5CF6EC201A08F00032670C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D00002C20DFE63B006A720B /* Sparkle.framework */,
+				7D3F7F122161DFBE0019185F /* Sparkle.framework */,
 				7D5CF6ED201A08F00032670C /* AppKit.framework */,
 			);
 			name = Frameworks;
@@ -250,6 +259,7 @@
 				7D5CF6B42019C3730032670C /* Resources */,
 				7D00002E20DFE73B006A720B /* CopyFiles */,
 				7D00002F20DFE758006A720B /* Headers */,
+				7D3F7F142161DFF50019185F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -312,7 +322,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -567,9 +577,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleClock/SimpleClock.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 348F982954;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,6 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -589,9 +602,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleClock/SimpleClock.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 348F982954;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
