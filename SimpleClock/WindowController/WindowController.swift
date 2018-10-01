@@ -14,6 +14,12 @@ class WindowController: NSWindowController {
     
     @IBOutlet weak var H24Changer: NSSegmentedControl!
     @IBOutlet weak var ModeChanger: NSSegmentedControl!
+    var pop : NSPopover?
+    var datee = Date()
+    var calendar : LunarCalendarView!
+    var dateFormatter:DateFormatter!
+    
+    
     @IBAction func ChangeSecond(_ sender: NSSegmentedControl) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
         if SecondChanger.isSelected(forSegment: 0) {
@@ -23,9 +29,7 @@ class WindowController: NSWindowController {
             rootViewController.isSecond = false
             rootViewController.setFormatClock(mode: rootViewController.isSecond, is24:rootViewController.is24H)
         }
-        
-        rootViewController.SecondChanger.performClick(nil)
-        
+        rootViewController.ChangeSecond(Any.self)
     }
     
     
@@ -33,8 +37,10 @@ class WindowController: NSWindowController {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
         if H24Changer.isSelected(forSegment: 0) {
             rootViewController.is24H = false
+            rootViewController.AMInMenu.state = .off
         }else{
             rootViewController.is24H = true
+            rootViewController.AMInMenu.state = .on
         }
     }
     
@@ -46,11 +52,43 @@ class WindowController: NSWindowController {
         }else{
             rootViewController.isNightMode = false
         }
-        rootViewController.NightModeChange.performClick(nil)
+        rootViewController.ClickToChangeBackground(Any.self)
     }
     
     override func windowDidLoad() {
         super.windowDidLoad()
+    }
+    
+    func createCalenderPopover(){
+        var myPopover = self.pop
+        if(myPopover == nil){
+            myPopover = NSPopover()
+            self.calendar = LunarCalendarView()
+            myPopover!.contentViewController = self.calendar
+            if #available(OSX 10.14, *) {
+                myPopover!.appearance = NSAppearance(named: NSAppearance.Name.darkAqua)
+            } else {
+                // Fallback on earlier versions
+                myPopover!.appearance = NSAppearance(named:
+                    NSAppearance.Name(rawValue: "NSAppearanceNameAqua"))
+            }
+            myPopover!.animates = true
+            myPopover!.behavior = NSPopover.Behavior.transient
+        }
+        self.pop = myPopover
+    }
+    
+    func openCal(_ sender: Any){
+        self.createCalenderPopover()
+        let vc = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
+        
+        let date = datee
+        self.calendar.date = date
+        self.calendar.selectedDate = date
+        self.calendar.show()
+        let cellRect = vc.CalendarLabel.bounds
+        self.pop?.show(relativeTo: cellRect, of: vc.CalendarLabel, preferredEdge: .maxY)
+        
     }
     
 }

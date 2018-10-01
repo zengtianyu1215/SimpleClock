@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class TimerViewController : NSViewController {
+class StopwatchViewController : NSViewController {
     @IBOutlet weak var TimerLabel: NSTextField!
     
     @IBOutlet weak var TimerStartEnd: NSButton!
@@ -64,11 +64,11 @@ class TimerViewController : NSViewController {
             minute = 0
             TimerLabel.stringValue = "00:00:00"
             timer.fireDate = NSDate.init() as Date
-            NSSound(named: "Glass.aiff")?.play()
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
-            NSSound(named: "Pop.aiff")?.play()
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
     
@@ -77,7 +77,7 @@ class TimerViewController : NSViewController {
         if isStart {
             timer.fireDate = Date.distantFuture
             isPause = true
-            NSSound(named: "Pop.aiff")?.play()
+            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
         }
     }
 
@@ -89,7 +89,7 @@ class TimerViewController : NSViewController {
             hour = 0
             minute = 0
             isStart = false
-            NSSound(named: "Glass.aiff")?.play()
+            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
         }
     }
 }

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		7D00002D20DFE63B006A720B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00002C20DFE63B006A720B /* Sparkle.framework */; };
 		7D00003020DFE783006A720B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00002C20DFE63B006A720B /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */; };
+		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
+		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
 		7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
 		7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BB2019C3730032670C /* ViewController.swift */; };
-		7D5CF6BE2019C3730032670C /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BD2019C3730032670C /* Document.swift */; };
 		7D5CF6C12019C3730032670C /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BF2019C3730032670C /* Document.xcdatamodeld */; };
 		7D5CF6C32019C3730032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6C62019C3730032670C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
@@ -24,16 +26,14 @@
 		7D5CF6F1201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F2201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6F3201A21C60032670C /* Images.xcassets */; };
-		7D6F64AC203EE79D00C46B06 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */; };
 		7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8254F201C2E05006C5566 /* ViewGithubController.swift */; };
 		7DA82552201C39DF006C5566 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7DA82551201C39DF006C5566 /* Glass.aiff */; };
 		7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82553201C431C006C5566 /* TimerWindowController.swift */; };
 		7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82555201C4393006C5566 /* StopwatchWindowController.swift */; };
 		7DB33020206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
 		7DB33021206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
-		7DC6DA15206FD9810088797D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* TimerViewController.swift */; };
-		7DCF8A8B2073D11100FE9034 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */; };
-		7DFDFA86201B77E8005E30AE /* Timer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */; };
+		7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* StopwatchViewController.swift */; };
+		7DFDFA86201B77E8005E30AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFA85201B77E8005E30AE /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +68,9 @@
 
 /* Begin PBXFileReference section */
 		7D00002C20DFE63B006A720B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendarView.swift; sourceTree = "<group>"; };
+		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
+		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
 		7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetViewController.swift; sourceTree = "<group>"; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -76,7 +79,6 @@
 		7D5CF6B62019C3730032670C /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5CF6B92019C3730032670C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5CF6BB2019C3730032670C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D5CF6BD2019C3730032670C /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		7D5CF6C02019C3730032670C /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
 		7D5CF6C22019C3730032670C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D5CF6C52019C3730032670C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,14 +94,12 @@
 		7D5CF6ED201A08F00032670C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7D5CF6EF201A14B20032670C /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		7D5CF6F3201A21C60032670C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		7DA8254F201C2E05006C5566 /* ViewGithubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGithubController.swift; sourceTree = "<group>"; };
 		7DA82551201C39DF006C5566 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
 		7DA82555201C4393006C5566 /* StopwatchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchWindowController.swift; sourceTree = "<group>"; };
-		7DC6DA14206FD9810088797D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Timer2ViewController.swift; path = SimpleClock/Timer2ViewController.swift; sourceTree = SOURCE_ROOT; };
+		7DC6DA14206FD9810088797D /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		7DFDFA85201B77E8005E30AE /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = SimpleClock/ViewController/TimerViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +129,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D0B6B04215CB70F0000ACD4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7DA8254F201C2E05006C5566 /* ViewGithubController.swift */,
+				7D5CF6BB2019C3730032670C /* ViewController.swift */,
+				7DC6DA14206FD9810088797D /* StopwatchViewController.swift */,
+				7DFDFA85201B77E8005E30AE /* TimerViewController.swift */,
+				7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7D0B6B05215CB7430000ACD4 /* WindowController */ = {
+			isa = PBXGroup;
+			children = (
+				7DA82555201C4393006C5566 /* StopwatchWindowController.swift */,
+				7D5CF6EF201A14B20032670C /* WindowController.swift */,
+				7DA82553201C431C006C5566 /* TimerWindowController.swift */,
+			);
+			path = WindowController;
+			sourceTree = "<group>";
+		};
+		7D0B6B06215CB9CA0000ACD4 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */,
+				7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */,
+				7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
 		7D5CF6AD2019C3730032670C = {
 			isa = PBXGroup;
 			children = (
@@ -153,26 +185,18 @@
 		7D5CF6B82019C3730032670C /* SimpleClock */ = {
 			isa = PBXGroup;
 			children = (
+				7D0B6B06215CB9CA0000ACD4 /* CalendarView */,
+				7D0B6B05215CB7430000ACD4 /* WindowController */,
+				7D0B6B04215CB70F0000ACD4 /* ViewController */,
+				7D5CF6C42019C3730032670C /* Main.storyboard */,
 				7D5CF6B92019C3730032670C /* AppDelegate.swift */,
-				7D5CF6BB2019C3730032670C /* ViewController.swift */,
-				7D5CF6BD2019C3730032670C /* Document.swift */,
 				7D5CF6C22019C3730032670C /* Assets.xcassets */,
-				7DA82555201C4393006C5566 /* StopwatchWindowController.swift */,
 				7DA82551201C39DF006C5566 /* Glass.aiff */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
-				7D5CF6C42019C3730032670C /* Main.storyboard */,
-				7DCF8A8A2073D11100FE9034 /* CalendarCell.swift */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
 				7D5CF6BF2019C3730032670C /* Document.xcdatamodeld */,
-				7D5CF6EF201A14B20032670C /* WindowController.swift */,
 				7D5CF6F3201A21C60032670C /* Images.xcassets */,
-				7DC6DA14206FD9810088797D /* TimerViewController.swift */,
-				7DFDFA85201B77E8005E30AE /* Timer2ViewController.swift */,
-				7DA8254F201C2E05006C5566 /* ViewGithubController.swift */,
-				7DA82553201C431C006C5566 /* TimerWindowController.swift */,
-				7D6F64AB203EE79D00C46B06 /* CalendarViewController.swift */,
-				7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */,
 			);
 			path = SimpleClock;
 			sourceTree = "<group>";
@@ -336,6 +360,7 @@
 				7D5CF6C32019C3730032670C /* Assets.xcassets in Resources */,
 				7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */,
 				7D5CF6C62019C3730032670C /* Main.storyboard in Resources */,
+				7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,19 +389,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFDFA86201B77E8005E30AE /* Timer2ViewController.swift in Sources */,
+				7DFDFA86201B77E8005E30AE /* TimerViewController.swift in Sources */,
 				7D5CF6C12019C3730032670C /* Document.xcdatamodeld in Sources */,
 				7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */,
-				7D6F64AC203EE79D00C46B06 /* CalendarViewController.swift in Sources */,
-				7DC6DA15206FD9810088797D /* TimerViewController.swift in Sources */,
+				7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */,
 				7D5CF6F0201A14B20032670C /* WindowController.swift in Sources */,
 				7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */,
 				7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */,
 				7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */,
 				7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */,
-				7D5CF6BE2019C3730032670C /* Document.swift in Sources */,
-				7DCF8A8B2073D11100FE9034 /* CalendarCell.swift in Sources */,
 				7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */,
+				7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */,
+				7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -579,7 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

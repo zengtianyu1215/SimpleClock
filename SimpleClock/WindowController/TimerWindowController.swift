@@ -18,18 +18,18 @@ class TimerWindowController: NSWindowController {
     
     
     @IBAction func Start(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
         rootViewController.StartButton.performClick(nil)
         
     }
     
     @IBAction func Pause(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
         rootViewController.PauseButton.performClick(nil)
     }
     
     @IBAction func End(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
         rootViewController.EndButton.performClick(nil)
     }
     override func windowDidLoad() {
@@ -39,9 +39,9 @@ class TimerWindowController: NSWindowController {
     @IBOutlet weak var ModeChanger: NSSegmentedControl!
     
     @IBAction func ChangeMode(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! Timer2ViewController
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
         if ModeChanger.isSelected(forSegment: 0) {
-            rootViewController.background.material = NSVisualEffectView.Material.light
+            rootViewController.background.material = NSVisualEffectView.Material.mediumLight
             rootViewController.TimerText.textColor = NSColor.black
             rootViewController.hourLabel.textColor = NSColor.black
             rootViewController.minuteLabel.textColor = NSColor.black
@@ -50,7 +50,7 @@ class TimerWindowController: NSWindowController {
             rootViewController.MinuteText.textColor = NSColor.black
             rootViewController.SecondText.textColor = NSColor.black
         }else{
-            rootViewController.background.material = NSVisualEffectView.Material.menu
+            rootViewController.background.material = NSVisualEffectView.Material.dark
             rootViewController.TimerText.textColor = NSColor.white
             rootViewController.hourLabel.textColor = NSColor.white
             rootViewController.minuteLabel.textColor = NSColor.white

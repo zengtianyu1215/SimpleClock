@@ -7,87 +7,6 @@
         <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
-        <!--Window Controller-->
-        <scene sceneID="ZSu-tN-bUF">
-            <objects>
-                <windowController id="pNx-uy-NUd" sceneMemberID="viewController">
-                    <window key="window" title="Calendar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="2EJ-tm-Fdl">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="333"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="333"/>
-                        <connections>
-                            <outlet property="delegate" destination="pNx-uy-NUd" id="UMX-up-fSp"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="lBa-gH-b8t" kind="relationship" relationship="window.shadowedContentViewController" id="dYq-9y-pb0"/>
-                    </connections>
-                </windowController>
-                <customObject id="vmE-H9-JZ5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-503" y="-669"/>
-        </scene>
-        <!--Calendar View Controller-->
-        <scene sceneID="pIO-hh-Vpx">
-            <objects>
-                <viewController id="lBa-gH-b8t" customClass="CalendarViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="J9t-UY-kCk">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="oiW-Fh-qO9">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <textField canDrawConcurrently="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-Sc-jIn">
-                                        <rect key="frame" x="18" y="299" width="444" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" alignment="center" id="BFO-uB-xdn">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <scrollView hidden="YES" wantsLayer="YES" canDrawConcurrently="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-9P-H5z">
-                                        <rect key="frame" x="20" y="20" width="440" height="271"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" hidden="YES" canDrawConcurrently="YES" ambiguous="YES" id="lJV-gE-AIq">
-                                            <rect key="frame" x="1" y="1" width="438" height="269"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <collectionView canDrawConcurrently="YES" focusRingType="none" ambiguous="YES" selectable="YES" allowsMultipleSelection="YES" id="NTk-6M-aDJ">
-                                                    <rect key="frame" x="0.0" y="111" width="438" height="158"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <collectionViewGridLayout key="collectionViewLayout" id="2pf-cK-7vk"/>
-                                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.17203329114202026" green="1" blue="0.0003432199855107898" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </clipView>
-                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="v7j-Xn-oc2">
-                                            <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="aOv-0W-7P3">
-                                            <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </scroller>
-                                    </scrollView>
-                                </subviews>
-                            </visualEffectView>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="collectionView" destination="qKS-9P-H5z" id="NjP-t8-LI9"/>
-                        <outlet property="timeLabel" destination="Dbj-Sc-jIn" id="MEE-3V-k0W"/>
-                    </connections>
-                </viewController>
-                <customObject id="BLd-MJ-HHW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="26" y="-668"/>
-        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
@@ -134,12 +53,6 @@
                                         <menuItem title="Clock" keyEquivalent="C" id="BNi-Dm-Ncm">
                                             <connections>
                                                 <segue destination="jGA-0Y-lOj" kind="show" id="ab7-cH-wNA"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Calendar" keyEquivalent="C" id="RNX-Ie-jMn">
-                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
-                                            <connections>
-                                                <segue destination="pNx-uy-NUd" kind="show" id="pzj-M9-FJx"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Stopwatch" keyEquivalent="S" id="SgY-gd-BCR">
@@ -254,9 +167,9 @@
                 <windowController id="zwL-UC-LHZ" customClass="TimerWindowController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="5y7-zX-MCb">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="333"/>
+                        <rect key="contentRect" x="196" y="240" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="333"/>
+                        <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
                             <outlet property="delegate" destination="zwL-UC-LHZ" id="d1W-JH-pQl"/>
                         </connections>
@@ -280,7 +193,7 @@
                             <touchBarItem id="q9u-cU-0gF">
                                 <viewController key="viewController" id="qez-3C-YRK">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qu1-Ej-IpY">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sGh-7m-x0h">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -296,7 +209,7 @@
                             <touchBarItem id="lgH-za-WKi">
                                 <viewController key="viewController" id="r8k-Z7-QS1">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-77-2Un">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nfN-iZ-bPb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -312,7 +225,7 @@
                             <touchBarItem id="eTu-T7-zox">
                                 <viewController key="viewController" id="Q5h-2h-oqQ">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YS2-2d-tBS">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="End Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zwn-HV-Snl">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -328,8 +241,8 @@
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="H2f-sd-tvc"/>
                             <touchBarItem id="5cA-MP-WLP">
                                 <viewController key="viewController" id="ru6-Pf-4z1">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
-                                        <rect key="frame" x="0.0" y="30" width="116" height="3"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
+                                        <rect key="frame" x="0.0" y="-3" width="116" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
                                             <font key="font" metaFont="system"/>
@@ -343,7 +256,7 @@
                                         </connections>
                                     </segmentedControl>
                                 </viewController>
-                                <size key="designTimeSize" width="110" height="30"/>
+                                <size key="designTimeSize" width="112" height="30"/>
                             </touchBarItem>
                         </touchBarItems>
                     </touchBar>
@@ -360,20 +273,19 @@
             </objects>
             <point key="canvasLocation" x="587" y="-472"/>
         </scene>
-        <!--Timer2 View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="o4X-Fr-Wbg">
             <objects>
-                <viewController id="4WS-vy-C2V" customClass="Timer2ViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4WS-vy-C2V" customClass="TimerViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="bPZ-8O-JPT">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="333"/>
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-ZA-pzG">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="340"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" blendingMode="behindWindow" material="dark" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-ZA-pzG">
+                                <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                                 <subviews>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dp-Ic-YSD">
-                                        <rect key="frame" x="52" y="87" width="56" height="22"/>
+                                        <rect key="frame" x="57" y="85" width="62" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="09j-69-mUw">
                                             <font key="font" metaFont="system"/>
@@ -385,7 +297,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-C2-Ibd">
-                                        <rect key="frame" x="170" y="87" width="56" height="22"/>
+                                        <rect key="frame" x="185" y="85" width="62" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="w93-QY-KNu">
                                             <font key="font" metaFont="system"/>
@@ -397,7 +309,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-r7-awt">
-                                        <rect key="frame" x="233" y="87" width="62" height="22"/>
+                                        <rect key="frame" x="257" y="85" width="68" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minute(s)" id="PLu-5X-RaX">
                                             <font key="font" metaFont="system"/>
@@ -406,7 +318,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
-                                        <rect key="frame" x="301" y="87" width="56" height="22"/>
+                                        <rect key="frame" x="332" y="85" width="61" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="pyD-MS-eLq">
                                             <font key="font" metaFont="system"/>
@@ -418,7 +330,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-ne-sPU">
-                                        <rect key="frame" x="363" y="87" width="67" height="22"/>
+                                        <rect key="frame" x="400" y="85" width="74" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Second(s)" id="qzJ-HS-3Tu">
                                             <font key="font" metaFont="system"/>
@@ -427,7 +339,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-wQ-axS">
-                                        <rect key="frame" x="133" y="25" width="70" height="32"/>
+                                        <rect key="frame" x="145" y="24" width="76" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gFu-E3-Yet">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -442,7 +354,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhM-e0-Rmq">
-                                        <rect key="frame" x="205" y="25" width="78" height="32"/>
+                                        <rect key="frame" x="225" y="24" width="86" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rgc-KW-5EW">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -455,7 +367,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Yd-nS-Vvt">
-                                        <rect key="frame" x="282" y="25" width="64" height="32"/>
+                                        <rect key="frame" x="311" y="24" width="70" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4mx-hJ-0ZZ">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -468,7 +380,7 @@ DQ
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-Ta-me2">
-                                        <rect key="frame" x="-2" y="130" width="484" height="146"/>
+                                        <rect key="frame" x="-2" y="127" width="533" height="143"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" allowsEditingTextAttributes="YES" usesSingleLineMode="YES" id="mMo-qG-YqC">
                                             <font key="font" metaFont="systemUltraLight" size="84"/>
@@ -477,7 +389,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-Hp-f0s">
-                                        <rect key="frame" x="113" y="87" width="51" height="22"/>
+                                        <rect key="frame" x="123" y="85" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hour(s)" id="ZWe-mj-Wnl">
                                             <font key="font" metaFont="system"/>
@@ -486,12 +398,18 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <progressIndicator wantsLayer="YES" focusRingType="none" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-9q-Ju3">
-                                        <rect key="frame" x="-6" y="-8" width="491" height="20"/>
+                                        <rect key="frame" x="-9" y="-8" width="542" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </progressIndicator>
                                 </subviews>
                             </visualEffectView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="AJe-ZA-pzG" firstAttribute="leading" secondItem="bPZ-8O-JPT" secondAttribute="leading" id="ERu-Fi-WSG"/>
+                            <constraint firstAttribute="bottom" secondItem="AJe-ZA-pzG" secondAttribute="bottom" id="cQ1-Az-S5o"/>
+                            <constraint firstAttribute="trailing" secondItem="AJe-ZA-pzG" secondAttribute="trailing" id="hRf-zx-c2Y"/>
+                            <constraint firstItem="AJe-ZA-pzG" firstAttribute="top" secondItem="bPZ-8O-JPT" secondAttribute="top" id="pbc-WE-vQt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="EndButton" destination="6Yd-nS-Vvt" id="4xY-sp-gk0"/>
@@ -510,7 +428,7 @@ DQ
                 </viewController>
                 <customObject id="5Tr-2y-ZMZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="-556.5"/>
+            <point key="canvasLocation" x="1189.5" y="-556.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Ati-oe-A8g">
@@ -544,7 +462,7 @@ DQ
                             <touchBarItem id="Akh-Rt-k46">
                                 <viewController key="viewController" id="Vjd-He-0Ey">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-jj-Wc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="156" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ofz-Zu-HlL">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -560,7 +478,7 @@ DQ
                             <touchBarItem id="LZ5-gb-ID0">
                                 <viewController key="viewController" id="oEM-lP-6Su">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-bh-lwq">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="156" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ugi-qn-5kE">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -576,7 +494,7 @@ DQ
                             <touchBarItem id="EcF-8Q-WdZ">
                                 <viewController key="viewController" id="eOC-bG-BqU">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-OE-uN1">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="End Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V5x-Lj-8od">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -592,8 +510,8 @@ DQ
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="3Ae-iD-uw5"/>
                             <touchBarItem id="gDk-AT-I4h">
                                 <viewController key="viewController" id="OdC-GI-PkU">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
-                                        <rect key="frame" x="0.0" y="30" width="116" height="3"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
+                                        <rect key="frame" x="0.0" y="-31.5" width="116" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
                                             <font key="font" metaFont="system"/>
@@ -607,7 +525,7 @@ DQ
                                         </segmentedCell>
                                     </segmentedControl>
                                 </viewController>
-                                <size key="designTimeSize" width="110" height="30"/>
+                                <size key="designTimeSize" width="112" height="30"/>
                             </touchBarItem>
                         </touchBarItems>
                     </touchBar>
@@ -619,17 +537,16 @@ DQ
             </objects>
             <point key="canvasLocation" x="658" y="109"/>
         </scene>
-        <!--TimerViewController-->
+        <!--StopwatchViewController-->
         <scene sceneID="30C-4r-SXw">
             <objects>
-                <viewController title="TimerViewController" id="ZG4-kJ-tYT" customClass="TimerViewController" customModule="SimpleClock" sceneMemberID="viewController">
+                <viewController title="StopwatchViewController" id="ZG4-kJ-tYT" customClass="StopwatchViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="B6t-4u-60E">
                         <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="menu" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-Bs-XNZ">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" blendingMode="behindWindow" material="dark" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-Bs-XNZ">
                                 <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-No-IGU">
                                         <rect key="frame" x="73" y="124" width="384" height="119"/>
@@ -669,7 +586,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-4U-QMO">
-                                        <rect key="frame" x="322" y="29" width="111" height="32"/>
+                                        <rect key="frame" x="320" y="29" width="111" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vNt-ub-QUc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -684,6 +601,12 @@ DQ
                                 </subviews>
                             </visualEffectView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tKz-Bs-XNZ" secondAttribute="trailing" id="JkO-Zh-P8n"/>
+                            <constraint firstItem="tKz-Bs-XNZ" firstAttribute="leading" secondItem="B6t-4u-60E" secondAttribute="leading" id="au5-NC-h3P"/>
+                            <constraint firstItem="tKz-Bs-XNZ" firstAttribute="top" secondItem="B6t-4u-60E" secondAttribute="top" id="oik-fT-SUz"/>
+                            <constraint firstAttribute="bottom" secondItem="tKz-Bs-XNZ" secondAttribute="bottom" id="uTe-uc-ybt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Background" destination="tKz-Bs-XNZ" id="Gby-Gr-8bm"/>
@@ -830,7 +753,7 @@ DQ
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="418"/>
+            <point key="canvasLocation" x="123" y="587"/>
         </scene>
         <!--SimpleClock-->
         <scene sceneID="hIz-AP-VOD">
@@ -840,26 +763,12 @@ DQ
                         <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="dark" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-rK-C29">
+                            <visualEffectView canDrawConcurrently="YES" focusRingType="none" appearanceType="vibrantDark" blendingMode="behindWindow" material="dark" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-rK-C29">
                                 <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-8m-gBq">
-                                        <rect key="frame" x="497" y="314" width="31" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <buttonCell key="cell" type="recessed" bezelStyle="recessed" image="buttonCell:aJE-pP-vSB:image" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="aJE-pP-vSB">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                            <font key="font" metaFont="systemBold" size="12"/>
-                                            <string key="keyEquivalent">n</string>
-                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="ClickToChangeBackground:" target="5gI-5U-AMq" id="QEs-Pi-Rzx"/>
-                                        </connections>
-                                    </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cB2-M7-tSk">
                                         <rect key="frame" x="-2" y="0.0" width="533" height="106"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="TabletClock For Android &amp; SimpleClock For Mac" id="TNd-iW-Vp6">
                                             <dateFormatter key="formatter" dateStyle="short" id="Dve-ed-UX1"/>
                                             <font key="font" metaFont="system"/>
@@ -872,7 +781,7 @@ DQ
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-4D-HbS">
                                         <rect key="frame" x="-2" y="0.0" width="533" height="257"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers>
                                             <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="3" id="c6V-SP-Hms">
                                                 <connections>
@@ -890,168 +799,61 @@ DQ
                                             <action selector="ClicktoChange:" target="5gI-5U-AMq" id="FfO-gk-nF7"/>
                                         </connections>
                                     </textField>
-                                    <button hidden="YES" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qx-kb-0uH">
-                                        <rect key="frame" x="112" y="125" width="302" height="132"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" focusRingType="none" transparent="YES" imageScaling="proportionallyDown" inset="2" id="mgK-EP-nDB">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                            <string key="keyEquivalent">s</string>
-                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="ChangeSecond:" target="5gI-5U-AMq" id="tac-Pt-zAb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <connections>
+                                    <outlet property="menu" destination="TOe-jS-hRT" id="bXV-Op-37o"/>
+                                </connections>
                             </visualEffectView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gGs-rK-C29" secondAttribute="bottom" id="6Yf-je-zEp"/>
+                            <constraint firstItem="gGs-rK-C29" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="P3t-ED-lGS"/>
+                            <constraint firstAttribute="trailing" secondItem="gGs-rK-C29" secondAttribute="trailing" id="b0u-Sy-bNy"/>
+                            <constraint firstItem="gGs-rK-C29" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="bkF-JW-YM6"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="AMInMenu" destination="EF6-Ts-Qao" id="UZk-kp-XFv"/>
                         <outlet property="Background" destination="gGs-rK-C29" id="WdW-s2-qof"/>
                         <outlet property="BackgroundView" destination="gGs-rK-C29" id="PPT-bs-Ttu"/>
                         <outlet property="CalendarLabel" destination="cB2-M7-tSk" id="nuV-rF-dY4"/>
                         <outlet property="ClockLabel" destination="rUm-4D-HbS" id="Dpf-NK-fxG"/>
-                        <outlet property="NightModeChange" destination="SIR-8m-gBq" id="uSU-Zu-w7Q"/>
-                        <outlet property="SecondChanger" destination="3Qx-kb-0uH" id="f2i-mY-AQT"/>
+                        <outlet property="SecondInMenu" destination="nOE-wM-gj5" id="1IP-VX-E4y"/>
                         <outlet property="ThemeChanger" destination="c6V-SP-Hms" id="fQA-3m-sn5"/>
                     </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="TOe-jS-hRT">
+                    <items>
+                        <menuItem title="Change Theme" id="LaZ-iS-Jtu">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="ClickToChangeBackground:" target="5gI-5U-AMq" id="kBB-Y3-1fa"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Toggle AM/PM" state="on" id="EF6-Ts-Qao">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="Change_AM_PM:" target="5gI-5U-AMq" id="0Px-hy-bi9"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Toggle Second" id="nOE-wM-gj5">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="ChangeSecond:" target="5gI-5U-AMq" id="6sw-hk-12y"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="WYy-hK-k4C"/>
+                        <menuItem title="Show Calendar" id="Jkl-eR-0Uj">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="ShowCalInMain:" target="5gI-5U-AMq" id="1ya-0G-6o2"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
-            <point key="canvasLocation" x="35.5" y="991.5"/>
+            <point key="canvasLocation" x="123" y="1072"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="buttonCell:aJE-pP-vSB:image" width="1" height="1">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
-ExQZHh8jJCsuMTtDR0tPUlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdz
-Vk5TUmVwc1dOU0NvbG9ygAKAERIgwwAAgAOAC1Z7MSwgMX3SFQoWGFpOUy5vYmplY3RzoReABIAK0hUK
-Gh2iGxyABYAGgAkQANIgCiEiXxAUTlNUSUZGUmVwcmVzZW50YXRpb26AB4AITxEIxE1NACoAAAAKAAAA
-EAEAAAMAAAABAAEAAAEBAAMAAAABAAEAAAECAAMAAAACAAgACAEDAAMAAAABAAEAAAEGAAMAAAABAAEA
-AAEKAAMAAAABAAEAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAIAAAEWAAMAAAABAAEA
-AAEXAAQAAAABAAAAAgEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAACAAEA
-AYdzAAcAAAf0AAAA0AAAAAAAAAf0YXBwbAIgAABtbnRyR1JBWVhZWiAH0AACAA4ADAAAAABhY3NwQVBQ
-TAAAAABub25lAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVkZXNjAAAAwAAAAG9kc2NtAAABMAAABmZjcHJ0AAAH
-mAAAADh3dHB0AAAH0AAAABRrVFJDAAAH5AAAAA5kZXNjAAAAAAAAABVHZW5lcmljIEdyYXkgUHJvZmls
-ZQAAAAAAAAAAAAAAFUdlbmVyaWMgR3JheSBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sAAAAqAAABhGVuVVMAAAAoAAAB
-rmNhRVMAAAAsAAAB1nZpVk4AAAAsAAACAnB0QlIAAAAqAAACLnVrVUEAAAAsAAACWGZyRlUAAAAqAAAC
-hGh1SFUAAAAuAAACrnpoVFcAAAAQAAAC3G5iTk8AAAAsAAAC7GtvS1IAAAAYAAADGGNzQ1oAAAAkAAAD
-MGhlSUwAAAAgAAADVHJvUk8AAAAkAAADdGRlREUAAAA6AAADmGl0SVQAAAAuAAAD0nN2U0UAAAAuAAAE
-AHpoQ04AAAAQAAAELmphSlAAAAAWAAAEPmVsR1IAAAAkAAAEVHB0UE8AAAA4AAAEeG5sTkwAAAAqAAAE
-sGVzRVMAAAAoAAAE2nRoVEgAAAAkAAAFAnRyVFIAAAAiAAAFJmZpRkkAAAAsAAAFSGhySFIAAAA6AAAF
-dHBsUEwAAAA2AAAFrnJ1UlUAAAAmAAAF5GFyRUcAAAAoAAAGCmRhREsAAAA0AAAGMgBWAWEAZQBvAGIA
-ZQBjAG4A/QAgAHMAaQB2AP0AIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAaQBjACAARwByAGEAeQAgAFAA
-cgBvAGYAaQBsAGUAUABlAHIAZgBpAGwAIABkAGUAIABnAHIAaQBzACAAZwBlAG4A6AByAGkAYwBDHqUA
-dQAgAGgA7ABuAGgAIABNAOAAdQAgAHgA4QBtACAAQwBoAHUAbgBnAFAAZQByAGYAaQBsACAAQwBpAG4A
-egBhACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAEcA
-cgBhAHkAUAByAG8AZgBpAGwAIABnAOkAbgDpAHIAaQBxAHUAZQAgAGcAcgBpAHMAwQBsAHQAYQBsAOEA
-bgBvAHMAIABzAHoA/AByAGsAZQAgAHAAcgBvAGYAaQBskBp1KHBwlo6Ccl9pY8+P8ABHAGUAbgBlAHIA
-aQBzAGsAIABnAHIA5QB0AG8AbgBlAHAAcgBvAGYAaQBsx3y8GAAgAEcAcgBhAHkAINUEuFzTDMd8AE8A
-YgBlAGMAbgD9ACABYQBlAGQA/QAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAARwByAGEAeQAgBdsF
-3AXcBdkAUAByAG8AZgBpAGwAIABnAHIAaQAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A
-ZQBzACAARwByAGEAdQBzAHQAdQBmAGUAbgAtAFAAcgBvAGYAaQBsAFAAcgBvAGYAaQBsAG8AIABnAHIA
-aQBnAGkAbwAgAGcAZQBuAGUAcgBpAGMAbwBHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QBzAGsAYQBsAGUA
-cAByAG8AZgBpAGxmbpAacHBepmPPj/Blh072TgCCLDCwMOwwpDDXMO0w1TChMKQw6wOTA7UDvQO5A7oD
-zAAgA8ADwQO/A8YDrwO7ACADswO6A8EDuQBQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQA
-ZQAgAGMAaQBuAHoAZQBuAHQAbwBzAEEAbABnAGUAbQBlAGUAbgAgAGcAcgBpAGoAcwBwAHIAbwBmAGkA
-ZQBsAFAAZQByAGYAaQBsACAAZwByAGkAcwAgAGcAZQBuAOkAcgBpAGMAbw5CDhsOIw5EDh8OJQ5MDioO
-NQ5ADhcOMg4XDjEOSA4nDkQOGwBHAGUAbgBlAGwAIABHAHIAaQAgAFAAcgBvAGYAaQBsAGkAWQBsAGUA
-aQBuAGUAbgAgAGgAYQByAG0AYQBhAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAHAA
-cgBvAGYAaQBsACAAcwBpAHYAaQBoACAAdABvAG4AbwB2AGEAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAA
-cAByAG8AZgBpAGwAIABzAHoAYQByAG8BWwBjAGkEHgQxBEkEOAQ5ACAEQQQ1BEAESwQ5ACAEPwRABD4E
-RAQ4BDsETAZFBkQGQQAgBioGOQYxBkoGQQAgAEcAcgBhAHkAIAYnBkQGOQYnBkUARwBlAG4AZQByAGUA
-bAAgAGcAcgDlAHQAbwBuAGUAYgBlAHMAawByAGkAdgBlAGwAcwBlAAB0ZXh0AAAAAENvcHlyaWdodCAy
-MDA3IEFwcGxlIEluYy4sIGFsbCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUQABAAAAARbMY3Vy
-dgAAAAAAAAABAc0AANIlJicoWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycp
-KlpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLC1XTlNBcnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8s
-KtUyMzQ1CjY3ODk6V05TV2hpdGVcTlNDb21wb25lbnRzXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29s
-b3JTcGFjZUQwIDAAQzAgMBADgAyAENQ8PT4KP0BBQlROU0lEVU5TSUNDV05TTW9kZWwQCYANEACAD9JE
-CkVGV05TLmRhdGFPERFoAAARaGFwcGwCAAAAbW50ckdSQVlYWVogB9wACAAXAA8ALgAPYWNzcEFQUEwA
-AAAAbm9uZQAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZGVzYwAAAMAAAAB5ZHNjbQAAATwAAAfoY3BydAAACSQA
-AAAjd3RwdAAACUgAAAAUa1RSQwAACVwAAAgMZGVzYwAAAAAAAAAfR2VuZXJpYyBHcmF5IEdhbW1hIDIu
-MiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxza1NLAAAALgAAAYRk
-YURLAAAAOAAAAbJjYUVTAAAAOAAAAep2aVZOAAAAQAAAAiJwdEJSAAAASgAAAmJ1a1VBAAAALAAAAqxm
-ckZVAAAAPgAAAthodUhVAAAANAAAAxZ6aFRXAAAAHgAAA0puYk5PAAAAOgAAA2hjc0NaAAAAKAAAA6Jo
-ZUlMAAAAJAAAA8ppdElUAAAATgAAA+5yb1JPAAAAKgAABDxkZURFAAAATgAABGZrb0tSAAAAIgAABLRz
-dlNFAAAAOAAAAbJ6aENOAAAAHgAABNZqYUpQAAAAJgAABPRlbEdSAAAAKgAABRpwdFBPAAAAUgAABURu
-bE5MAAAAQAAABZZlc0VTAAAATAAABdZ0aFRIAAAAMgAABiJ0clRSAAAAJAAABlRmaUZJAAAARgAABnho
-ckhSAAAAPgAABr5wbFBMAAAASgAABvxydVJVAAAAOgAAB0ZlblVTAAAAPAAAB4BhckVHAAAALAAAB7wA
-VgFhAGUAbwBiAGUAYwBuAOEAIABzAGkAdgDhACAAZwBhAG0AYQAgADIALAAyAEcAZQBuAGUAcgBpAHMA
-awAgAGcAcgDlACAAMgAsADIAIABnAGEAbQBtAGEAcAByAG8AZgBpAGwARwBhAG0AbQBhACAAZABlACAA
-ZwByAGkAcwBvAHMAIABnAGUAbgDoAHIAaQBjAGEAIAAyAC4AMgBDHqUAdQAgAGgA7ABuAGgAIABNAOAA
-dQAgAHgA4QBtACAAQwBoAHUAbgBnACAARwBhAG0AbQBhACAAMgAuADIAUABlAHIAZgBpAGwAIABHAGUA
-bgDpAHIAaQBjAG8AIABkAGEAIABHAGEAbQBhACAAZABlACAAQwBpAG4AegBhAHMAIAAyACwAMgQXBDAE
-MwQwBDsETAQ9BDAAIABHAHIAYQB5AC0EMwQwBDwEMAAgADIALgAyAFAAcgBvAGYAaQBsACAAZwDpAG4A
-6QByAGkAcQB1AGUAIABnAHIAaQBzACAAZwBhAG0AbQBhACAAMgAsADIAwQBsAHQAYQBsAOEAbgBvAHMA
-IABzAHoA/AByAGsAZQAgAGcAYQBtAG0AYQAgADIALgAykBp1KHBwlo5RSV6mACAAMgAuADIAIIJyX2lj
-z4/wAEcAZQBuAGUAcgBpAHMAawAgAGcAcgDlACAAZwBhAG0AbQBhACAAMgAsADIALQBwAHIAbwBmAGkA
-bABPAGIAZQBjAG4A4QAgAWEAZQBkAOEAIABnAGEAbQBhACAAMgAuADIF0gXQBd4F1AAgBdAF5AXVBegA
-IAXbBdwF3AXZACAAMgAuADIAUAByAG8AZgBpAGwAbwAgAGcAcgBpAGcAaQBvACAAZwBlAG4AZQByAGkA
-YwBvACAAZABlAGwAbABhACAAZwBhAG0AbQBhACAAMgAsADIARwBhAG0AYQAgAGcAcgBpACAAZwBlAG4A
-ZQByAGkAYwEDACAAMgAsADIAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAARwByAGEAdQBzAHQAdQBmAGUA
-bgAtAFAAcgBvAGYAaQBsACAARwBhAG0AbQBhACAAMgAsADLHfLwYACDWjMDJACCsELnIACAAMgAuADIA
-INUEuFzTDMd8Zm6QGnBwXqZ8+2VwACAAMgAuADIAIGPPj/Blh072TgCCLDCwMOwwpDCsMPMw3gAgADIA
-LgAyACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAOTA7oDwQO5ACADkwOsA7wDvAOxACAAMgAuADIA
-UABlAHIAZgBpAGwAIABnAGUAbgDpAHIAaQBjAG8AIABkAGUAIABjAGkAbgB6AGUAbgB0AG8AcwAgAGQA
-YQAgAEcAYQBtAG0AYQAgADIALAAyAEEAbABnAGUAbQBlAGUAbgAgAGcAcgBpAGoAcwAgAGcAYQBtAG0A
-YQAgADIALAAyAC0AcAByAG8AZgBpAGUAbABQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQA
-ZQAgAGcAYQBtAG0AYQAgAGQAZQAgAGcAcgBpAHMAZQBzACAAMgAsADIOIw4xDgcOKg41DkEOAQ4hDiEO
-Mg5ADgEOIw4iDkwOFw4xDkgOJw5EDhsAIAAyAC4AMgBHAGUAbgBlAGwAIABHAHIAaQAgAEcAYQBtAGEA
-IAAyACwAMgBZAGwAZQBpAG4AZQBuACAAaABhAHIAbQBhAGEAbgAgAGcAYQBtAG0AYQAgADIALAAyACAA
-LQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABHAHIAYQB5ACAARwBhAG0AbQBhACAA
-MgAuADIAIABwAHIAbwBmAGkAbABVAG4AaQB3AGUAcgBzAGEAbABuAHkAIABwAHIAbwBmAGkAbAAgAHMA
-egBhAHIAbwFbAGMAaQAgAGcAYQBtAG0AYQAgADIALAAyBB4EMQRJBDAETwAgBEEENQRABDAETwAgBDME
-MAQ8BDwEMAAgADIALAAyAC0EPwRABD4ERAQ4BDsETABHAGUAbgBlAHIAaQBjACAARwByAGEAeQAgAEcA
-YQBtAG0AYQAgADIALgAyACAAUAByAG8AZgBpAGwAZQY6BicGRQYnACAAMgAuADIAIAZEBkgGRgAgBjEG
-RQYnBi8GSgAgBjkGJwZFdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUgSW5jLiwgMjAxMgAAWFlaIAAAAAAA
-APNRAAEAAAABFsxjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQA
-WQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA
-8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEB
-uQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsEC
-ywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAE
-LQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF
-5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH
-+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQK
-agqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYN
-QA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQ
-fhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYU
-JxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsY
-QBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMc
-zBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEh
-ziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgn
-SSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwt
-QS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38z
-uDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6
-sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5C
-MEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBK
-N0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxS
-x1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb
-5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1l
-kmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv
-0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6
-pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauG
-DoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiS
-EZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCe
-rp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr
-6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5
-wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/I
-Pci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjX
-XNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbn
-H+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3
-ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//4AO0iUmSEldTlNNdXRhYmxlRGF0YaNISipWTlNE
-YXRh0iUmTE1cTlNDb2xvclNwYWNlok4qXE5TQ29sb3JTcGFjZdIlJlBRV05TQ29sb3KiUCrSJSZTVFdO
-U0ltYWdlolMqXxAPTlNLZXllZEFyY2hpdmVy0VdYVHJvb3SAAQAIABEAGgAjAC0AMgA3AEwAUgBdAGQA
-awB4AH8AhwCJAIsAkACSAJQAmwCgAKsArQCvALEAtgC5ALsAvQC/AMEAxgDdAN8A4QmpCa4JuQnCCdUJ
-2QnkCe0J8gn6Cf0KAgoRChUKIAooCjUKQgpXClwKYApiCmQKZgpvCnQKegqCCoQKhgqICooKjwqXHAMc
-BRwKHBgcHBwjHCgcNRw4HEUcShxSHFUcWhxiHGUcdxx6HH8AAAAAAAACAQAAAAAAAABZAAAAAAAAAAAA
-AAAAAAAcgQ
-</mutableData>
-        </image>
-    </resources>
 </document>

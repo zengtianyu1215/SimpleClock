@@ -26,6 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(url!)
     }
     
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+    
     @IBAction func CheckUpdate(_ sender: Any) {
         let url = URL.init(string: "https://github.com/zengtianyu1215/SimpleClock/releases")
         NSWorkspace.shared.open(url!)
