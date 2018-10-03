@@ -21,7 +21,7 @@ class ViewController: NSViewController {
     var is24H = Bool(true)
     @IBOutlet weak var ThemeChanger: NSClickGestureRecognizer!
     @IBOutlet weak var Background: NSVisualEffectView!
-    
+    var isLoading = Bool(true)
     @IBOutlet weak var SecondInMenu: NSMenuItem!
     @IBOutlet weak var AMInMenu: NSMenuItem!
     
@@ -48,7 +48,17 @@ class ViewController: NSViewController {
             ChangeSecond(Any.self)
         }
         timer.fire();
+        isLoading = false
     }
+    
+    override func viewWillDisappear() {
+        let defau = UserDefaults.standard
+        defau.setValue(is24H, forKey: "ShowAM?")
+        defau.setValue(isSecond, forKey: "ShowSecond?")
+        defau.setValue(isNightMode, forKey: "DarkTheme?")
+        super.viewWillDisappear()
+    }
+    
     @IBAction func ShowCalInMain(_ sender: Any) {
         let window = NSApplication.shared.mainWindow?.windowController as! WindowController
         window.openCal(Any.self)
@@ -63,13 +73,17 @@ class ViewController: NSViewController {
         if isSecond {
             isSecond = false
             SecondInMenu.state = .off
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.SecondChanger.selectedSegment = 0
+            if(!isLoading){
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.SecondChanger.selectedSegment = 0
+            }
         }else{
             isSecond = true
             SecondInMenu.state = .on
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.SecondChanger.selectedSegment = 1
+            if(!isLoading){
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.SecondChanger.selectedSegment = 1
+            }
         }
     }
     
@@ -77,13 +91,17 @@ class ViewController: NSViewController {
         if is24H {
             is24H = false
             AMInMenu.state = .off
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.H24Changer.selectedSegment = 0
+            if !isLoading{
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.H24Changer.selectedSegment = 0
+            }
         }else{
             is24H = true
             AMInMenu.state = .on
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.H24Changer.selectedSegment = 1
+            if !isLoading{
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.H24Changer.selectedSegment = 1
+            }
         }
     }
     @IBAction func ClickToChangeBackgroundInWindow(_ sender: Any) {
@@ -96,15 +114,19 @@ class ViewController: NSViewController {
             ClockLabel.textColor = NSColor.black
             CalendarLabel.textColor = NSColor.black
             isNightMode = false
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.ModeChanger.selectedSegment = 0
+            if !isLoading{
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.ModeChanger.selectedSegment = 0
+            }
         }else{
             BackgroundView.material =  NSVisualEffectView.Material.dark
             ClockLabel.textColor = NSColor.white
             CalendarLabel.textColor = NSColor.white
             isNightMode = true
-//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-//            Window.ModeChanger.selectedSegment = 1
+            if !isLoading{
+                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+                Window.ModeChanger.selectedSegment = 1
+            }
         }
     }
    
