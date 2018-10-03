@@ -23,6 +23,13 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Preference" id="63Z-vx-ClR">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <segue destination="1B9-8q-nPe" kind="show" id="27Q-c5-IhM"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="CsI-sg-vtm"/>
                                         <menuItem title="Check for Update from GitHub" keyEquivalent="U" id="hwr-Lb-HB2">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
@@ -153,13 +160,155 @@
                     <connections>
                         <outlet property="DevGithub" destination="reN-dW-1lZ" id="4Ro-BL-48X"/>
                         <outlet property="SimpleGithub" destination="5bG-Uq-FYZ" id="r15-WA-Ldf"/>
+                        <outlet property="dockMenu" destination="toW-2I-gkv" id="QuO-QX-d2Y"/>
                     </connections>
                 </customObject>
+                <menu id="toW-2I-gkv">
+                    <items>
+                        <menuItem title="SimpleClock" keyEquivalent="C" id="GOj-dF-Wbs">
+                            <connections>
+                                <segue destination="jGA-0Y-lOj" kind="show" id="1hk-Ib-D3x"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Stopwatch" keyEquivalent="S" id="ATR-k9-Uhh">
+                            <connections>
+                                <segue destination="zWa-RP-J5V" kind="show" id="o2f-2I-bPm"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Timer" keyEquivalent="T" id="dKC-BC-WOh">
+                            <connections>
+                                <segue destination="zwL-UC-LHZ" kind="show" id="xQJ-Ug-91q"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="DLv-lY-pnQ"/>
+                        <menuItem title="View SimpleClock GitHub Pages" id="xkl-Nj-yMZ">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="SimpleGithubView:" target="Voe-Tx-rLC" id="f4W-rz-55s"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="View Developer's GitHub Pages" id="wjX-iE-UCM">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="DevGithubView:" target="Voe-Tx-rLC" id="3An-0k-a6q"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Check for Update from GitHub" keyEquivalent="U" id="byl-x4-XTP">
+                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                            <connections>
+                                <action selector="CheckUpdate:" target="Voe-Tx-rLC" id="wIA-Qk-zug"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="tn3-qc-M10"/>
             </objects>
             <point key="canvasLocation" x="-1" y="-277"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="Qka-RH-bS6">
+            <objects>
+                <windowController id="1B9-8q-nPe" sceneMemberID="viewController">
+                    <window key="window" title="SimpleClock Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="K7H-0a-4R9">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="198" y="470" width="529" height="333"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+                        <value key="minSize" type="size" width="529" height="333"/>
+                        <value key="maxSize" type="size" width="529" height="333"/>
+                        <connections>
+                            <outlet property="delegate" destination="1B9-8q-nPe" id="jRu-fo-i1i"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XkM-dt-wNE" kind="relationship" relationship="window.shadowedContentViewController" id="q8r-zW-TcX"/>
+                    </connections>
+                </windowController>
+                <customObject id="5Jz-EB-r8f" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579.5" y="147"/>
+        </scene>
+        <!--Preference View Controller-->
+        <scene sceneID="Lt3-M0-Ahk">
+            <objects>
+                <viewController id="XkM-dt-wNE" customClass="PreferenceViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="CpW-em-aOK">
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tabView translatesAutoresizingMaskIntoConstraints="NO" id="qT3-gr-db6">
+                                <rect key="frame" x="5" y="2" width="519" height="325"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="SimpleClock Preference Switch" identifier="" id="Vbh-Hq-Rl8">
+                                        <view key="view" id="ydt-kn-GLn">
+                                            <rect key="frame" x="10" y="33" width="499" height="279"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-Hs-OEZ">
+                                                    <rect key="frame" x="15" y="260" width="469" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Show AM/PM In Clock Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="5Kf-8R-OJw">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-H8-BCQ">
+                                                    <rect key="frame" x="15" y="231" width="469" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Show Seconds In Clock Interface" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0Ev-NH-OH5">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-55-hYv">
+                                                    <rect key="frame" x="15" y="202" width="469" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Show Dark Theme as Default Theme In Clock Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TMf-Bp-73J">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Pe2-Hs-OEZ" secondAttribute="trailing" constant="17" id="JpV-hQ-pVX"/>
+                                                <constraint firstItem="GTv-H8-BCQ" firstAttribute="top" secondItem="Pe2-Hs-OEZ" secondAttribute="bottom" constant="15" id="QL2-Kc-LNf"/>
+                                                <constraint firstItem="Tb7-55-hYv" firstAttribute="top" secondItem="GTv-H8-BCQ" secondAttribute="bottom" constant="15" id="VSR-Ux-oJz"/>
+                                                <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="emJ-BT-xqD"/>
+                                                <constraint firstItem="Tb7-55-hYv" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="eyc-gS-nWZ"/>
+                                                <constraint firstItem="Tb7-55-hYv" firstAttribute="top" secondItem="GTv-H8-BCQ" secondAttribute="bottom" constant="15" id="ha9-os-Xic"/>
+                                                <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="top" secondItem="ydt-kn-GLn" secondAttribute="top" constant="3" id="ivr-nY-Nor"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tb7-55-hYv" secondAttribute="trailing" constant="17" id="nxt-oX-XdO"/>
+                                                <constraint firstAttribute="trailing" secondItem="GTv-H8-BCQ" secondAttribute="trailing" constant="17" id="ps7-ER-YJF"/>
+                                                <constraint firstItem="GTv-H8-BCQ" firstAttribute="top" secondItem="Pe2-Hs-OEZ" secondAttribute="bottom" constant="15" id="pya-1n-feT"/>
+                                                <constraint firstItem="GTv-H8-BCQ" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="yqH-1f-WMs"/>
+                                            </constraints>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="SimpleClock Font" identifier="" id="iDh-80-elb">
+                                        <view key="view" id="taf-1g-tyt">
+                                            <rect key="frame" x="10" y="33" width="499" height="279"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qT3-gr-db6" secondAttribute="bottom" constant="12" id="MqD-9V-a0M"/>
+                            <constraint firstItem="qT3-gr-db6" firstAttribute="leading" secondItem="CpW-em-aOK" secondAttribute="leading" constant="12" id="R2Z-hD-6X6"/>
+                            <constraint firstItem="qT3-gr-db6" firstAttribute="top" secondItem="CpW-em-aOK" secondAttribute="top" constant="12" id="Yx1-Wg-4LV"/>
+                            <constraint firstAttribute="trailing" secondItem="qT3-gr-db6" secondAttribute="trailing" constant="12" id="zWc-JC-v6x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DarkTheme" destination="Tb7-55-hYv" id="wvS-70-Pkb"/>
+                        <outlet property="ShowAMPM" destination="Pe2-Hs-OEZ" id="YLm-cr-jEN"/>
+                        <outlet property="ShowSecond" destination="GTv-H8-BCQ" id="rQ0-Jj-emf"/>
+                    </connections>
+                </viewController>
+                <customObject id="Etf-kV-v72" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580.5" y="745"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Qbe-eY-nLl">
@@ -168,7 +317,7 @@
                     <window key="window" title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="5y7-zX-MCb">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="240" width="529" height="333"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
                         <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
                             <outlet property="delegate" destination="zwL-UC-LHZ" id="d1W-JH-pQl"/>
@@ -193,7 +342,7 @@
                             <touchBarItem id="q9u-cU-0gF">
                                 <viewController key="viewController" id="qez-3C-YRK">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qu1-Ej-IpY">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sGh-7m-x0h">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -209,7 +358,7 @@
                             <touchBarItem id="lgH-za-WKi">
                                 <viewController key="viewController" id="r8k-Z7-QS1">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-77-2Un">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nfN-iZ-bPb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -225,7 +374,7 @@
                             <touchBarItem id="eTu-T7-zox">
                                 <viewController key="viewController" id="Q5h-2h-oqQ">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YS2-2d-tBS">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="End Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zwn-HV-Snl">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -241,7 +390,7 @@
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="H2f-sd-tvc"/>
                             <touchBarItem id="5cA-MP-WLP">
                                 <viewController key="viewController" id="ru6-Pf-4z1">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
@@ -461,7 +610,7 @@ DQ
                             <touchBarItem id="Akh-Rt-k46">
                                 <viewController key="viewController" id="Vjd-He-0Ey">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-jj-Wc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="156" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ofz-Zu-HlL">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -477,7 +626,7 @@ DQ
                             <touchBarItem id="LZ5-gb-ID0">
                                 <viewController key="viewController" id="oEM-lP-6Su">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-bh-lwq">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="156" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ugi-qn-5kE">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -493,7 +642,7 @@ DQ
                             <touchBarItem id="EcF-8Q-WdZ">
                                 <viewController key="viewController" id="eOC-bG-BqU">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-OE-uN1">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="-11" width="151" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="End Stopwatch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V5x-Lj-8od">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -509,7 +658,7 @@ DQ
                             <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="3Ae-iD-uw5"/>
                             <touchBarItem id="gDk-AT-I4h">
                                 <viewController key="viewController" id="OdC-GI-PkU">
-                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
@@ -610,7 +759,6 @@ DQ
                     <connections>
                         <outlet property="Background" destination="tKz-Bs-XNZ" id="Gby-Gr-8bm"/>
                         <outlet property="End" destination="Dzu-4U-QMO" id="HM9-t2-GnE"/>
-                        <outlet property="EndTimer" destination="Dzu-4U-QMO" id="uzB-u4-kmB"/>
                         <outlet property="Pause" destination="TVU-6s-wU6" id="FFd-kI-Vky"/>
                         <outlet property="TimerLabel" destination="RL6-No-IGU" id="aq3-CC-WbS"/>
                         <outlet property="TimerStartEnd" destination="N3b-w8-Gst" id="e06-ro-K3N"/>
@@ -848,4 +996,9 @@ DQ
             <point key="canvasLocation" x="123" y="1072"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ab7-cH-wNA"/>
+        <segue reference="o2f-2I-bPm"/>
+        <segue reference="sow-GF-fri"/>
+    </inferredMetricsTieBreakers>
 </document>

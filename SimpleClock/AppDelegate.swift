@@ -14,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var windowController: NSWindowController?    
     
+    @IBOutlet weak var dockMenu: NSMenu!
     @IBOutlet weak var SimpleGithub: NSMenuItem!
     @IBAction func SimpleGithubView(_ sender: NSMenuItem) {
         let url = URL.init(string: "https://zengtianyu1215.github.io/SimpleClock/")
@@ -52,7 +53,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
+    
+    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
+        return dockMenu
+    }
+    
 }
 

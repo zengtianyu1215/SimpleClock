@@ -10,7 +10,6 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-        
     @IBOutlet weak var ClockLabel: NSTextField!
     @IBOutlet weak var CalendarLabel: NSTextField!
     @IBOutlet weak var BackgroundView: NSVisualEffectView!
@@ -28,11 +27,26 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkTheme?")
+        let AM = defau.bool(forKey: "ShowAM?")
+        let Sec = defau.bool(forKey: "ShowSecond?")
+        
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
         timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (timer) in
             self.timerMain()
         })
+        
+        if !dark{
+            ClickToChangeBackground(Any.self)
+        }
+        if !AM {
+            Change_AM_PM(Any.self)
+        }
+        if Sec {
+            ChangeSecond(Any.self)
+        }
         timer.fire();
     }
     @IBAction func ShowCalInMain(_ sender: Any) {
@@ -49,13 +63,13 @@ class ViewController: NSViewController {
         if isSecond {
             isSecond = false
             SecondInMenu.state = .off
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.SecondChanger.selectedSegment = 0
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.SecondChanger.selectedSegment = 0
         }else{
             isSecond = true
             SecondInMenu.state = .on
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.SecondChanger.selectedSegment = 1
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.SecondChanger.selectedSegment = 1
         }
     }
     
@@ -63,13 +77,13 @@ class ViewController: NSViewController {
         if is24H {
             is24H = false
             AMInMenu.state = .off
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.H24Changer.selectedSegment = 0
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.H24Changer.selectedSegment = 0
         }else{
             is24H = true
             AMInMenu.state = .on
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.H24Changer.selectedSegment = 1
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.H24Changer.selectedSegment = 1
         }
     }
     @IBAction func ClickToChangeBackgroundInWindow(_ sender: Any) {
@@ -82,15 +96,15 @@ class ViewController: NSViewController {
             ClockLabel.textColor = NSColor.black
             CalendarLabel.textColor = NSColor.black
             isNightMode = false
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.ModeChanger.selectedSegment = 0
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.ModeChanger.selectedSegment = 0
         }else{
             BackgroundView.material =  NSVisualEffectView.Material.dark
             ClockLabel.textColor = NSColor.white
             CalendarLabel.textColor = NSColor.white
             isNightMode = true
-            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-            Window.ModeChanger.selectedSegment = 1
+//            let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
+//            Window.ModeChanger.selectedSegment = 1
         }
     }
    

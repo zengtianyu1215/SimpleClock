@@ -32,6 +32,7 @@
 		7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82555201C4393006C5566 /* StopwatchWindowController.swift */; };
 		7DB33020206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
 		7DB33021206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
+		7DB9D54A2164735B00403AD3 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */; };
 		7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* StopwatchViewController.swift */; };
 		7DFDFA86201B77E8005E30AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFA85201B77E8005E30AE /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +108,7 @@
 		7DA82551201C39DF006C5566 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
 		7DA82555201C4393006C5566 /* StopwatchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchWindowController.swift; sourceTree = "<group>"; };
+		7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		7DC6DA14206FD9810088797D /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		7DFDFA85201B77E8005E30AE /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = SimpleClock/ViewController/TimerViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				7DC6DA14206FD9810088797D /* StopwatchViewController.swift */,
 				7DFDFA85201B77E8005E30AE /* TimerViewController.swift */,
 				7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */,
+				7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */,
 				7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */,
 				7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */,
+				7DB9D54A2164735B00403AD3 /* PreferenceViewController.swift in Sources */,
 				7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */,
 				7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */,
 				7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */,

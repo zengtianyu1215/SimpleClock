@@ -19,6 +19,23 @@ class WindowController: NSWindowController {
     var calendar : LunarCalendarView!
     var dateFormatter:DateFormatter!
     
+    override func windowWillLoad() {
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkTheme?")
+        let AM = defau.bool(forKey: "ShowAM?")
+        let Sec = defau.bool(forKey: "ShowSecond?")
+        if !dark {
+            ModeChanger.selectedSegment = 0
+        }
+        if !AM {
+            H24Changer.selectedSegment = 0
+        }
+        if Sec {
+            SecondChanger.selectedSegment = 1
+        }
+        super.windowWillLoad()
+    }
+    
     @IBAction func ChangeSecond(_ sender: NSSegmentedControl) {
         let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
         if SecondChanger.isSelected(forSegment: 0) {
