@@ -180,6 +180,13 @@
                                 <segue destination="zwL-UC-LHZ" kind="show" id="xQJ-Ug-91q"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="Hz3-qn-lm0"/>
+                        <menuItem title="Preference" id="2GA-Ny-a4t">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <segue destination="1B9-8q-nPe" kind="show" id="Nnj-Hr-S5m"/>
+                            </connections>
+                        </menuItem>
                         <menuItem isSeparatorItem="YES" id="DLv-lY-pnQ"/>
                         <menuItem title="View SimpleClock GitHub Pages" id="xkl-Nj-yMZ">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -211,8 +218,8 @@
         <scene sceneID="Qka-RH-bS6">
             <objects>
                 <windowController id="1B9-8q-nPe" sceneMemberID="viewController">
-                    <window key="window" title="SimpleClock Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="K7H-0a-4R9">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
+                    <window key="window" title="SimpleClock Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="K7H-0a-4R9">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="198" y="470" width="529" height="333"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
@@ -235,58 +242,89 @@
             <objects>
                 <viewController id="XkM-dt-wNE" customClass="PreferenceViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CpW-em-aOK">
-                        <rect key="frame" x="0.0" y="0.0" width="529" height="333"/>
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="255"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <tabView translatesAutoresizingMaskIntoConstraints="NO" id="qT3-gr-db6">
-                                <rect key="frame" x="5" y="2" width="519" height="325"/>
+                                <rect key="frame" x="5" y="2" width="519" height="247"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="SimpleClock Preference Switch" identifier="" id="Vbh-Hq-Rl8">
                                         <view key="view" id="ydt-kn-GLn">
-                                            <rect key="frame" x="10" y="33" width="499" height="279"/>
+                                            <rect key="frame" x="10" y="33" width="499" height="201"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-Hs-OEZ">
-                                                    <rect key="frame" x="15" y="260" width="469" height="18"/>
+                                                    <rect key="frame" x="15" y="182" width="469" height="18"/>
                                                     <buttonCell key="cell" type="check" title="Show AM/PM In Clock Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="5Kf-8R-OJw">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-H8-BCQ">
-                                                    <rect key="frame" x="15" y="231" width="469" height="18"/>
+                                                    <rect key="frame" x="15" y="153" width="469" height="18"/>
                                                     <buttonCell key="cell" type="check" title="Show Seconds In Clock Interface" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0Ev-NH-OH5">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-55-hYv">
-                                                    <rect key="frame" x="15" y="202" width="469" height="18"/>
+                                                    <rect key="frame" x="15" y="124" width="469" height="18"/>
                                                     <buttonCell key="cell" type="check" title="Show Dark Theme as Default Theme In Clock Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TMf-Bp-73J">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                 </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i8L-N7-GWu">
+                                                    <rect key="frame" x="15" y="95" width="469" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Show Dark Theme as Default Theme In Timer Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ek7-er-BZ9">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-Kj-7HV">
+                                                    <rect key="frame" x="15" y="66" width="469" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Show Dark Theme as Default Theme In Stopwatch Interface" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cZ1-fc-qW7">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZLN-WS-fxx">
+                                                    <rect key="frame" x="11" y="10" width="477" height="32"/>
+                                                    <buttonCell key="cell" type="push" title="Apply" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dAe-zQ-vEb">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ZLN-WS-fxx" secondAttribute="trailing" constant="17" id="APB-qz-mM6"/>
                                                 <constraint firstAttribute="trailing" secondItem="Pe2-Hs-OEZ" secondAttribute="trailing" constant="17" id="JpV-hQ-pVX"/>
                                                 <constraint firstItem="GTv-H8-BCQ" firstAttribute="top" secondItem="Pe2-Hs-OEZ" secondAttribute="bottom" constant="15" id="QL2-Kc-LNf"/>
+                                                <constraint firstItem="ZLN-WS-fxx" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="QYc-FF-pEe"/>
                                                 <constraint firstItem="Tb7-55-hYv" firstAttribute="top" secondItem="GTv-H8-BCQ" secondAttribute="bottom" constant="15" id="VSR-Ux-oJz"/>
+                                                <constraint firstItem="i8L-N7-GWu" firstAttribute="top" secondItem="Tb7-55-hYv" secondAttribute="bottom" constant="15" id="b0z-an-7RF"/>
+                                                <constraint firstAttribute="trailing" secondItem="iBH-Kj-7HV" secondAttribute="trailing" constant="17" id="drb-1J-8M3"/>
+                                                <constraint firstItem="i8L-N7-GWu" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="eOQ-D5-nwX"/>
                                                 <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="emJ-BT-xqD"/>
                                                 <constraint firstItem="Tb7-55-hYv" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="eyc-gS-nWZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZLN-WS-fxx" secondAttribute="bottom" constant="17" id="gKU-8C-eeu"/>
                                                 <constraint firstItem="Tb7-55-hYv" firstAttribute="top" secondItem="GTv-H8-BCQ" secondAttribute="bottom" constant="15" id="ha9-os-Xic"/>
                                                 <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="top" secondItem="ydt-kn-GLn" secondAttribute="top" constant="3" id="ivr-nY-Nor"/>
+                                                <constraint firstItem="ZLN-WS-fxx" firstAttribute="top" secondItem="iBH-Kj-7HV" secondAttribute="bottom" constant="30" id="jKy-OO-Yhq"/>
                                                 <constraint firstAttribute="trailing" secondItem="Tb7-55-hYv" secondAttribute="trailing" constant="17" id="nxt-oX-XdO"/>
                                                 <constraint firstAttribute="trailing" secondItem="GTv-H8-BCQ" secondAttribute="trailing" constant="17" id="ps7-ER-YJF"/>
                                                 <constraint firstItem="GTv-H8-BCQ" firstAttribute="top" secondItem="Pe2-Hs-OEZ" secondAttribute="bottom" constant="15" id="pya-1n-feT"/>
+                                                <constraint firstItem="iBH-Kj-7HV" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="uQn-Fc-Poa"/>
+                                                <constraint firstItem="iBH-Kj-7HV" firstAttribute="top" secondItem="i8L-N7-GWu" secondAttribute="bottom" constant="15" id="wEN-q3-r1a"/>
+                                                <constraint firstAttribute="trailing" secondItem="i8L-N7-GWu" secondAttribute="trailing" constant="17" id="wud-aQ-4fx"/>
                                                 <constraint firstItem="GTv-H8-BCQ" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="yqH-1f-WMs"/>
                                             </constraints>
                                         </view>
                                     </tabViewItem>
                                     <tabViewItem label="SimpleClock Font" identifier="" id="iDh-80-elb">
                                         <view key="view" id="taf-1g-tyt">
-                                            <rect key="frame" x="10" y="33" width="499" height="279"/>
+                                            <rect key="frame" x="10" y="33" width="499" height="201"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </tabViewItem>
@@ -308,7 +346,7 @@
                 </viewController>
                 <customObject id="Etf-kV-v72" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580.5" y="745"/>
+            <point key="canvasLocation" x="-580.5" y="744.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Qbe-eY-nLl">
@@ -391,7 +429,7 @@
                             <touchBarItem id="5cA-MP-WLP">
                                 <viewController key="viewController" id="ru6-Pf-4z1">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="-31.5" width="116" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
                                             <font key="font" metaFont="system"/>
@@ -457,7 +495,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-r7-awt">
-                                        <rect key="frame" x="257" y="85" width="68" height="22"/>
+                                        <rect key="frame" x="256" y="85" width="68" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minute(s)" id="PLu-5X-RaX">
                                             <font key="font" metaFont="system"/>
@@ -466,7 +504,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-xh-Hes">
-                                        <rect key="frame" x="332" y="85" width="61" height="22"/>
+                                        <rect key="frame" x="331" y="85" width="61" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="right" drawsBackground="YES" usesSingleLineMode="YES" id="pyD-MS-eLq">
                                             <font key="font" metaFont="system"/>
@@ -487,7 +525,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-wQ-axS">
-                                        <rect key="frame" x="145" y="24" width="76" height="32"/>
+                                        <rect key="frame" x="144" y="24" width="76" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gFu-E3-Yet">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -502,7 +540,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhM-e0-Rmq">
-                                        <rect key="frame" x="225" y="24" width="86" height="32"/>
+                                        <rect key="frame" x="224" y="24" width="86" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rgc-KW-5EW">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -537,7 +575,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-Hp-f0s">
-                                        <rect key="frame" x="123" y="85" width="56" height="22"/>
+                                        <rect key="frame" x="122" y="85" width="56" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hour(s)" id="ZWe-mj-Wnl">
                                             <font key="font" metaFont="system"/>
@@ -546,7 +584,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <progressIndicator wantsLayer="YES" focusRingType="none" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-9q-Ju3">
-                                        <rect key="frame" x="-9" y="-8" width="542" height="20"/>
+                                        <rect key="frame" x="-10" y="-8" width="542" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </progressIndicator>
                                 </subviews>
@@ -659,7 +697,7 @@ DQ
                             <touchBarItem id="gDk-AT-I4h">
                                 <viewController key="viewController" id="OdC-GI-PkU">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="-31.5" width="116" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
                                             <font key="font" metaFont="system"/>
@@ -734,7 +772,7 @@ DQ
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-4U-QMO">
-                                        <rect key="frame" x="320" y="29" width="111" height="32"/>
+                                        <rect key="frame" x="319" y="29" width="111" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vNt-ub-QUc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -993,12 +1031,13 @@ DQ
                     </items>
                 </menu>
             </objects>
-            <point key="canvasLocation" x="123" y="1072"/>
+            <point key="canvasLocation" x="122.5" y="1071.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ab7-cH-wNA"/>
         <segue reference="o2f-2I-bPm"/>
         <segue reference="sow-GF-fri"/>
+        <segue reference="Nnj-Hr-S5m"/>
     </inferredMetricsTieBreakers>
 </document>
