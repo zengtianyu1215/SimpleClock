@@ -23,8 +23,7 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Preference" id="63Z-vx-ClR">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Preference" keyEquivalent="p" id="63Z-vx-ClR">
                                             <connections>
                                                 <segue destination="1B9-8q-nPe" kind="show" id="27Q-c5-IhM"/>
                                             </connections>
@@ -181,8 +180,7 @@
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="Hz3-qn-lm0"/>
-                        <menuItem title="Preference" id="2GA-Ny-a4t">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="Preference" keyEquivalent="p" id="2GA-Ny-a4t">
                             <connections>
                                 <segue destination="1B9-8q-nPe" kind="show" id="Nnj-Hr-S5m"/>
                             </connections>
@@ -217,7 +215,7 @@
         <!--Window Controller-->
         <scene sceneID="Qka-RH-bS6">
             <objects>
-                <windowController id="1B9-8q-nPe" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="1B9-8q-nPe" sceneMemberID="viewController">
                     <window key="window" title="SimpleClock Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="K7H-0a-4R9">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -242,16 +240,16 @@
             <objects>
                 <viewController id="XkM-dt-wNE" customClass="PreferenceViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CpW-em-aOK">
-                        <rect key="frame" x="0.0" y="0.0" width="529" height="255"/>
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="269"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <tabView translatesAutoresizingMaskIntoConstraints="NO" id="qT3-gr-db6">
-                                <rect key="frame" x="5" y="2" width="519" height="247"/>
+                                <rect key="frame" x="5" y="4" width="519" height="261"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="SimpleClock Preference Switch" identifier="" id="Vbh-Hq-Rl8">
                                         <view key="view" id="ydt-kn-GLn">
-                                            <rect key="frame" x="10" y="33" width="499" height="201"/>
+                                            <rect key="frame" x="10" y="33" width="499" height="215"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-Hs-OEZ">
@@ -310,12 +308,12 @@
                                                 <constraint firstItem="Tb7-55-hYv" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="eyc-gS-nWZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZLN-WS-fxx" secondAttribute="bottom" constant="17" id="gKU-8C-eeu"/>
                                                 <constraint firstItem="Tb7-55-hYv" firstAttribute="top" secondItem="GTv-H8-BCQ" secondAttribute="bottom" constant="15" id="ha9-os-Xic"/>
-                                                <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="top" secondItem="ydt-kn-GLn" secondAttribute="top" constant="3" id="ivr-nY-Nor"/>
                                                 <constraint firstItem="ZLN-WS-fxx" firstAttribute="top" secondItem="iBH-Kj-7HV" secondAttribute="bottom" constant="30" id="jKy-OO-Yhq"/>
                                                 <constraint firstAttribute="trailing" secondItem="Tb7-55-hYv" secondAttribute="trailing" constant="17" id="nxt-oX-XdO"/>
                                                 <constraint firstAttribute="trailing" secondItem="GTv-H8-BCQ" secondAttribute="trailing" constant="17" id="ps7-ER-YJF"/>
                                                 <constraint firstItem="GTv-H8-BCQ" firstAttribute="top" secondItem="Pe2-Hs-OEZ" secondAttribute="bottom" constant="15" id="pya-1n-feT"/>
                                                 <constraint firstItem="iBH-Kj-7HV" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="uQn-Fc-Poa"/>
+                                                <constraint firstItem="Pe2-Hs-OEZ" firstAttribute="top" secondItem="ydt-kn-GLn" secondAttribute="top" constant="17" id="vLk-xY-1iB"/>
                                                 <constraint firstItem="iBH-Kj-7HV" firstAttribute="top" secondItem="i8L-N7-GWu" secondAttribute="bottom" constant="15" id="wEN-q3-r1a"/>
                                                 <constraint firstAttribute="trailing" secondItem="i8L-N7-GWu" secondAttribute="trailing" constant="17" id="wud-aQ-4fx"/>
                                                 <constraint firstItem="GTv-H8-BCQ" firstAttribute="leading" secondItem="ydt-kn-GLn" secondAttribute="leading" constant="17" id="yqH-1f-WMs"/>
@@ -332,10 +330,10 @@
                             </tabView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qT3-gr-db6" secondAttribute="bottom" constant="12" id="MqD-9V-a0M"/>
-                            <constraint firstItem="qT3-gr-db6" firstAttribute="leading" secondItem="CpW-em-aOK" secondAttribute="leading" constant="12" id="R2Z-hD-6X6"/>
-                            <constraint firstItem="qT3-gr-db6" firstAttribute="top" secondItem="CpW-em-aOK" secondAttribute="top" constant="12" id="Yx1-Wg-4LV"/>
-                            <constraint firstAttribute="trailing" secondItem="qT3-gr-db6" secondAttribute="trailing" constant="12" id="zWc-JC-v6x"/>
+                            <constraint firstItem="qT3-gr-db6" firstAttribute="leading" secondItem="CpW-em-aOK" secondAttribute="leading" constant="12" id="47M-ob-zjO"/>
+                            <constraint firstAttribute="trailing" secondItem="qT3-gr-db6" secondAttribute="trailing" constant="12" id="5Jd-3P-LDa"/>
+                            <constraint firstAttribute="bottom" secondItem="qT3-gr-db6" secondAttribute="bottom" constant="14" id="U2S-Wm-5wU"/>
+                            <constraint firstItem="qT3-gr-db6" firstAttribute="top" secondItem="CpW-em-aOK" secondAttribute="top" constant="10" id="nn1-bl-fPT"/>
                         </constraints>
                     </view>
                     <connections>

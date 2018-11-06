@@ -64,7 +64,16 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Touch%20Bar%20Shot%202018-01-27%20at%2014.59.00.png)
 <center>Stopwatch Touch Bar</center>
 
+### 5. Calendar Display
+
+After several iterations of SimpleClock, making a calendar display function was taken into consideration. To toggle this function, just right-click on the panel of Clock interface and click show calendar. Current month's calendar will be shown in a popup window as following.
+
+![avatar](https://raw.githubusercontent.com/zengtianyu1215/PersonalPics/master/img/Screen%20Shot%202018-11-04%20at%2023.11.18.png)
+
+
+
 ## RELEASE: SimpleClock 1.8(8)
+
 ### Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
 # Release ChangeLog::
 

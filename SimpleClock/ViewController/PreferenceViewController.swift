@@ -19,7 +19,6 @@ class PreferenceViewController: NSViewController, NSWindowDelegate{
     @IBOutlet weak var ShowSecond: NSButton!
     @IBOutlet weak var DarkTheme: NSButton!
     
-    
     var delegate: PreferencesViewControllerDelegate?
     
     override func viewDidLoad() {
@@ -32,6 +31,13 @@ class PreferenceViewController: NSViewController, NSWindowDelegate{
         setStatus(ShowAMPM, status: AM)
         setStatus(DarkTheme, status: dark)
         setStatus(ShowSecond, status: Sec)
+        
+        ShowAMPM.action = #selector(setAMPM)
+    }
+    
+    @objc func setAMPM(){
+        let defau = UserDefaults.standard
+        defau.setValue(getStatus(button: ShowAMPM), forKey: "ShowAM?")
     }
     
     func setStatus(_ button: NSButton, status: Bool) -> Void {

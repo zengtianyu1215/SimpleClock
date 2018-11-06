@@ -8,7 +8,8 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, PreferencesViewControllerDelegate {
+    
 
     @IBOutlet weak var ClockLabel: NSTextField!
     @IBOutlet weak var CalendarLabel: NSTextField!
@@ -24,6 +25,7 @@ class ViewController: NSViewController {
     var isLoading = Bool(true)
     @IBOutlet weak var SecondInMenu: NSMenuItem!
     @IBOutlet weak var AMInMenu: NSMenuItem!
+    var preferencesWindow:PreferenceViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -162,6 +164,24 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    func preferencesDidUpdate() {
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkTheme?")
+        let AM = defau.bool(forKey: "ShowAM?")
+        let Sec = defau.bool(forKey: "ShowSecond?")
+        
+        if !dark{
+            ClickToChangeBackground(Any.self)
+        }
+        if !AM {
+            Change_AM_PM(Any.self)
+        }
+        if Sec {
+            ChangeSecond(Any.self)
+        }
+        timer.fire();
     }
     
 }
