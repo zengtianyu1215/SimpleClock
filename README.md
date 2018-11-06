@@ -68,11 +68,7 @@ As an application designed on High Sierra, SimpleClock provides several Touch Ba
 
 After several iterations of SimpleClock, making a calendar display function was taken into consideration. To toggle this function, just right-click on the panel of Clock interface and click show calendar. Current month's calendar will be shown in a popup window as following.
 
-<center>
-
 ![avatar](https://raw.githubusercontent.com/zengtianyu1215/PersonalPics/master/img/Screen%20Shot%202018-11-04%20at%2023.11.18.png)
-
-</center>
 
 
 
