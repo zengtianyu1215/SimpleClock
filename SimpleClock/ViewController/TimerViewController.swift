@@ -26,6 +26,11 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
     var isStart = Bool(false)
     var isPause = Bool(false)
     
+    var myQueue = OperationQueue()
+    let myActivity = ProcessInfo.processInfo.beginActivity(
+        options: ProcessInfo.ActivityOptions.userInitiated,
+        reason: "Batch processing files")
+    
     @IBOutlet weak var Indicater: NSProgressIndicator!
     var timer : Timer!
     
@@ -43,6 +48,9 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             self.timerMain()
         })
         timer.fireDate = Date.distantFuture
+        myQueue.addOperation {
+            ProcessInfo.processInfo.beginActivity(options: ProcessInfo.ActivityOptions.idleSystemSleepDisabled, reason: "Timer")
+        }
     }
     
     func timerMain() -> Void {

@@ -12,7 +12,8 @@ import Foundation
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var windowController: NSWindowController?    
+//    var updater = GitHubUpdater.init()
+    var windowController: NSWindowController?
     
     @IBOutlet weak var dockMenu: NSMenu!
     @IBOutlet weak var SimpleGithub: NSMenuItem!
@@ -32,6 +33,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func CheckUpdate(_ sender: Any) {
+//        self.updater = GitHubUpdater.init()
+//        self.updater.user = "zengtianyu1215"
+//        self.updater.repository = "SimpleClock"
+//        self.updater.checkForUpdates(Any?.self)
         let url = URL.init(string: "https://github.com/zengtianyu1215/SimpleClock/releases")
         NSWorkspace.shared.open(url!)
     }

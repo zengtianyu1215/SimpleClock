@@ -15,7 +15,10 @@ class StopwatchViewController : NSViewController {
     @IBOutlet weak var Pause: NSButton!
     @IBOutlet weak var End: NSButton!
     let timeFormat = DateFormatter()
-    
+    var myQueue = OperationQueue()
+    let myActivity = ProcessInfo.processInfo.beginActivity(
+        options: ProcessInfo.ActivityOptions.userInitiated,
+        reason: "Batch processing files")
     @IBOutlet weak var Background: NSVisualEffectView!
     var isStart = Bool(false)
     var isPause = Bool(false)
@@ -35,7 +38,9 @@ class StopwatchViewController : NSViewController {
             self.runTimer()
         })
         timer.fireDate = Date.distantFuture
-        
+        myQueue.addOperation {
+            ProcessInfo.processInfo.beginActivity(options: ProcessInfo.ActivityOptions.idleSystemSleepDisabled, reason: "Timer")
+        }
     }
     
     func runTimer() -> Void {

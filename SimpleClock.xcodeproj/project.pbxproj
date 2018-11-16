@@ -11,8 +11,6 @@
 		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
 		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
 		7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */; };
-		7D3F7F132161DFBE0019185F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3F7F122161DFBE0019185F /* Sparkle.framework */; };
-		7D3F7F152161E02C0019185F /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D3F7F122161DFBE0019185F /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
 		7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BB2019C3730032670C /* ViewController.swift */; };
@@ -26,6 +24,9 @@
 		7D5CF6F1201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F2201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6F3201A21C60032670C /* Images.xcassets */; };
+		7D80EE73219E906800A0FA7E /* SC-Bridge-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */; };
+		7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; };
+		7D80EE76219E9EBA00A0FA7E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8254F201C2E05006C5566 /* ViewGithubController.swift */; };
 		7DA82552201C39DF006C5566 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7DA82551201C39DF006C5566 /* Glass.aiff */; };
 		7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82553201C431C006C5566 /* TimerWindowController.swift */; };
@@ -61,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D3F7F152161E02C0019185F /* Sparkle.framework in CopyFiles */,
+				7D80EE76219E9EBA00A0FA7E /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +82,6 @@
 		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
 		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
 		7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetViewController.swift; sourceTree = "<group>"; };
-		7D3F7F122161DFBE0019185F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7D516628202C316B00EF62EB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		7D5CF6ED201A08F00032670C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7D5CF6EF201A14B20032670C /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		7D5CF6F3201A21C60032670C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SC-Bridge-Header.h"; sourceTree = "<group>"; };
+		7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7DA8254F201C2E05006C5566 /* ViewGithubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGithubController.swift; sourceTree = "<group>"; };
 		7DA82551201C39DF006C5566 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
@@ -119,7 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5CF6EE201A08F00032670C /* AppKit.framework in Frameworks */,
-				7D3F7F132161DFBE0019185F /* Sparkle.framework in Frameworks */,
+				7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +206,7 @@
 				7D5CF6B92019C3730032670C /* AppDelegate.swift */,
 				7D5CF6C22019C3730032670C /* Assets.xcassets */,
 				7DA82551201C39DF006C5566 /* Glass.aiff */,
+				7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
@@ -234,7 +237,7 @@
 		7D5CF6EC201A08F00032670C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D3F7F122161DFBE0019185F /* Sparkle.framework */,
+				7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */,
 				7D5CF6ED201A08F00032670C /* AppKit.framework */,
 			);
 			name = Frameworks;
@@ -247,6 +250,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D80EE73219E906800A0FA7E /* SC-Bridge-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleClock/SC-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -622,7 +626,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleClock/SC-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
