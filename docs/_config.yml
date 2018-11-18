@@ -1,0 +1,31 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: https://zengtianyu1215.github.io/SimpleClock/
+title: SimpleClock
+email: 
+author: Zeng Tianyu
+description: A macOS application which can bring basic time functions but with better user experience
+copyright: 'Copyright &copy; 2017-2018 Zeng Tianyu. All Rights Reserved.'
+credits: ''
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: downLoad
+    url: https://github.com/zengtianyu1215/SimpleClock/releases
+  - title: Github
+    url: https://github.com/zengtianyu1215/SimpleClock
+  - title: developer
+    url: https://zengtianyu1215.github.io/

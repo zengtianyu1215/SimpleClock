@@ -1,0 +1,19 @@
+---
+layout: default
+img: cal.png
+category: Function
+title: Function? No Problem!
+description: |
+---
+Mac OS is a designed but functional operating system. For SimpleClock, we provide calendar, stopwatch and timer which will keep simple but also stay functional. 
+
+The functions and the interfaces are:
+
+* Calendar in main clock interface
+* Stopwatch with its independent interface
+* Timer with its independent interface
+* More...
+
+
+
+<center><img src="https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-27%20at%2014.59.20.png" width="500px"></center>

@@ -1,0 +1,28 @@
+---
+layout: default
+img: icon.png
+category: Function
+title: Release ChangeLog
+description: |
+---
+**Time: 2018/10/01 13:44:26**
+
+> **Content**
+>
+> 1. Add Supports for Mac OS X 10.14 Mojave;
+> 2. Full Theme switch in All UI;
+> 3. Add Right-Click Menu in Clock interface; 
+> 4. Add Triple-Click Gesture Recognizer to change the light / dark theme;
+> 5. Add Calendar Part in Clock's Calendar label;
+> 6. Delete Calendar from App Menu;
+> 7. Add Sparkle Auto-Update Framework; 
+> 8. Optimized with battery and CPU; 
+> 9. Fix CPU bugs and multi-threads bugs; 
+> 10. Add Constrains in all interface;
+> 11. Use New Dark Mode of Mac OS X 10.14 Mojave
+> 12. Fix the bug on starting scene;
+> 13. Fix display bugs on Multi-touch Bar;
+> 14. Now SimpleClock support Mac OS X 10.12;
+> 15. Reach 600+ users, 4 forks and 19 stars on Github. Thanks!
+>
+> *If you have problems when you are using SimpleClock, please post an issue on SimpleClock.*

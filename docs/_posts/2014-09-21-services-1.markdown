@@ -1,0 +1,10 @@
+---
+layout: default
+img: ipad.png
+category: Services
+title: Dark Theme with Mojave
+description: |
+---
+In Mojave, macOS 10.14, Apple introduced dark theme as two of the default themes. In SimpleClock, we provide Dark theme in the first version. 
+
+No matter what your operating system version is, SimpleClock will provide you the same experience as macOS 10.14.

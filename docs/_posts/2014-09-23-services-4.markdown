@@ -1,0 +1,8 @@
+---
+layout: default
+img: touch.png
+category: Services
+title: Touch Bar & Menu, Full of Design
+description: |
+---
+For all Mac, no just Macbook Pro, SimpleClock can run swiftly just like the language called Swift. For all configurations in SimpleClock, if your macOS and the hardware support Multi-touch Bar, SimpleClock support it well. You can open calendar, change the theme or start a timer just by clicking virtual buttons. But if not, right-click menu is right for you.

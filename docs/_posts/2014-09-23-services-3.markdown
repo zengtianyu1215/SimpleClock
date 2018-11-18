@@ -1,0 +1,8 @@
+---
+layout: default
+img: Screen Shot 2018-01-26 at 16.16.35-2.jpg
+category: Services
+title: Mac, an iPad in Large Size
+description: |
+---
+We like the display method carried by iOS. From the size difference between Macbook Pro and iPad Pro, making an time application whose display method is similar to iOS is important. In SimpleClock, the "Simple" means the design but also the usage is simple just like an iPad.

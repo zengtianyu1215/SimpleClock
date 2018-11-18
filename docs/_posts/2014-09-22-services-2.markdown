@@ -1,0 +1,8 @@
+---
+layout: default
+img: dog.png
+category: Services
+title: Bright Theme with all Mac
+description: |
+---
+In SimpleClock, you can toggle Bright theme from Right-Click Menu or Multi-touch Bar. No matter what theme you like, SimpleClock will meet your satisfaction. You don't need to care about the theme, SimpleClock will keep the preferences in all times.
