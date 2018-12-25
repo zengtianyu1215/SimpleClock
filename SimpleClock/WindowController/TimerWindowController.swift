@@ -18,18 +18,18 @@ class TimerWindowController: NSWindowController {
     
     
     @IBAction func Start(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
+        let rootViewController = contentViewController as! TimerViewController
         rootViewController.StartButton.performClick(Any.self)
         
     }
     
     @IBAction func Pause(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
+        let rootViewController = contentViewController as! TimerViewController
         rootViewController.PauseButton.performClick(Any.self)
     }
     
     @IBAction func End(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
+        let rootViewController = contentViewController as! TimerViewController
         rootViewController.EndButton.performClick(Any.self)
     }
     override func windowDidLoad() {
@@ -39,7 +39,7 @@ class TimerWindowController: NSWindowController {
     @IBOutlet weak var ModeChanger: NSSegmentedControl!
     
     @IBAction func ChangeMode(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! TimerViewController
+        let rootViewController = contentViewController as! TimerViewController
         if ModeChanger.isSelected(forSegment: 0) {
             rootViewController.background.material = NSVisualEffectView.Material.mediumLight
             rootViewController.TimerText.textColor = NSColor.black

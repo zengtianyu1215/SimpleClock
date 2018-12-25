@@ -11,6 +11,7 @@
 		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
 		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
 		7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */; };
+		7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
 		7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6BB2019C3730032670C /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
 		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
 		7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetViewController.swift; sourceTree = "<group>"; };
+		7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7D516628202C316B00EF62EB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */,
 				7D5CF6EE201A08F00032670C /* AppKit.framework in Frameworks */,
 				7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */,
 			);
@@ -237,6 +240,7 @@
 		7D5CF6EC201A08F00032670C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */,
 				7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */,
 				7D5CF6ED201A08F00032670C /* AppKit.framework */,
 			);

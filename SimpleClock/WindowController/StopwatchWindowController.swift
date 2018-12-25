@@ -12,23 +12,23 @@ class StopwatchWindowController: NSWindowController {
     
    
     @IBAction func Start(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! StopwatchViewController
+        let rootViewController = contentViewController as! StopwatchViewController
         rootViewController.TimerStartEnd.performClick(nil)
     }
     
     @IBAction func Pause(_ sender: Any) {
-       let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! StopwatchViewController
+       let rootViewController = contentViewController as! StopwatchViewController
         rootViewController.Pause.performClick(nil)
     }
     
     @IBAction func End(_ sender: NSButtonCell) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! StopwatchViewController
+        let rootViewController = contentViewController as! StopwatchViewController
         rootViewController.End.performClick(nil
         )
     }
     
     @IBAction func Changeback(_ sender: Any){
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! StopwatchViewController
+        let rootViewController = contentViewController as! StopwatchViewController
         if rootViewController.isDark {
             rootViewController.Background.material = NSVisualEffectView.Material.mediumLight
             rootViewController.TimerLabel.textColor = NSColor.black

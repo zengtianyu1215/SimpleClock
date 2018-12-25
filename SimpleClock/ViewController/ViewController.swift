@@ -27,6 +27,11 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
     @IBOutlet weak var AMInMenu: NSMenuItem!
     var preferencesWindow:PreferenceViewController!
     
+    var myQueue = OperationQueue()
+    let myActivity = ProcessInfo.processInfo.beginActivity(
+        options: ProcessInfo.ActivityOptions.userInitiated,
+        reason: "Batch processing files")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let defau = UserDefaults.standard
@@ -36,7 +41,7 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
         
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
-        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer) in
             self.timerMain()
         })
         
@@ -50,6 +55,9 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             ChangeSecond(Any.self)
         }
         timer.fire();
+        myQueue.addOperation {
+            ProcessInfo.processInfo.beginActivity(options: ProcessInfo.ActivityOptions.idleSystemSleepDisabled, reason: "Timer")
+        }
         isLoading = false
     }
     
@@ -62,8 +70,7 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
     }
     
     @IBAction func ShowCalInMain(_ sender: Any) {
-        let window = NSApplication.shared.mainWindow?.windowController as! WindowController
-        window.openCal(Any.self)
+        NotificationCenter.default.post(name: NSNotification.Name.init("ShowCalInMain"), object: nil)
     }
     
     @IBAction func Change_AM_PM(_ sender: Any) {
@@ -76,15 +83,13 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             isSecond = false
             SecondInMenu.state = .off
             if(!isLoading){
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.SecondChanger.selectedSegment = 0
+                NotificationCenter.default.post(name: NSNotification.Name.init("ChangeSecond0"), object: nil)
             }
         }else{
             isSecond = true
             SecondInMenu.state = .on
             if(!isLoading){
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.SecondChanger.selectedSegment = 1
+                NotificationCenter.default.post(name: NSNotification.Name.init("ChangeSecond1"), object: nil)
             }
         }
     }
@@ -94,15 +99,13 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             is24H = false
             AMInMenu.state = .off
             if !isLoading{
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.H24Changer.selectedSegment = 0
+                NotificationCenter.default.post(name: NSNotification.Name.init("Change24H0"), object: nil)
             }
         }else{
             is24H = true
             AMInMenu.state = .on
             if !isLoading{
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.H24Changer.selectedSegment = 1
+                NotificationCenter.default.post(name: NSNotification.Name.init("Change24H1"), object: nil)
             }
         }
     }
@@ -117,8 +120,7 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             CalendarLabel.textColor = NSColor.black
             isNightMode = false
             if !isLoading{
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.ModeChanger.selectedSegment = 0
+                NotificationCenter.default.post(name: NSNotification.Name.init("ClickToChangeBackground0"), object: nil)
             }
         }else{
             BackgroundView.material =  NSVisualEffectView.Material.dark
@@ -126,8 +128,7 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             CalendarLabel.textColor = NSColor.white
             isNightMode = true
             if !isLoading{
-                let Window = NSApplication.shared.mainWindow?.windowController as! WindowController
-                Window.ModeChanger.selectedSegment = 1
+                NotificationCenter.default.post(name: NSNotification.Name.init("ClickToChangeBackground1"), object: nil)
             }
         }
     }

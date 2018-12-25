@@ -34,10 +34,42 @@ class WindowController: NSWindowController {
             SecondChanger.selectedSegment = 1
         }
         super.windowWillLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(ClickToChangeBackground0), name: NSNotification.Name(rawValue: "ClickToChangeBackground0"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ClickToChangeBackground1), name: NSNotification.Name(rawValue: "ClickToChangeBackground1"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(Change24H0), name: NSNotification.Name(rawValue: "Change24H0"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(Change24H1), name: NSNotification.Name(rawValue: "Change24H1"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChangeSecond0), name: NSNotification.Name(rawValue: "ChangeSecond0"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChangeSecond1), name: NSNotification.Name(rawValue: "ChangeSecond1"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(openCal), name: NSNotification.Name(rawValue: "ShowCalInMain"), object: nil)
+
+    }
+    
+    @objc func ClickToChangeBackground0(){
+        ModeChanger.selectedSegment = 0
+    }
+    
+    @objc func ClickToChangeBackground1(){
+        ModeChanger.selectedSegment = 1
+    }
+    
+    @objc func Change24H0(){
+        H24Changer.selectedSegment = 0
+    }
+    
+    @objc func Change24H1(){
+        H24Changer.selectedSegment = 1
+    }
+    
+    @objc func ChangeSecond0(){
+        SecondChanger.selectedSegment = 0
+    }
+    
+    @objc func ChangeSecond1(){
+        SecondChanger.selectedSegment = 1
     }
     
     @IBAction func ChangeSecond(_ sender: NSSegmentedControl) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
+        let rootViewController = contentViewController as! ViewController
         if SecondChanger.isSelected(forSegment: 0) {
             rootViewController.isSecond = true
             rootViewController.setFormatClock(mode: rootViewController.isSecond, is24: rootViewController.is24H)
@@ -50,7 +82,7 @@ class WindowController: NSWindowController {
     
     
     @IBAction func Change24H(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
+        let rootViewController = contentViewController as! ViewController
         if H24Changer.isSelected(forSegment: 0) {
             rootViewController.is24H = false
             rootViewController.AMInMenu.state = .off
@@ -62,7 +94,7 @@ class WindowController: NSWindowController {
     
     
     @IBAction func DarkLight(_ sender: Any) {
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
+        let rootViewController = contentViewController as! ViewController
         if ModeChanger.isSelected(forSegment: 0) {
             rootViewController.isNightMode = true
         }else{
@@ -94,10 +126,9 @@ class WindowController: NSWindowController {
         self.pop = myPopover
     }
     
-    func openCal(_ sender: Any){
+    @objc func openCal(_ sender: Any){
         self.createCalenderPopover()
-        let vc = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
-        
+        let vc = contentViewController as! ViewController
         let date = datee
         self.calendar.date = date
         self.calendar.selectedDate = date
