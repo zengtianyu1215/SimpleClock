@@ -811,7 +811,7 @@ DQ
                     <window key="window" title="SimpleClock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="alertPanel" frameAutosaveName="" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="366" width="529" height="333"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
                         <value key="minSize" type="size" width="529" height="333"/>
                         <connections>
                             <outlet property="delegate" destination="jGA-0Y-lOj" id="98r-iN-zZc"/>
@@ -837,7 +837,7 @@ DQ
                             <touchBarItem id="dgM-78-7YT">
                                 <viewController key="viewController" id="Wlg-tI-47x">
                                     <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-Tl-v86">
-                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Jcg-Vc-M2T">
                                             <font key="font" metaFont="system"/>
@@ -871,7 +871,7 @@ DQ
                             <touchBarItem id="eHE-gX-mha">
                                 <viewController key="viewController" id="I9J-NQ-zKp">
                                     <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-77-8TR">
-                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="pem-Hr-P9W">
                                             <font key="font" metaFont="system"/>
@@ -905,7 +905,7 @@ DQ
                             <touchBarItem id="3A1-kI-5TX">
                                 <viewController key="viewController" id="ym2-b5-dym">
                                     <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apB-yj-cCY">
-                                        <rect key="frame" x="2" y="-1" width="144" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="JBs-y0-iUz">
                                             <font key="font" metaFont="system"/>
