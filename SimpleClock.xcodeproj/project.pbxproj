@@ -10,12 +10,6 @@
 		7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */; };
 		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
 		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
-		7D1FA15D21DE493C00E439E7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */; };
-		7D1FA16021DE493C00E439E7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FA15F21DE493C00E439E7 /* TodayViewController.swift */; };
-		7D1FA16321DE493C00E439E7 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1FA16121DE493C00E439E7 /* TodayViewController.xib */; };
-		7D1FA16721DE493C00E439E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D1FA16521DE493C00E439E7 /* InfoPlist.strings */; };
-		7D1FA16B21DE493C00E439E7 /* SCTfimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D1FA15B21DE493C00E439E7 /* SCTfimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */; };
 		7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
@@ -33,7 +27,11 @@
 		7D80EE73219E906800A0FA7E /* SC-Bridge-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */; };
 		7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; };
 		7D80EE76219E9EBA00A0FA7E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8254F201C2E05006C5566 /* ViewGithubController.swift */; };
+		7D8C4A2C21E1C28B00F8ACDB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */; };
+		7D8C4A2F21E1C28B00F8ACDB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */; };
+		7D8C4A3221E1C28B00F8ACDB /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C4A3021E1C28B00F8ACDB /* TodayViewController.xib */; };
+		7D8C4A3621E1C28B00F8ACDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C4A3421E1C28B00F8ACDB /* InfoPlist.strings */; };
+		7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DA82552201C39DF006C5566 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7DA82551201C39DF006C5566 /* Glass.aiff */; };
 		7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82553201C431C006C5566 /* TimerWindowController.swift */; };
 		7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82555201C4393006C5566 /* StopwatchWindowController.swift */; };
@@ -45,13 +43,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7D1FA16921DE493C00E439E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D5CF6AE2019C3730032670C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D1FA15A21DE493C00E439E7;
-			remoteInfo = SCTfimeWidget;
-		};
 		7D5CF6CE2019C3730032670C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7D5CF6AE2019C3730032670C /* Project object */;
@@ -65,6 +56,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7D5CF6B52019C3730032670C;
 			remoteInfo = SimpleClock;
+		};
+		7D8C4A3821E1C28B00F8ACDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D5CF6AE2019C3730032670C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D8C4A2A21E1C28B00F8ACDB;
+			remoteInfo = SCTimeWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,7 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7D1FA16B21DE493C00E439E7 /* SCTfimeWidget.appex in Embed App Extensions */,
+				7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,14 +103,7 @@
 		7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendarView.swift; sourceTree = "<group>"; };
 		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
 		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
-		7D1FA15B21DE493C00E439E7 /* SCTfimeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCTfimeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		7D1FA15F21DE493C00E439E7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		7D1FA16221DE493C00E439E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
-		7D1FA16421DE493C00E439E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D1FA16621DE493C00E439E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7D1FA16821DE493C00E439E7 /* SCTfimeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SCTfimeWidget.entitlements; sourceTree = "<group>"; };
-		7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetViewController.swift; sourceTree = "<group>"; };
 		7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -138,7 +129,12 @@
 		7D5CF6F3201A21C60032670C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SC-Bridge-Header.h"; sourceTree = "<group>"; };
 		7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		7DA8254F201C2E05006C5566 /* ViewGithubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGithubController.swift; sourceTree = "<group>"; };
+		7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCTimeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		7D8C4A3121E1C28B00F8ACDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		7D8C4A3321E1C28B00F8ACDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D8C4A3521E1C28B00F8ACDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D8C4A3721E1C28B00F8ACDB /* SCTimeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SCTimeWidget.entitlements; sourceTree = "<group>"; };
 		7DA82551201C39DF006C5566 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 		7DA82553201C431C006C5566 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
 		7DA82555201C4393006C5566 /* StopwatchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchWindowController.swift; sourceTree = "<group>"; };
@@ -148,14 +144,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D1FA15821DE493C00E439E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D1FA15D21DE493C00E439E7 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D5CF6B32019C3730032670C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,17 +168,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D8C4A2821E1C28B00F8ACDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8C4A2C21E1C28B00F8ACDB /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7D0B6B04215CB70F0000ACD4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7DA8254F201C2E05006C5566 /* ViewGithubController.swift */,
 				7D5CF6BB2019C3730032670C /* ViewController.swift */,
 				7DC6DA14206FD9810088797D /* StopwatchViewController.swift */,
 				7DFDFA85201B77E8005E30AE /* TimerViewController.swift */,
-				7D23031F205CE43400D43EC5 /* ClockWidgetViewController.swift */,
 				7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */,
 			);
 			path = ViewController;
@@ -216,25 +210,13 @@
 			path = CalendarView;
 			sourceTree = "<group>";
 		};
-		7D1FA15E21DE493C00E439E7 /* SCTfimeWidget */ = {
-			isa = PBXGroup;
-			children = (
-				7D1FA15F21DE493C00E439E7 /* TodayViewController.swift */,
-				7D1FA16121DE493C00E439E7 /* TodayViewController.xib */,
-				7D1FA16421DE493C00E439E7 /* Info.plist */,
-				7D1FA16521DE493C00E439E7 /* InfoPlist.strings */,
-				7D1FA16821DE493C00E439E7 /* SCTfimeWidget.entitlements */,
-			);
-			path = SCTfimeWidget;
-			sourceTree = "<group>";
-		};
 		7D5CF6AD2019C3730032670C = {
 			isa = PBXGroup;
 			children = (
 				7D5CF6B82019C3730032670C /* SimpleClock */,
 				7D5CF6D02019C3730032670C /* SimpleClockTests */,
 				7D5CF6DB2019C3730032670C /* SimpleClockUITests */,
-				7D1FA15E21DE493C00E439E7 /* SCTfimeWidget */,
+				7D8C4A2D21E1C28B00F8ACDB /* SCTimeWidget */,
 				7D5CF6B72019C3730032670C /* Products */,
 				7D5CF6EC201A08F00032670C /* Frameworks */,
 			);
@@ -246,7 +228,7 @@
 				7D5CF6B62019C3730032670C /* SimpleClock.app */,
 				7D5CF6CD2019C3730032670C /* SimpleClockTests.xctest */,
 				7D5CF6D82019C3730032670C /* SimpleClockUITests.xctest */,
-				7D1FA15B21DE493C00E439E7 /* SCTfimeWidget.appex */,
+				7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +282,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D8C4A2D21E1C28B00F8ACDB /* SCTimeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */,
+				7D8C4A3021E1C28B00F8ACDB /* TodayViewController.xib */,
+				7D8C4A3321E1C28B00F8ACDB /* Info.plist */,
+				7D8C4A3421E1C28B00F8ACDB /* InfoPlist.strings */,
+				7D8C4A3721E1C28B00F8ACDB /* SCTimeWidget.entitlements */,
+			);
+			path = SCTimeWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -314,23 +308,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7D1FA15A21DE493C00E439E7 /* SCTfimeWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D1FA16E21DE493C00E439E7 /* Build configuration list for PBXNativeTarget "SCTfimeWidget" */;
-			buildPhases = (
-				7D1FA15721DE493C00E439E7 /* Sources */,
-				7D1FA15821DE493C00E439E7 /* Frameworks */,
-				7D1FA15921DE493C00E439E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCTfimeWidget;
-			productName = SCTfimeWidget;
-			productReference = 7D1FA15B21DE493C00E439E7 /* SCTfimeWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		7D5CF6B52019C3730032670C /* SimpleClock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D5CF6E12019C3730032670C /* Build configuration list for PBXNativeTarget "SimpleClock" */;
@@ -346,7 +323,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7D1FA16A21DE493C00E439E7 /* PBXTargetDependency */,
+				7D8C4A3921E1C28B00F8ACDB /* PBXTargetDependency */,
 			);
 			name = SimpleClock;
 			productName = SimpleClock;
@@ -389,6 +366,23 @@
 			productReference = 7D5CF6D82019C3730032670C /* SimpleClockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7D8C4A2A21E1C28B00F8ACDB /* SCTimeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D8C4A3B21E1C28B00F8ACDB /* Build configuration list for PBXNativeTarget "SCTimeWidget" */;
+			buildPhases = (
+				7D8C4A2721E1C28B00F8ACDB /* Sources */,
+				7D8C4A2821E1C28B00F8ACDB /* Frameworks */,
+				7D8C4A2921E1C28B00F8ACDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCTimeWidget;
+			productName = SCTimeWidget;
+			productReference = 7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -399,10 +393,6 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "曾天宇";
 				TargetAttributes = {
-					7D1FA15A21DE493C00E439E7 = {
-						CreatedOnToolsVersion = 10.1;
-						ProvisioningStyle = Automatic;
-					};
 					7D5CF6B52019C3730032670C = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1000;
@@ -425,6 +415,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7D5CF6B52019C3730032670C;
 					};
+					7D8C4A2A21E1C28B00F8ACDB = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7D5CF6B12019C3730032670C /* Build configuration list for PBXProject "SimpleClock" */;
@@ -443,21 +437,12 @@
 				7D5CF6B52019C3730032670C /* SimpleClock */,
 				7D5CF6CC2019C3730032670C /* SimpleClockTests */,
 				7D5CF6D72019C3730032670C /* SimpleClockUITests */,
-				7D1FA15A21DE493C00E439E7 /* SCTfimeWidget */,
+				7D8C4A2A21E1C28B00F8ACDB /* SCTimeWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7D1FA15921DE493C00E439E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D1FA16321DE493C00E439E7 /* TodayViewController.xib in Resources */,
-				7D1FA16721DE493C00E439E7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D5CF6B42019C3730032670C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,17 +474,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7D1FA15721DE493C00E439E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		7D8C4A2921E1C28B00F8ACDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1FA16021DE493C00E439E7 /* TodayViewController.swift in Sources */,
+				7D8C4A3221E1C28B00F8ACDB /* TodayViewController.xib in Resources */,
+				7D8C4A3621E1C28B00F8ACDB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		7D5CF6B22019C3730032670C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,12 +495,10 @@
 				7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */,
 				7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */,
 				7D5CF6F0201A14B20032670C /* WindowController.swift in Sources */,
-				7D230320205CE43400D43EC5 /* ClockWidgetViewController.swift in Sources */,
 				7D5CF6BC2019C3730032670C /* ViewController.swift in Sources */,
 				7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */,
 				7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */,
 				7DB9D54A2164735B00403AD3 /* PreferenceViewController.swift in Sources */,
-				7DA82550201C2E05006C5566 /* ViewGithubController.swift in Sources */,
 				7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */,
 				7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */,
 			);
@@ -536,14 +520,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D8C4A2721E1C28B00F8ACDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8C4A2F21E1C28B00F8ACDB /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D1FA16A21DE493C00E439E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D1FA15A21DE493C00E439E7 /* SCTfimeWidget */;
-			targetProxy = 7D1FA16921DE493C00E439E7 /* PBXContainerItemProxy */;
-		};
 		7D5CF6CF2019C3730032670C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7D5CF6B52019C3730032670C /* SimpleClock */;
@@ -554,25 +541,14 @@
 			target = 7D5CF6B52019C3730032670C /* SimpleClock */;
 			targetProxy = 7D5CF6D92019C3730032670C /* PBXContainerItemProxy */;
 		};
+		7D8C4A3921E1C28B00F8ACDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D8C4A2A21E1C28B00F8ACDB /* SCTimeWidget */;
+			targetProxy = 7D8C4A3821E1C28B00F8ACDB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D1FA16121DE493C00E439E7 /* TodayViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D1FA16221DE493C00E439E7 /* Base */,
-			);
-			name = TodayViewController.xib;
-			sourceTree = "<group>";
-		};
-		7D1FA16521DE493C00E439E7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D1FA16621DE493C00E439E7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		7D5CF6C42019C3730032670C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -585,50 +561,25 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		7D8C4A3021E1C28B00F8ACDB /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8C4A3121E1C28B00F8ACDB /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		7D8C4A3421E1C28B00F8ACDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8C4A3521E1C28B00F8ACDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7D1FA16C21DE493C00E439E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = SCTfimeWidget/SCTfimeWidget.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
-				INFOPLIST_FILE = SCTfimeWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTfimeWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		7D1FA16D21DE493C00E439E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = SCTfimeWidget/SCTfimeWidget.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
-				INFOPLIST_FILE = SCTfimeWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTfimeWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		7D5CF6DF2019C3730032670C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -855,18 +806,50 @@
 			};
 			name = Release;
 		};
+		7D8C4A3C21E1C28B00F8ACDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = SCTimeWidget/SCTimeWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 348F982954;
+				INFOPLIST_FILE = SCTimeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7D8C4A3D21E1C28B00F8ACDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = SCTimeWidget/SCTimeWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 348F982954;
+				INFOPLIST_FILE = SCTimeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D1FA16E21DE493C00E439E7 /* Build configuration list for PBXNativeTarget "SCTfimeWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D1FA16C21DE493C00E439E7 /* Debug */,
-				7D1FA16D21DE493C00E439E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7D5CF6B12019C3730032670C /* Build configuration list for PBXProject "SimpleClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -899,6 +882,15 @@
 			buildConfigurations = (
 				7D5CF6E82019C3730032670C /* Debug */,
 				7D5CF6E92019C3730032670C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D8C4A3B21E1C28B00F8ACDB /* Build configuration list for PBXNativeTarget "SCTimeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8C4A3C21E1C28B00F8ACDB /* Debug */,
+				7D8C4A3D21E1C28B00F8ACDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

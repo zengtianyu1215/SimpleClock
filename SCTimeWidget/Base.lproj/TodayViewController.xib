@@ -5,7 +5,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="SCTfimeWidget" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="SCTimeWidget" customModuleProvider="target">
             <connections>
                 <outlet property="Callabel" destination="f27-HX-G0g" id="8fl-EX-cd6"/>
                 <outlet property="Clabel" destination="KU6-MB-4x2" id="Jm4-I5-9BJ"/>
