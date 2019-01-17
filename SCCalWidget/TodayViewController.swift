@@ -70,7 +70,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         backgroundColor = NSColor.white.withAlphaComponent(0.0)
         textColor = MonthLabel.textColor
         selectionColor = NSColor.red.withAlphaComponent(0.0)
-        todayMarkerColor = NSColor.green.withAlphaComponent(0.0)
+        todayMarkerColor = NSColor.black.withAlphaComponent(0.2)
         dayMakerColor = NSColor.white
         DateFormat.dateFormat = NSLocalizedString("TimeFormatWidget", comment: "default")
         MonthLabel.stringValue = DateFormat.string(from: date as Date) as String
@@ -91,7 +91,8 @@ class TodayViewController: NSViewController, NCWidgetProviding {
                 let _id = "C\(i)"
                 let cell = self.viewByID(_id) as! CalendarCell
                 cell.target = self
-                cell.action = #selector(self.cellClicked(_:))
+                cell.id = i-1
+                //cell.action = #selector(self.cellClicked(_:))
                 self.dayCells![row].append(cell)
                 cell.owner = self
             }
@@ -292,7 +293,7 @@ class CalendarBackgroud:NSView
 class CalendarCell:NSButton
 {
     weak var owner:TodayViewController!
-    
+    var id = Int()
     var representedDate:Date?{
         didSet{
             self.needsDisplay = true
@@ -400,22 +401,8 @@ class CalendarCell:NSButton
                 let bottomLine = NSBezierPath()
                 bottomLine.move(to: NSMakePoint(NSMinX(bounds), NSMaxY(bounds)))
                 bottomLine.line(to: NSMakePoint(NSMaxX(bounds), NSMaxY(bounds)))
-                bottomLine.lineWidth = 4.0
+                bottomLine.lineWidth = 2*(NSMaxY(bounds)-NSMinY(bounds))
                 bottomLine.stroke()
-            }
-            
-            //lunar
-            if !self.selected {
-                let lunarFont = NSFont(name: self.font!.fontName, size: 8)!
-                let attrs = [NSAttributedString.Key.paragraphStyle:paragraphStyle,
-                             NSAttributedString.Key.font:lunarFont,
-                             NSAttributedString.Key.foregroundColor:NSColor.gray]
-                let size = (self.lunarStr as NSString).size(withAttributes: attrs)
-                let r = NSMakeRect(bounds.origin.x,
-                                   bounds.origin.y + (bounds.size.height - size.height)/2.0 + 12,
-                                   bounds.size.width, bounds.size.height)
-                (self.lunarStr as NSString).draw(in: r, withAttributes: attrs)
-                
             }
             
             //solar
@@ -442,6 +429,9 @@ class CalendarCell:NSButton
         }
         else {
             self.isEnabled = false
+            if((id)/7 == 5){
+                self.isHidden = true
+            }
         }
         
     }

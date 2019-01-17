@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SimpleClock
+
+  Created by 曾天宇 on 2019/1/17.
+  Copyright © 2019 曾天宇. All rights reserved.
+*/
+"TimeUp" = "定时器时间到";
+"TimeUpA" = "定时器结束，总共用时： %ds";
+"TimeUpB" = "SimpleClock 定时器结束，总共用时：%ds; 运行用时：%ds。";
+"TimeUpC" = "SimpleClock 定时器手动结束，运行秒数：%ds。";

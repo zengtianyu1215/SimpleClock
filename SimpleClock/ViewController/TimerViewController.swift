@@ -59,9 +59,9 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             TimerText.textColor = NSColor.red
             NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
             let userNotification = NSUserNotification()
-            userNotification.title = "Time Up! "
-            userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-            userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, runningSec - 1)
+            userNotification.title = NSLocalizedString("TimeUp", comment: "default")
+            userNotification.subtitle = String(format: NSLocalizedString("TimeUpA", comment: "default"), total)
+            userNotification.informativeText = String(format: NSLocalizedString("TimeUpB", comment: "default"), total, runningSec - 1)
             let userNotificationCenter = NSUserNotificationCenter.default
             userNotificationCenter.scheduleNotification(userNotification)
         }else{
@@ -77,9 +77,9 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
                 TimerText.textColor = NSColor.red
                 NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
                 let userNotification = NSUserNotification()
-                userNotification.title = "Time Up! "
-                userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-                userNotification.informativeText = String(format: "SimpleClock Timer is ended. Total seconds: %ds; Running seconds: %ds.", total, runningSec - 1)
+                userNotification.title = NSLocalizedString("TimeUp", comment: "default")
+                userNotification.subtitle = String(format: NSLocalizedString("TimeUpA", comment: "default"), total)
+                userNotification.informativeText = String(format: NSLocalizedString("TimeUpB", comment: "default"), total, runningSec - 1)
                 let userNotificationCenter = NSUserNotificationCenter.default
                 userNotificationCenter.scheduleNotification(userNotification)
             }
@@ -109,7 +109,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             TimerText.stringValue = String(format: "%02d:%02d:%02d", hour, minute, second)
             //计时器启动
             let userNotification = NSUserNotification()
-            userNotification.title = "Timer Start"
+            userNotification.title = "Timer Start / 启动 / 啟動"
             let userNotificationCenter = NSUserNotificationCenter.default
             userNotificationCenter.scheduleNotification(userNotification)
             Indicater.doubleValue = Double(totalSecond)
@@ -147,9 +147,9 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
             
             let userNotification = NSUserNotification()
-            userNotification.title = "Time Up! "
-            userNotification.subtitle = String(format: "The Timer is ended. Total seconds: %ds", total)
-            userNotification.informativeText = String(format: "SimpleClock Timer is ended manually. Running seconds: %ds.", runningSec - 1)
+            userNotification.title = NSLocalizedString("TimeUp", comment: "default")
+            userNotification.subtitle = String(format: NSLocalizedString("TimeUpA", comment: "default"), total)
+            userNotification.informativeText = String(format: NSLocalizedString("TimeUpC", comment: "default"), runningSec - 1)
             let userNotificationCenter = NSUserNotificationCenter.default
             userNotificationCenter.scheduleNotification(userNotification)
             totalSecond = 0

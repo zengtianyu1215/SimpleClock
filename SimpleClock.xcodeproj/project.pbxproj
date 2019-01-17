@@ -45,6 +45,7 @@
 		7DB9B7AA21F04D5F004E692A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B7AC21F04D5F004E692A /* Localizable.strings */; };
 		7DB9D54A2164735B00403AD3 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */; };
 		7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* StopwatchViewController.swift */; };
+		7DE186B921F05D0F00B77D70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DE186BB21F05D0F00B77D70 /* Localizable.strings */; };
 		7DFDFA86201B77E8005E30AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFDFA85201B77E8005E30AE /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,10 @@
 		7DB9B7AE21F04D63004E692A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		7DC6DA14206FD9810088797D /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		7DE186BA21F05D0F00B77D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DE186BC21F05D1200B77D70 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7DE186BD21F05D1300B77D70 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DE186BE21F05D1400B77D70 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7DFDFA85201B77E8005E30AE /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = SimpleClock/ViewController/TimerViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -275,6 +280,7 @@
 				7D5CF6C42019C3730032670C /* Main.storyboard */,
 				7D5CF6B92019C3730032670C /* AppDelegate.swift */,
 				7D5CF6C22019C3730032670C /* Assets.xcassets */,
+				7DE186BB21F05D0F00B77D70 /* Localizable.strings */,
 				7DA82551201C39DF006C5566 /* Glass.aiff */,
 				7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
@@ -522,6 +528,7 @@
 				7DA82552201C39DF006C5566 /* Glass.aiff in Resources */,
 				7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */,
 				7D5CF6C32019C3730032670C /* Assets.xcassets in Resources */,
+				7DE186B921F05D0F00B77D70 /* Localizable.strings in Resources */,
 				7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */,
 				7D5CF6C62019C3730032670C /* Main.storyboard in Resources */,
 				7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */,
@@ -694,6 +701,17 @@
 				7DB9B7AB21F04D5F004E692A /* en */,
 				7DB9B7AD21F04D61004E692A /* zh-Hans */,
 				7DB9B7AE21F04D63004E692A /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7DE186BB21F05D0F00B77D70 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE186BA21F05D0F00B77D70 /* en */,
+				7DE186BC21F05D1200B77D70 /* zh-Hans */,
+				7DE186BD21F05D1300B77D70 /* de */,
+				7DE186BE21F05D1400B77D70 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
