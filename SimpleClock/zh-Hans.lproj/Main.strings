@@ -181,3 +181,5 @@
 
 /* Class = "NSButtonCell"; title = "End Timer"; ObjectID = "zwn-HV-Snl"; */
 "zwn-HV-Snl.title" = "结束倒计时";
+
+"TimeFormatWidget" = "yyyy 年 MMMM"

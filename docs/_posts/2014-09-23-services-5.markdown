@@ -15,5 +15,4 @@ The functions and the interfaces are:
 * More...
 
 
-
-<center><img src="https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-27%20at%2014.59.20.png" width="500px"></center>
+<center><img src="https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SamplePic/Screen%20Shot%202018-01-27%20at%2014.59.20.png" width="100%"></center>
