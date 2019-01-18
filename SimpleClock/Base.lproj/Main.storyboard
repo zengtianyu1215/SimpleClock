@@ -29,6 +29,12 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="CsI-sg-vtm"/>
+                                        <menuItem title="Check for Update" id="W42-Kf-gw2">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="CheckUpdates:" target="Voe-Tx-rLC" id="39p-zS-TAZ"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Check for Update from GitHub" keyEquivalent="U" id="hwr-Lb-HB2">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
@@ -157,6 +163,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SimpleClock" customModuleProvider="target">
                     <connections>
+                        <outlet property="Check4Update" destination="W42-Kf-gw2" id="Sff-TY-ycG"/>
                         <outlet property="DevGithub" destination="reN-dW-1lZ" id="4Ro-BL-48X"/>
                         <outlet property="SimpleGithub" destination="5bG-Uq-FYZ" id="r15-WA-Ldf"/>
                         <outlet property="dockMenu" destination="toW-2I-gkv" id="QuO-QX-d2Y"/>
@@ -427,7 +434,7 @@
                             <touchBarItem id="5cA-MP-WLP">
                                 <viewController key="viewController" id="ru6-Pf-4z1">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-lb-007">
-                                        <rect key="frame" x="0.0" y="-31.5" width="116" height="33"/>
+                                        <rect key="frame" x="0.0" y="-1.5" width="116" height="3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1B2-0l-iHK">
                                             <font key="font" metaFont="system"/>
@@ -695,7 +702,7 @@ DQ
                             <touchBarItem id="gDk-AT-I4h">
                                 <viewController key="viewController" id="OdC-GI-PkU">
                                     <segmentedControl key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRo-lU-Btf">
-                                        <rect key="frame" x="0.0" y="-31.5" width="116" height="33"/>
+                                        <rect key="frame" x="0.0" y="-1.5" width="116" height="3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LUQ-dU-J88">
                                             <font key="font" metaFont="system"/>

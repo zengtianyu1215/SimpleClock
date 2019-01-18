@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>SCCalWidget</string>
+	<string>SimpleCalendar Widget</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -34,7 +34,7 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).TodayViewController</string>
 		<key>com.apple.notificationcenter.widget.description</key>
-		<string>SCCalWidget</string>
+		<string>SimpleCalendar Widget</string>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 曾天宇. All rights reserved.</string>

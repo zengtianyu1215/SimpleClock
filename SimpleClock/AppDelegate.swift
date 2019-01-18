@@ -8,13 +8,15 @@
 
 import Cocoa
 import Foundation
+import Sparkle
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
 
 //    var updater = GitHubUpdater.init()
     var windowController: NSWindowController?
     
+    @IBOutlet weak var Check4Update: NSMenuItem!
     @IBOutlet weak var dockMenu: NSMenu!
     @IBOutlet weak var SimpleGithub: NSMenuItem!
     @IBAction func SimpleGithubView(_ sender: NSMenuItem) {
@@ -28,6 +30,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(url!)
     }
     
+    @IBAction func CheckUpdates(_ sender: Any) {
+        let su = SUUpdater()
+        su.delegate = self
+        su.feedURL = URL.init(string: "https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/appcast.xml")
+        su.sendsSystemProfile = true
+        su.checkForUpdates(Any?.self)
+    }
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }

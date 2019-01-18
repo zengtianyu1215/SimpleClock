@@ -10,6 +10,9 @@
 		7D0B6B08215CB9DE0000ACD4 /* LunarCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */; };
 		7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */; };
 		7D0B6B0C215CBABC0000ACD4 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */; };
+		7D1D1AAC21F1A558000FB543 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1D1AAA21F1A547000FB543 /* Sparkle.framework */; };
+		7D1D1AAD21F1A558000FB543 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1D1AAA21F1A547000FB543 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D1D1AAF21F1AB4C000FB543 /* appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7D1D1AAE21F1AB4C000FB543 /* appcast.xml */; };
 		7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
@@ -25,8 +28,6 @@
 		7D5CF6F2201A20F70032670C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C22019C3730032670C /* Assets.xcassets */; };
 		7D5CF6F4201A21C60032670C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6F3201A21C60032670C /* Images.xcassets */; };
 		7D80EE73219E906800A0FA7E /* SC-Bridge-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */; };
-		7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; };
-		7D80EE76219E9EBA00A0FA7E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D8C4A2C21E1C28B00F8ACDB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */; };
 		7D8C4A2F21E1C28B00F8ACDB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */; };
 		7D8C4A3221E1C28B00F8ACDB /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C4A3021E1C28B00F8ACDB /* TodayViewController.xib */; };
@@ -87,7 +88,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D80EE76219E9EBA00A0FA7E /* Sparkle.framework in CopyFiles */,
+				7D1D1AAD21F1A558000FB543 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +119,8 @@
 		7D0B6B07215CB9DE0000ACD4 /* LunarCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendarView.swift; sourceTree = "<group>"; };
 		7D0B6B09215CBA320000ACD4 /* LunarCalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarCalendarView.xib; sourceTree = "<group>"; };
 		7D0B6B0B215CBABC0000ACD4 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
+		7D1D1AAA21F1A547000FB543 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		7D1D1AAE21F1AB4C000FB543 /* appcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 		7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
@@ -143,7 +146,6 @@
 		7D5CF6EF201A14B20032670C /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		7D5CF6F3201A21C60032670C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SC-Bridge-Header.h"; sourceTree = "<group>"; };
-		7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCTimeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		7D8C4A3121E1C28B00F8ACDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
@@ -178,7 +180,7 @@
 			files = (
 				7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */,
 				7D5CF6EE201A08F00032670C /* AppKit.framework in Frameworks */,
-				7D80EE75219E9E9E00A0FA7E /* Sparkle.framework in Frameworks */,
+				7D1D1AAC21F1A558000FB543 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +287,7 @@
 				7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
+				7D1D1AAE21F1AB4C000FB543 /* appcast.xml */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
 				7D5CF6BF2019C3730032670C /* Document.xcdatamodeld */,
 				7D5CF6F3201A21C60032670C /* Images.xcassets */,
@@ -313,8 +316,8 @@
 		7D5CF6EC201A08F00032670C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D1D1AAA21F1A547000FB543 /* Sparkle.framework */,
 				7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */,
-				7D80EE74219E9E9E00A0FA7E /* Sparkle.framework */,
 				7D5CF6ED201A08F00032670C /* AppKit.framework */,
 				7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */,
 			);
@@ -531,6 +534,7 @@
 				7DE186B921F05D0F00B77D70 /* Localizable.strings in Resources */,
 				7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */,
 				7D5CF6C62019C3730032670C /* Main.storyboard in Resources */,
+				7D1D1AAF21F1AB4C000FB543 /* appcast.xml in Resources */,
 				7D0B6B0A215CBA320000ACD4 /* LunarCalendarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
