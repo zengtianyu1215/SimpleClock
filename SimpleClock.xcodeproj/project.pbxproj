@@ -13,6 +13,7 @@
 		7D1D1AAC21F1A558000FB543 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1D1AAA21F1A547000FB543 /* Sparkle.framework */; };
 		7D1D1AAD21F1A558000FB543 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1D1AAA21F1A547000FB543 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D1D1AAF21F1AB4C000FB543 /* appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7D1D1AAE21F1AB4C000FB543 /* appcast.xml */; };
+		7D3AC62D21F1D6D800AD71D1 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D3AC62C21F1D6D800AD71D1 /* TodayViewController.xib */; };
 		7D3D1D9321CF45E3004FD2F9 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */; };
 		7D507512201C52C100E2C6C5 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7D507511201C52C000E2C6C5 /* Pop.aiff */; };
 		7D5CF6BA2019C3730032670C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF6B92019C3730032670C /* AppDelegate.swift */; };
@@ -40,7 +41,6 @@
 		7DB33021206FD72300326021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF6C42019C3730032670C /* Main.storyboard */; };
 		7DB9B79621F04CB5004E692A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */; };
 		7DB9B79921F04CB5004E692A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9B79821F04CB5004E692A /* TodayViewController.swift */; };
-		7DB9B79C21F04CB5004E692A /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B79A21F04CB5004E692A /* TodayViewController.xib */; };
 		7DB9B7A021F04CB5004E692A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B79E21F04CB5004E692A /* InfoPlist.strings */; };
 		7DB9B7A421F04CB5004E692A /* SCCalWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DB9B79521F04CB4004E692A /* SCCalWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DB9B7AA21F04D5F004E692A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B7AC21F04D5F004E692A /* Localizable.strings */; };
@@ -122,6 +122,7 @@
 		7D1D1AAA21F1A547000FB543 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7D1D1AAE21F1AB4C000FB543 /* appcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 		7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7D3AC62C21F1D6D800AD71D1 /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
 		7D3D1D9221CF45E3004FD2F9 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		7D507511201C52C000E2C6C5 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 		7D516627202C2EFB00EF62EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -157,7 +158,6 @@
 		7DA82555201C4393006C5566 /* StopwatchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchWindowController.swift; sourceTree = "<group>"; };
 		7DB9B79521F04CB4004E692A /* SCCalWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCCalWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB9B79821F04CB5004E692A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		7DB9B79B21F04CB5004E692A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		7DB9B79D21F04CB5004E692A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB9B79F21F04CB5004E692A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7DB9B7A121F04CB5004E692A /* SCCalWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SCCalWidget.entitlements; sourceTree = "<group>"; };
@@ -340,11 +340,11 @@
 			isa = PBXGroup;
 			children = (
 				7DB9B79821F04CB5004E692A /* TodayViewController.swift */,
-				7DB9B79A21F04CB5004E692A /* TodayViewController.xib */,
 				7DB9B79D21F04CB5004E692A /* Info.plist */,
 				7DB9B79E21F04CB5004E692A /* InfoPlist.strings */,
 				7DB9B7AC21F04D5F004E692A /* Localizable.strings */,
 				7DB9B7A121F04CB5004E692A /* SCCalWidget.entitlements */,
+				7D3AC62C21F1D6D800AD71D1 /* TodayViewController.xib */,
 			);
 			path = SCCalWidget;
 			sourceTree = "<group>";
@@ -570,7 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DB9B79C21F04CB5004E692A /* TodayViewController.xib in Resources */,
+				7D3AC62D21F1D6D800AD71D1 /* TodayViewController.xib in Resources */,
 				7DB9B7AA21F04D5F004E692A /* Localizable.strings in Resources */,
 				7DB9B7A021F04CB5004E692A /* InfoPlist.strings in Resources */,
 			);
@@ -681,14 +681,6 @@
 				7D8C4A3521E1C28B00F8ACDB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7DB9B79A21F04CB5004E692A /* TodayViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DB9B79B21F04CB5004E692A /* Base */,
-			);
-			name = TodayViewController.xib;
 			sourceTree = "<group>";
 		};
 		7DB9B79E21F04CB5004E692A /* InfoPlist.strings */ = {
