@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import SimpleClock
 
 class SimpleClockTests: XCTestCase {
     

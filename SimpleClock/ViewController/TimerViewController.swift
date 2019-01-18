@@ -91,6 +91,9 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
     @IBAction func StartTimer(_ sender: NSButton) {
         if isStart==false{
             isStart = true
+            if(SecondText.stringValue.count>10 || MinuteText.stringValue.count>10 || HourText.stringValue.count>10){
+                return;
+            }
             if HourText.stringValue == ""{
                 HourText.stringValue = "0"
             }
