@@ -10,8 +10,7 @@
                 https://github.com/zengtianyu1215/SimpleClock/releases/tag/v2.0.test
             </sparkle:releaseNotesLink>
             <pubDate>Fri, 18 Jan 2018 19:20:11 +0000</pubDate>
-            <!-- Sparkle 1.21+ uses sparkle::edSignature="ed25519" instead of sparkle::dsaSignature="deprecated DSA" -->
-            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/archive/v2.0.test.zip" sparkle:version="v2.0.test" length="xxx" type="application/octet-stream" sparkle:shortVersionString="2.0" />
+            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/archive/v2.0.test.zip" sparkle:version="10" length="xxx" type="application/octet-stream" sparkle:shortVersionString="2.0" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
     </channel>
