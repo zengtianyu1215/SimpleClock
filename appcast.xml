@@ -7,10 +7,10 @@
         <item>
             <title>SimpleClock Release 2.0</title>
             <sparkle:releaseNotesLink>
-                https://github.com/zengtianyu1215/SimpleClock/releases/tag/v2.0.test
+                https://github.com/zengtianyu1215/SimpleClock/releases/tag/v2.0(10)
             </sparkle:releaseNotesLink>
-            <pubDate>Fri, 18 Jan 2018 19:20:11 +0000</pubDate>
-            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/archive/v2.0.test.zip" sparkle:version="10" length="xxx" type="application/octet-stream" sparkle:shortVersionString="2.0" />
+            <pubDate>2019/01/18 15:21:26</pubDate>
+            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/releases/download/v2.0(10)/SimpleClock.v2.0.10.Release.dmg" sparkle:version="10" length="xxx" type="application/octet-stream" sparkle:shortVersionString="2.0" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
     </channel>

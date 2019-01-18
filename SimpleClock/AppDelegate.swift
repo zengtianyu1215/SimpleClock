@@ -19,12 +19,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
     @IBOutlet weak var Check4Update: NSMenuItem!
     @IBOutlet weak var dockMenu: NSMenu!
     @IBOutlet weak var SimpleGithub: NSMenuItem!
+    
     @IBAction func SimpleGithubView(_ sender: NSMenuItem) {
         let url = URL.init(string: "https://zengtianyu1215.github.io/SimpleClock/")
         NSWorkspace.shared.open(url!)
         
     }
     @IBOutlet weak var DevGithub: NSMenuItem!
+    
     @IBAction func DevGithubView(_ sender: NSMenuItem) {
         let url = URL.init(string: "https://zengtianyu1215.github.io/")
         NSWorkspace.shared.open(url!)
@@ -37,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
         su.sendsSystemProfile = true
         su.checkForUpdates(Any?.self)
     }
+    
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
@@ -60,8 +63,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
         
         if #available(OSX 10.12.2, *) {
             NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
-        }
-        
+        }       
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
