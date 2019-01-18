@@ -72,51 +72,49 @@ After several iterations of SimpleClock, making a calendar display function was 
 
 
 
-## RELEASE: SimpleClock 1.8(8)
+## RELEASE: SimpleClock 2.0(10)
 
 ### Link: <https://github.com/zengtianyu1215/SimpleClock/releases>
-# Release ChangeLog::
+# SimpleClock 2.0(10) Release ChangeLog::
 
-**Time: 2018/10/01 13:44:26**
+**Time: 2019/01/18 15:21:26**
 
 >**Content**
->1. Add Supports for Mac OS X 10.14 Mojave;
->2. Full Theme Mode switch in Clock, Timer and Stopwatch;
->3. Add Right-Click Menu in Clock interface, which can help iMac and Macbook Pro without Multi-Touch Bar to use the functions provided in Multi-Touch Bar; (Issue #1 Fixed)
->4. Add Triple-Click Gesture Recognizer to change the light / dark theme;
->5. Add Calendar Part in Clock's Calendar label;
->6. Delete Calendar from App Menu;
->7. Add Sparkle Auto-Update Framework; (Now it is under testing...)
->8. Optimized with battery and CPU; (Issue #1 Fixed)
->9. Fix CPU bugs and multi-threads bugs; (Issue #1 Fixed)
->10. Add Constrains in all interface;
->11. Use New Dark Mode of Mac OS X 10.14 Mojave
->12. Fix the bug on starting scene;
->13. Fix display bugs on Multi-touch Bar;
->14. Now SimpleClock support Mac OS X 10.12;
->15. Reach 600+ users, 4 forks and 19 stars on Github. Thanks!
->
+>1.  Fixed Time Lapse Bugs in Issue #2 (Issue #2 Fixed).
+>2. Fixed Bugs in Timer and Clock (Issue #2 Fixed).
+>3. Improve SimpleClock Efficiency in CPU Time.
+>4. Fixed Bugs in Clock Interface Right-Click Menu.
+>5. Improve the Performance of Right-Click Menu.
+>6. Add Auto-Update Framework, Sparkle. The Download Source is from GitHub.
+>7. Add Time Today Widget.
+>8. Add Calendar Today Widget.
+>9. Add Validating Condition to Timer Input.
+>10. Update SimpleClock Homepage.
+>11. Improve Today Widget Performance in Battery and CPU Time.
+>12. Improve Preference Saving Method.
+>13. Add More Localization Files.
+>14. Fixed Bugs on Sending Notifications.
+>15. Now SimpleClock Total Download Rate has Reached 750+. 🎉 Thanks! 
 >*If you have problems when you are using SimpleClock, please post an issue on SimpleClock.*
-
-**编译时间: 2018/10/01 13:44:26**
+---
+**编译时间: 2019/01/18 15:21:26**
 
 >**更新内容**
->
->1. 现已支持 Mac OS X 10.14 Mojave；
->2. 全面改进的界面，在时钟、计时器、秒表都有改进；
->3. 在时钟界面添加了右键菜单，能够让 iMac 和没有 Multi-Touch Bar 的 Macbook / Macbook Pro 使用相应的功能，如主题转换、开关；（Issue #1 已修复）
->4. 在时钟界面，添加了三击手势检测，能够快速转换明亮和暗色主题；
->5. 在时钟界面，添加了日历模块，利用右键菜单即可打开；
->6. 删除了日历界面；
->7. 添加了 Sparkle 自动更新框架； (正在测试中)
->8. 提省了 SimpleClock 在 CPU 和电池方面的性能 (Issue #1 已修复)
->9. 修复了 CPU 和多线程的相关错误 (Issue #1 已修复)
->10. 在界面中添加了相关的约束条件；
->11. 暗色界面采用了来自 Mac OS X 10.14 Mojave 的新材质；
->12. 减少启动过程中的错误和重复项；
->13. 修复了在 Multi-Touch Bar 上的显示错误；
->14. SimpleClock 在 Mac OS X 10.12 上会获得更好的支持；
->15. 现在 SimpleClock 已经有 600+ 位用户，在 GitHub 上有 4 个分支和 19 星的评价，感谢各位！
+>1.  修复了 Issue #2 中有关时间延迟的问题；
+>2. 修复了 Issue #2 中在时钟和定时器的问题；
+>3. 改进了 SimpleClock 在 CPU 时间上面的表现，能耗进一步降低；
+>4. 修复了右键菜单与 Touch Bar 的交互问题；
+>5. 修复了当前界面失焦适用右键菜单造成的闪退问题;
+>6. 添加了 Sparkle 自动更新框架，更新源为本 GitHub 网站。从 2.0 版本开始，可以使用 Sparkle 进行更新；
+>7. 添加了时钟小部件，无需打开应用即可查看时间，在通知栏中的今天部分可以添加；
+>8. 添加了日历小部件，无需打开应用即可查看日历，在通知栏中的今天部分可以添加；
+>9. 添加了定时器输入验证功能，防止非法时间输入；
+>10.  更新了 SimpleClock 主页；
+>11. 改进了时钟和日历部件的性能，整体性能与系统部件一致；
+>12. 改进了设置保存方法；
+>13. 添加了本地化文件；
+>14. 修复了定时器的通知发出问题；
+>15.  到现在，SimpleClock 的总共下载量已经超过了750次，24星，4个分支。🎉 
 >
 >*如果在使用过程中遇到无法解决的Bug，欢迎在 Issue 中提出*
 <br>
