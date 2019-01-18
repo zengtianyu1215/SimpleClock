@@ -2,27 +2,28 @@
 layout: default
 img: icon.png
 category: Function
-title: Release ChangeLog
+title:  SimpleClock 2.0 Available
 description: |
 ---
-**Time: 2018/10/01 13:44:26**
+# [Release ChangeLog](https://github.com/zengtianyu1215/SimpleClock/releases/tag/v2.0(10))
 
-> **Content**
->
-> 1. Add Supports for Mac OS X 10.14 Mojave;
-> 2. Full Theme switch in All UI;
-> 3. Add Right-Click Menu in Clock interface; 
-> 4. Add Triple-Click Gesture Recognizer to change the light / dark theme;
-> 5. Add Calendar Part in Clock's Calendar label;
-> 6. Delete Calendar from App Menu;
-> 7. Add Sparkle Auto-Update Framework; 
-> 8. Optimized with battery and CPU; 
-> 9. Fix CPU bugs and multi-threads bugs; 
-> 10. Add Constrains in all interface;
-> 11. Use New Dark Mode of Mac OS X 10.14 Mojave
-> 12. Fix the bug on starting scene;
-> 13. Fix display bugs on Multi-touch Bar;
-> 14. Now SimpleClock support Mac OS X 10.12;
-> 15. Reach 600+ users, 4 forks and 19 stars on Github. Thanks!
->
-> *If you have problems when you are using SimpleClock, please post an issue on SimpleClock.*
+**Version: 2.0(10) Time: 2019/01/18 15:21:26**
+
+**Content**
+1.  Fixed Time Lapse Bugs in Issue #2 (Issue #2 Fixed).
+2. Fixed Bugs in Timer and Clock (Issue #2 Fixed).
+3. Improve SimpleClock Efficiency in CPU Time.
+4. Fixed Bugs in Clock Interface Right-Click Menu.
+5. Improve the Performance of Right-Click Menu.
+6. Add Auto-Update Framework.
+7. Add Time Today Widget.
+8. Add Calendar Today Widget.
+9. Add Validating Condition to Timer Input.
+10. Update SimpleClock Homepage.
+11. Improve Today Widget Performance.
+12. Improve Preference Saving Method.
+13. Add More Localization Files.
+14. Fixed Bugs on Sending Notifications.
+15. Now SimpleClock Total Download Rate has Reached 750+. 🎉 Thanks! 
+
+*If you have problems when you are using SimpleClock, please post an issue on SimpleClock.*
