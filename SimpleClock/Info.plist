@@ -104,6 +104,6 @@
 		<dict/>
 	</array>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SimpleClock/appcast.xml</string>
 </dict>
 </plist>

@@ -7,11 +7,11 @@
         <item>
             <title>SimpleClock Release 2.0</title>
             <sparkle:releaseNotesLink>
-                https://github.com/zengtianyu1215/SimpleClock/releases/tag/1.9
+                https://github.com/zengtianyu1215/SimpleClock/releases/tag/v2.0.test
             </sparkle:releaseNotesLink>
-            <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
+            <pubDate>Fri, 18 Jan 2018 19:20:11 +0000</pubDate>
             <!-- Sparkle 1.21+ uses sparkle::edSignature="ed25519" instead of sparkle::dsaSignature="deprecated DSA" -->
-            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/releases/download/v1.8(8)/SimpleClock.v1.8.8.Release.dmg" sparkle:version="1.8.8" length="xxx" type="application/octet-stream" sparkle:shortVersionString="1.8" />
+            <enclosure url="https://github.com/zengtianyu1215/SimpleClock/archive/v2.0.test.zip" sparkle:version="v2.0.test" length="xxx" type="application/octet-stream" sparkle:shortVersionString="2.0" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
     </channel>

@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
     @IBAction func CheckUpdates(_ sender: Any) {
         let su = SUUpdater()
         su.delegate = self
-        su.feedURL = URL.init(string: "https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/appcast.xml")
+        su.feedURL = URL.init(string: "https://raw.githubusercontent.com/zengtianyu1215/SimpleClock/master/SimpleClock/appcast.xml")
         su.sendsSystemProfile = true
         su.checkForUpdates(Any?.self)
     }
