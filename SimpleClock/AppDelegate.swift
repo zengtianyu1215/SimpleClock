@@ -13,7 +13,7 @@ import Sparkle
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
 
-//    var updater = GitHubUpdater.init()
+    
     var windowController: NSWindowController?
     
     @IBOutlet weak var Check4Update: NSMenuItem!
