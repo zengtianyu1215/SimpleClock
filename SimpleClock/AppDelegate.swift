@@ -12,7 +12,6 @@ import Sparkle
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
-
     
     var windowController: NSWindowController?
     
