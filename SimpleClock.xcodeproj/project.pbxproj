@@ -251,6 +251,7 @@
 		7D5CF6AD2019C3730032670C = {
 			isa = PBXGroup;
 			children = (
+				7D1D1AAE21F1AB4C000FB543 /* appcast.xml */,
 				7D5CF6B82019C3730032670C /* SimpleClock */,
 				7D5CF6D02019C3730032670C /* SimpleClockTests */,
 				7D5CF6DB2019C3730032670C /* SimpleClockUITests */,
@@ -287,7 +288,6 @@
 				7D80EE72219E906800A0FA7E /* SC-Bridge-Header.h */,
 				7D507511201C52C000E2C6C5 /* Pop.aiff */,
 				7D5CF6C72019C3730032670C /* Info.plist */,
-				7D1D1AAE21F1AB4C000FB543 /* appcast.xml */,
 				7D5CF6C82019C3730032670C /* SimpleClock.entitlements */,
 				7D5CF6BF2019C3730032670C /* Document.xcdatamodeld */,
 				7D5CF6F3201A21C60032670C /* Images.xcassets */,
