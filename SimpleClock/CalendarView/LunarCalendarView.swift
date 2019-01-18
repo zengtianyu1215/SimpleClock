@@ -9,12 +9,6 @@
 import Foundation
 import Cocoa
 
-//protocol LunarCalendarViewDelegate:NSObjectProtocol{
-//    func didSelectDate(_ selectedDate:Date)
-//}
-
-
-
 class LunarCalendarView:NSViewController{
     
     @IBOutlet weak var calendarTittle: NSTextField!
