@@ -14,7 +14,7 @@ import Sparkle
 class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
     
     var windowController: NSWindowController?
-    
+     
     @IBOutlet weak var Check4Update: NSMenuItem!
     @IBOutlet weak var dockMenu: NSMenu!
     @IBOutlet weak var SimpleGithub: NSMenuItem!
