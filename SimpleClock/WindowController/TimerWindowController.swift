@@ -14,9 +14,6 @@ class TimerWindowController: NSWindowController {
     @IBOutlet weak var PauseB: NSButton!
     @IBOutlet weak var EndB: NSButton!
     
-    
-    
-    
     @IBAction func Start(_ sender: Any) {
         let rootViewController = contentViewController as! TimerViewController
         rootViewController.StartButton.performClick(Any.self)

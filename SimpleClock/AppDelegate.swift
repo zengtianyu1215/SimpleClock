@@ -73,5 +73,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
         return dockMenu
     }
     
+    @IBAction func MakeTextLarger(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCTextLarger"), object: nil)
+    }
+    
+    @IBAction func MakeTextSmaller(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCTextSmaller"), object: nil)
+    }
+    
+    @IBAction func MakeTextDefault(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCTextDefault"), object: nil)
+    }
+    
 }
 

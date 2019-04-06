@@ -38,6 +38,17 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
         let dark = defau.bool(forKey: "DarkTheme?")
         let AM = defau.bool(forKey: "ShowAM?")
         let Sec = defau.bool(forKey: "ShowSecond?")
+        var clockFont = defau.float(forKey: "SCClockFontSize")
+        var calFont = defau.float(forKey: "SCCalFontSize")
+        if (clockFont<10 || calFont < 10){
+            clockFont = Float(84)
+            calFont = Float(13)
+        }
+        ClockLabel.font = NSFont.init(name: ClockLabel.font!.fontName, size: CGFloat(clockFont))
+        CalendarLabel.font = NSFont.init(name: CalendarLabel.font!.fontName, size: CGFloat(calFont))
+        NotificationCenter.default.addObserver(self, selector: #selector(textLarger), name: NSNotification.Name(rawValue: "SCTextLarger"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textSmaller), name: NSNotification.Name(rawValue: "SCTextSmaller"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDefault), name: NSNotification.Name(rawValue: "SCTextDefault"), object: nil)
         
         timeFormat.dateFormat = "HH:mm  aa"
         timeFormat2.dateFormat = "yyyy/MM/dd EEEE  zzzz ZZZZ"
@@ -66,6 +77,8 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
         defau.setValue(is24H, forKey: "ShowAM?")
         defau.setValue(isSecond, forKey: "ShowSecond?")
         defau.setValue(isNightMode, forKey: "DarkTheme?")
+        defau.setValue(Float(ClockLabel.font?.pointSize ?? 84), forKey: "SCClockFontSize")
+        defau.setValue(Float(CalendarLabel.font?.pointSize ?? 13), forKey: "SCCalFontSize")
         super.viewWillDisappear()
     }
     
@@ -183,6 +196,32 @@ class ViewController: NSViewController, PreferencesViewControllerDelegate {
             ChangeSecond(Any.self)
         }
         timer.fire();
+    }
+    
+    @objc func textLarger(){
+        var clockFont = CGFloat(ClockLabel.font?.pointSize ?? 84)
+        clockFont += CGFloat(10)
+        ClockLabel.font = NSFont.init(name: ClockLabel.font!.fontName, size: clockFont)
+        var calFont = CGFloat(CalendarLabel.font?.pointSize ?? 13)
+        calFont += CGFloat(5)
+        CalendarLabel.font = NSFont.init(name: CalendarLabel.font!.fontName, size: calFont)
+    }
+    
+    @objc func textSmaller(){
+        var clockFont = CGFloat(ClockLabel.font?.pointSize ?? 84)
+        var calFont = CGFloat(CalendarLabel.font?.pointSize ?? 13)
+        calFont -= CGFloat(5)
+        clockFont -= CGFloat(10)
+        if(clockFont <= 70 || calFont <= 5){
+            return
+        }
+        ClockLabel.font = NSFont.init(name: ClockLabel.font!.fontName, size: clockFont)
+        CalendarLabel.font = NSFont.init(name: CalendarLabel.font!.fontName, size: calFont)
+    }
+    
+    @objc func textDefault(){
+        ClockLabel.font = NSFont.init(name: ClockLabel.font!.fontName, size: 84)
+        CalendarLabel.font = NSFont.init(name: CalendarLabel.font!.fontName, size: 13)
     }
     
 }
