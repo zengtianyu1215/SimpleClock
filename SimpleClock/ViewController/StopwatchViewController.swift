@@ -69,11 +69,11 @@ class StopwatchViewController : NSViewController {
             minute = 0
             TimerLabel.stringValue = "00:00:00"
             timer.fireDate = NSDate.init() as Date
-            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            NSSound(named: "Glass.aiff")?.play()
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
-            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
+            NSSound(named: "Pop.aiff")?.play()
         }
     }
     
@@ -82,7 +82,7 @@ class StopwatchViewController : NSViewController {
         if isStart {
             timer.fireDate = Date.distantFuture
             isPause = true
-            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
+            NSSound(named: "Pop.aiff")?.play()
         }
     }
 
@@ -94,7 +94,7 @@ class StopwatchViewController : NSViewController {
             hour = 0
             minute = 0
             isStart = false
-            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            NSSound(named: "Glass.aiff")?.play()
         }
     }
 }

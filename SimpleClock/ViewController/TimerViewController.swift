@@ -57,7 +57,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         if TimerText.stringValue == "00:00:00" {
             timer.fireDate = Date.distantFuture
             TimerText.textColor = NSColor.red
-            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            NSSound(named: "Glass.aiff")?.play()
             let userNotification = NSUserNotification()
             userNotification.title = NSLocalizedString("TimeUp", comment: "default")
             userNotification.subtitle = String(format: NSLocalizedString("TimeUpA", comment: "default"), total)
@@ -75,7 +75,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             if hour == 0 && minute == 0 && second == 0{
                 timer.fireDate = Date.distantFuture
                 TimerText.textColor = NSColor.red
-                NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+                NSSound(named: "Glass.aiff")?.play()
                 let userNotification = NSUserNotification()
                 userNotification.title = NSLocalizedString("TimeUp", comment: "default")
                 userNotification.subtitle = String(format: NSLocalizedString("TimeUpA", comment: "default"), total)
@@ -119,12 +119,12 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             Indicater.maxValue = Double(totalSecond)
             timer.fireDate = NSDate.init() as Date
             TimerText.textColor = NSColor.white
-            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            NSSound(named: "Glass.aiff")?.play()
             runningSec = 0
         }else if isPause{
             timer.fireDate = NSDate.init() as Date
             isPause = false
-            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
+            NSSound(named: "Pop.aiff")?.play()
         }
     }
     
@@ -132,7 +132,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         if isStart {
             isPause = true
             timer.fireDate = Date.distantFuture
-            NSSound(named: NSSound.Name(rawValue: "Pop.aiff"))?.play()
+            NSSound(named: "Pop.aiff")?.play()
         }
     }
     
@@ -147,7 +147,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
             TimerText.stringValue = "00:00:00"
             Indicater.doubleValue = 0
             TimerText.textColor = NSColor.white
-            NSSound(named: NSSound.Name(rawValue: "Glass.aiff"))?.play()
+            NSSound(named: "Glass.aiff")?.play()
             
             let userNotification = NSUserNotification()
             userNotification.title = NSLocalizedString("TimeUp", comment: "default")

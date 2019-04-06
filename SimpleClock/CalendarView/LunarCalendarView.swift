@@ -67,7 +67,7 @@ class LunarCalendarView:NSViewController{
     }
     
     init(){
-        super.init(nibName: NSNib.Name(rawValue: "LunarCalendarView"), bundle: nil)
+        super.init(nibName: "LunarCalendarView", bundle: nil)
         commonInit()
     }
     
