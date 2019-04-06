@@ -135,7 +135,6 @@ class WindowController: NSWindowController {
         self.calendar.show()
         let cellRect = vc.CalendarLabel.bounds
         self.pop?.show(relativeTo: cellRect, of: vc.CalendarLabel, preferredEdge: .maxY)
-        
     }
     
 }

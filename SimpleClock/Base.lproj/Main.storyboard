@@ -352,8 +352,21 @@
                                     </tabViewItem>
                                     <tabViewItem label="SimpleClock Font" identifier="" id="iDh-80-elb">
                                         <view key="view" id="taf-1g-tyt">
-                                            <rect key="frame" x="10" y="33" width="499" height="201"/>
+                                            <rect key="frame" x="10" y="33" width="499" height="215"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yf1-HE-CmJ">
+                                                    <rect key="frame" x="17" y="189" width="465" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="roundTextured" title="Clock Interface Font" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3AV-f7-VPd">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="clockFontChanger:" target="XkM-dt-wNE" id="84X-P2-9Y7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </view>
                                     </tabViewItem>
                                 </tabViewItems>
@@ -368,6 +381,8 @@
                     </view>
                     <connections>
                         <outlet property="DarkTheme" destination="Tb7-55-hYv" id="wvS-70-Pkb"/>
+                        <outlet property="DarkThemeStopwatch" destination="iBH-Kj-7HV" id="Gwa-3e-Msb"/>
+                        <outlet property="DarkThemeTimer" destination="i8L-N7-GWu" id="4Py-Wd-NEb"/>
                         <outlet property="ShowAMPM" destination="Pe2-Hs-OEZ" id="YLm-cr-jEN"/>
                         <outlet property="ShowSecond" destination="GTv-H8-BCQ" id="rQ0-Jj-emf"/>
                     </connections>
@@ -739,6 +754,7 @@ DQ
                         </touchBarItems>
                     </touchBar>
                     <connections>
+                        <outlet property="ModeChanger" destination="mRo-lU-Btf" id="CIT-9k-ngm"/>
                         <segue destination="ZG4-kJ-tYT" kind="relationship" relationship="window.shadowedContentViewController" id="E2X-uu-NjB"/>
                     </connections>
                 </windowController>
@@ -791,7 +807,7 @@ DQ
                                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="Pause:" target="ZG4-kJ-tYT" id="11s-GA-nc5"/>
+                                            <action selector="PauseTimer:" target="ZG4-kJ-tYT" id="11s-GA-nc5"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-4U-QMO">
@@ -804,7 +820,7 @@ DQ
                                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="End:" target="ZG4-kJ-tYT" id="OV2-df-WXh"/>
+                                            <action selector="EndTimer:" target="ZG4-kJ-tYT" id="OV2-df-WXh"/>
                                         </connections>
                                     </button>
                                 </subviews>

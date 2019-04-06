@@ -25,6 +25,7 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
     
     var isStart = Bool(false)
     var isPause = Bool(false)
+    var isDark = Bool(true)
     
     var myQueue = OperationQueue()
     let myActivity = ProcessInfo.processInfo.beginActivity(
@@ -44,6 +45,18 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkThemeTimer?")
+        if !dark {
+            changeLight()
+        }else{
+            changeDark()
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(changeDark), name: NSNotification.Name.init("SCTIMERDARK"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLight), name: NSNotification.Name.init("SCTIMERLIGHT"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(start), name: NSNotification.Name.init("SCTIMERSTART"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(pause), name: NSNotification.Name.init("SCTIMERPAUSE"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(end), name: NSNotification.Name.init("SCTIMEREND"), object: nil)
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
             self.timerMain()
         })
@@ -51,6 +64,36 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         myQueue.addOperation {
             ProcessInfo.processInfo.beginActivity(options: ProcessInfo.ActivityOptions.idleSystemSleepDisabled, reason: "Timer")
         }
+    }
+    
+    override func viewWillDisappear() {
+        let defau = UserDefaults.standard
+        defau.setValue(isDark, forKey: "DarkThemeTimer?")
+        super.viewWillDisappear()
+    }
+    
+    @objc func changeDark(){
+        background.material = NSVisualEffectView.Material.dark
+        TimerText.textColor = NSColor.white
+        hourLabel.textColor = NSColor.white
+        minuteLabel.textColor = NSColor.white
+        secondLabel.textColor = NSColor.white
+        HourText.textColor = NSColor.white
+        MinuteText.textColor = NSColor.white
+        SecondText.textColor = NSColor.white
+        isDark = true
+    }
+    
+    @objc func changeLight(){
+        background.material = NSVisualEffectView.Material.mediumLight
+        TimerText.textColor = NSColor.black
+        hourLabel.textColor = NSColor.black
+        minuteLabel.textColor = NSColor.black
+        secondLabel.textColor = NSColor.black
+        HourText.textColor = NSColor.black
+        MinuteText.textColor = NSColor.black
+        SecondText.textColor = NSColor.black
+        isDark = false
     }
     
     func timerMain() -> Void {
@@ -86,9 +129,12 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         }
 
     }
-
     
-    @IBAction func StartTimer(_ sender: NSButton) {
+    @objc func start(){
+        StartTimer(Any.self)
+    }
+    
+    @IBAction func StartTimer(_ sender: Any) {
         if isStart==false{
             isStart = true
             if(SecondText.stringValue.count>10 || MinuteText.stringValue.count>10 || HourText.stringValue.count>10){
@@ -128,7 +174,11 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         }
     }
     
-    @IBAction func PauseTimer(_ sender: NSButton) {
+    @objc func pause(){
+        PauseTimer(Any.self)
+    }
+    
+    @IBAction func PauseTimer(_ sender: Any) {
         if isStart {
             isPause = true
             timer.fireDate = Date.distantFuture
@@ -136,8 +186,11 @@ class TimerViewController : NSViewController, NSUserNotificationCenterDelegate{
         }
     }
     
+    @objc func end(){
+        EndTimer(Any.self)
+    }
     
-    @IBAction func EndTimer(_ sender: NSButton) {
+    @IBAction func EndTimer(_ sender: Any) {
         if isStart {
             isStart = false
             timer.fireDate = Date.distantFuture

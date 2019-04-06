@@ -34,6 +34,13 @@ class StopwatchViewController : NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkThemeStopwatch?")
+        if !dark {
+            changeLight()
+        }else{
+            changeDark()
+        }
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
             self.runTimer()
         })
@@ -41,6 +48,30 @@ class StopwatchViewController : NSViewController {
         myQueue.addOperation {
             ProcessInfo.processInfo.beginActivity(options: ProcessInfo.ActivityOptions.idleSystemSleepDisabled, reason: "Timer")
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(changeDark), name: NSNotification.Name.init("SCSTOPWATCHDARK"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLight), name: NSNotification.Name.init("SCSTOPWATCHLIGHT"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(start), name: NSNotification.Name.init("SCSTOPWATCHSTART"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(pause), name: NSNotification.Name.init("SCSTOPWATCHPAUSE"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(end), name: NSNotification.Name.init("SCSTOPWATCHEND"), object: nil)
+        
+    }
+    
+    override func viewWillDisappear() {
+        let defau = UserDefaults.standard
+        defau.setValue(isDark, forKey: "DarkThemeStopwatch?")
+        super.viewWillDisappear()
+    }
+    
+    @objc func changeDark(){
+        self.Background.material = NSVisualEffectView.Material.dark
+        self.TimerLabel.textColor = NSColor.white
+        self.isDark = true
+    }
+    
+    @objc func changeLight(){
+        self.Background.material = NSVisualEffectView.Material.mediumLight
+        self.TimerLabel.textColor = NSColor.black
+        self.isDark = false
     }
     
     func runTimer() -> Void {
@@ -60,7 +91,11 @@ class StopwatchViewController : NSViewController {
         TimerLabel.stringValue = String(format: "%02d:%02d:%02d", hour,minute,second)
     }
     
-    @IBAction func StartTimer(_ sender: NSButton) {
+    @objc func start(){
+        StartTimer(Any.self)
+    }
+    
+    @IBAction func StartTimer(_ sender: Any) {
         if isStart == false {
             isStart = true
             second = 0
@@ -77,16 +112,24 @@ class StopwatchViewController : NSViewController {
         }
     }
     
+    @objc func pause(){
+        PauseTimer(Any.self)
+    }
     
-    @IBAction func Pause(_ sender: NSButton) {
+    
+    @IBAction func PauseTimer(_ sender: Any) {
         if isStart {
             timer.fireDate = Date.distantFuture
             isPause = true
             NSSound(named: "Pop.aiff")?.play()
         }
     }
+    
+    @objc func end(){
+        EndTimer(Any.self)
+    }
 
-    @IBAction func End(_ sender: NSButton) {
+    @IBAction func EndTimer(_ sender: Any) {
         if isStart {
             timer.fireDate = Date.distantFuture
             second = 0

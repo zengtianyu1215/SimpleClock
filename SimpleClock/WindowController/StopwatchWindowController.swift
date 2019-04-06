@@ -9,39 +9,34 @@
 import Cocoa
 class StopwatchWindowController: NSWindowController {
     
+    @IBOutlet weak var ModeChanger: NSSegmentedControl!
     
-   
     @IBAction func Start(_ sender: Any) {
-        let rootViewController = contentViewController as! StopwatchViewController
-        rootViewController.TimerStartEnd.performClick(nil)
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCSTOPWATCHSTART"), object: nil)
     }
     
     @IBAction func Pause(_ sender: Any) {
-       let rootViewController = contentViewController as! StopwatchViewController
-        rootViewController.Pause.performClick(nil)
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCSTOPWATCHPAUSE"), object: nil)
     }
     
     @IBAction func End(_ sender: NSButtonCell) {
-        let rootViewController = contentViewController as! StopwatchViewController
-        rootViewController.End.performClick(nil
-        )
+        NotificationCenter.default.post(name: NSNotification.Name.init("SCSTOPWATCHEND"), object: nil)
     }
     
     @IBAction func Changeback(_ sender: Any){
-        let rootViewController = contentViewController as! StopwatchViewController
-        if rootViewController.isDark {
-            rootViewController.Background.material = NSVisualEffectView.Material.mediumLight
-            rootViewController.TimerLabel.textColor = NSColor.black
-            rootViewController.isDark = false
+        if ModeChanger.isSelected(forSegment: 0) {
+            NotificationCenter.default.post(name: NSNotification.Name.init("SCSTOPWATCHLIGHT"), object: nil)
         }else{
-            rootViewController.Background.material = NSVisualEffectView.Material.dark
-            rootViewController.TimerLabel.textColor = NSColor.white
-            rootViewController.isDark = true
+            NotificationCenter.default.post(name: NSNotification.Name.init("SCSTOPWATCHDARK"), object: nil)
         }
     }
     
-    
     override func windowDidLoad() {
         super.windowDidLoad()
+        let defau = UserDefaults.standard
+        let dark = defau.bool(forKey: "DarkThemeStopwatch?")
+        if !dark {
+            ModeChanger.selectedSegment = 0
+        }
     }
 }
